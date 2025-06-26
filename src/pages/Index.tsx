@@ -1,5 +1,4 @@
-
-import { Phone, MapPin, Clock, CheckCircle, Users, Wrench } from 'lucide-react';
+import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -32,6 +31,45 @@ const Index = () => {
       icon: "🔧",
       title: "Reparos Elétricos/Hidráulicos",
       description: "Troca de torneiras, maçanetas e ajustes leves"
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Maria Silva",
+      location: "Miami Beach",
+      rating: 5,
+      comment: "Excelente serviço! Instalaram minha TV na parede com muito profissionalismo. Super recomendo!"
+    },
+    {
+      name: "Carlos Rodriguez",
+      location: "Aventura",
+      rating: 5,
+      comment: "Montaram todos os móveis do meu apartamento. Trabalho impecável e preço justo."
+    },
+    {
+      name: "Ana Costa",
+      location: "Doral",
+      rating: 5,
+      comment: "Resolveram um problema elétrico que outros não conseguiram. Muito satisfeita com o atendimento!"
+    },
+    {
+      name: "Roberto Santos",
+      location: "Brickell",
+      rating: 5,
+      comment: "Pontualidade e qualidade. Fizeram a instalação das cortinas perfeitamente. Parabéns!"
+    },
+    {
+      name: "Lucia Pereira",
+      location: "Coral Gables",
+      rating: 5,
+      comment: "Atendimento via WhatsApp muito rápido. Vieram no mesmo dia e resolveram tudo!"
+    },
+    {
+      name: "Fernando Lima",
+      location: "Pembroke Pines",
+      rating: 5,
+      comment: "Profissionais competentes e honestos. Já indiquei para vários amigos!"
     }
   ];
 
@@ -177,6 +215,47 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold text-white mb-4">O que nossos clientes dizem</h3>
+            <p className="text-xl text-yellow-100 max-w-2xl mx-auto">
+              Veja os depoimentos de quem já confiou no nosso trabalho
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <p className="text-gray-700 mb-4 italic">"{testimonial.comment}"</p>
+                  <div className="border-t pt-4">
+                    <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                    <p className="text-sm text-gray-600">{testimonial.location}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              onClick={openWhatsApp}
+              className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-bold px-8 py-3 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <Phone className="h-5 w-5 mr-3" />
+              Seja nosso próximo cliente satisfeito!
+            </Button>
           </div>
         </div>
       </section>
