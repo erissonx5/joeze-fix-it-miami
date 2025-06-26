@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -61,11 +62,11 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[rgb(231,188,45)] to-[#e7bc2d] text-white py-20">
+      <section style={{backgroundColor: '#0b1c33'}} className="text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Um resolve, o outro <span className="text-yellow-100">garante</span>
+              Um resolve, o outro <span className="text-yellow-300">garante</span>
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-yellow-100 font-light">
               Serviços de handyman profissionais em Miami-Dade e Broward
@@ -74,7 +75,7 @@ const Index = () => {
               <Button 
                 onClick={openWhatsApp}
                 size="lg"
-                className="bg-white text-[rgb(231,188,45)] hover:bg-gray-100 font-bold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Phone className="h-5 w-5 mr-3" />
                 WhatsApp: (786) 593-7841
