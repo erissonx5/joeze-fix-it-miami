@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -45,42 +44,42 @@ const Index = () => {
       location: "Miami Beach",
       rating: 5,
       comment: t.testimonials.reviews.maria,
-      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b17c?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Carlos Rodriguez",
       location: "Aventura",
       rating: 5,
       comment: t.testimonials.reviews.carlos,
-      avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Ana Costa",
       location: "Doral",
       rating: 5,
       comment: t.testimonials.reviews.ana,
-      avatar: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Roberto Santos",
       location: "Brickell",
       rating: 5,
       comment: t.testimonials.reviews.roberto,
-      avatar: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Lucia Pereira",
       location: "Coral Gables",
       rating: 5,
       comment: t.testimonials.reviews.lucia,
-      avatar: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Fernando Lima",
       location: "Pembroke Pines",
       rating: 5,
       comment: t.testimonials.reviews.fernando,
-      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
     }
   ];
 
