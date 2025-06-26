@@ -1,8 +1,12 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSelector from '@/components/LanguageSelector';
 
 const Index = () => {
+  const { t } = useLanguage();
   const whatsappNumber = "+17865937841";
   const whatsappMessage = "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
   
@@ -14,23 +18,23 @@ const Index = () => {
   const services = [
     {
       icon: "📺",
-      title: "Instalação de TVs",
-      description: "Drywall, alvenaria, suporte articulado - instalação segura e profissional"
+      title: t.services.tvInstallation.title,
+      description: t.services.tvInstallation.description
     },
     {
       icon: "🛠️",
-      title: "Montagem de Móveis",
-      description: "Montagem completa de móveis com precisão e cuidado"
+      title: t.services.furnitureAssembly.title,
+      description: t.services.furnitureAssembly.description
     },
     {
       icon: "🏠",
-      title: "Instalações Residenciais",
-      description: "Cortinas, prateleiras, luminárias e muito mais"
+      title: t.services.homeInstallations.title,
+      description: t.services.homeInstallations.description
     },
     {
       icon: "🔧",
-      title: "Reparos Elétricos/Hidráulicos",
-      description: "Troca de torneiras, maçanetas e ajustes leves"
+      title: t.services.repairs.title,
+      description: t.services.repairs.description
     }
   ];
 
@@ -39,37 +43,37 @@ const Index = () => {
       name: "Maria Silva",
       location: "Miami Beach",
       rating: 5,
-      comment: "Excelente serviço! Instalaram minha TV na parede com muito profissionalismo. Super recomendo!"
+      comment: t.testimonials.reviews.maria
     },
     {
       name: "Carlos Rodriguez",
       location: "Aventura",
       rating: 5,
-      comment: "Montaram todos os móveis do meu apartamento. Trabalho impecável e preço justo."
+      comment: t.testimonials.reviews.carlos
     },
     {
       name: "Ana Costa",
       location: "Doral",
       rating: 5,
-      comment: "Resolveram um problema elétrico que outros não conseguiram. Muito satisfeita com o atendimento!"
+      comment: t.testimonials.reviews.ana
     },
     {
       name: "Roberto Santos",
       location: "Brickell",
       rating: 5,
-      comment: "Pontualidade e qualidade. Fizeram a instalação das cortinas perfeitamente. Parabéns!"
+      comment: t.testimonials.reviews.roberto
     },
     {
       name: "Lucia Pereira",
       location: "Coral Gables",
       rating: 5,
-      comment: "Atendimento via WhatsApp muito rápido. Vieram no mesmo dia e resolveram tudo!"
+      comment: t.testimonials.reviews.lucia
     },
     {
       name: "Fernando Lima",
       location: "Pembroke Pines",
       rating: 5,
-      comment: "Profissionais competentes e honestos. Já indiquei para vários amigos!"
+      comment: t.testimonials.reviews.fernando
     }
   ];
 
@@ -84,17 +88,20 @@ const Index = () => {
                 <Wrench className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">Mr. Joe & Zé</h1>
-                <p className="text-sm text-[#e7bc2d] font-medium">Handyman Services</p>
+                <h1 className="text-xl font-bold text-gray-900">{t.header.title}</h1>
+                <p className="text-sm text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
               </div>
             </div>
-            <Button 
-              onClick={openWhatsApp}
-              className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              <Phone className="h-4 w-4 mr-2" />
-              Chama no Zap
-            </Button>
+            <div className="flex items-center gap-4">
+              <LanguageSelector />
+              <Button 
+                onClick={openWhatsApp}
+                className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Phone className="h-4 w-4 mr-2" />
+                {t.header.whatsappButton}
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -104,10 +111,10 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Um resolve, o outro <span className="text-yellow-300">garante</span>
+              <span className="text-yellow-300">{t.hero.title}</span>
             </h2>
             <p className="text-xl md:text-2xl mb-8 text-yellow-100 font-light">
-              Serviços de handyman profissionais em Miami-Dade e Broward
+              {t.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button 
@@ -116,21 +123,21 @@ const Index = () => {
                 className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Phone className="h-5 w-5 mr-3" />
-                WhatsApp: (786) 593-7841
+                {t.hero.phone}
               </Button>
             </div>
             <div className="flex items-center justify-center space-x-8 text-yellow-100">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 mr-2" />
-                <span>Serviço Garantido</span>
+                <span>{t.hero.guaranteed}</span>
               </div>
               <div className="flex items-center">
                 <Clock className="h-5 w-5 mr-2" />
-                <span>Atendimento Rápido</span>
+                <span>{t.hero.fastService}</span>
               </div>
               <div className="flex items-center">
                 <Users className="h-5 w-5 mr-2" />
-                <span>Equipe Experiente</span>
+                <span>{t.hero.expertTeam}</span>
               </div>
             </div>
           </div>
@@ -141,9 +148,9 @@ const Index = () => {
       <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-white mb-4">Nossos Serviços</h3>
+            <h3 className="text-4xl font-bold text-white mb-4">{t.services.title}</h3>
             <p className="text-xl text-yellow-100 max-w-2xl mx-auto">
-              Oferecemos uma ampla gama de serviços de handyman para sua casa ou escritório
+              {t.services.subtitle}
             </p>
           </div>
           
@@ -165,7 +172,7 @@ const Index = () => {
       <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-4xl font-bold text-white mb-8">Por que escolher Mr. Joe & Zé?</h3>
+            <h3 className="text-4xl font-bold text-white mb-8">{t.about.title}</h3>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left">
                 <div className="space-y-6">
@@ -174,8 +181,8 @@ const Index = () => {
                       <CheckCircle className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-white mb-2">Qualidade Garantida</h4>
-                      <p className="text-yellow-100">Um resolve com expertise, o outro garante a qualidade do serviço.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
+                      <p className="text-yellow-100">{t.about.quality.description}</p>
                     </div>
                   </div>
                   
@@ -184,8 +191,8 @@ const Index = () => {
                       <Clock className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-white mb-2">Atendimento Rápido</h4>
-                      <p className="text-yellow-100">Resposta rápida no WhatsApp e agendamento flexível.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
+                      <p className="text-yellow-100">{t.about.fastService.description}</p>
                     </div>
                   </div>
                   
@@ -194,24 +201,24 @@ const Index = () => {
                       <Users className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-white mb-2">Equipe Experiente</h4>
-                      <p className="text-yellow-100">Anos de experiência em serviços residenciais e comerciais.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
+                      <p className="text-yellow-100">{t.about.expertTeam.description}</p>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-white rounded-2xl p-8 text-[rgb(231,188,45)]">
-                <h4 className="text-2xl font-bold mb-4">👉 Chama no Zap</h4>
+                <h4 className="text-2xl font-bold mb-4">{t.about.whatsappTitle}</h4>
                 <p className="text-lg mb-6 text-gray-700">
-                  Orçamento gratuito e atendimento personalizado via WhatsApp
+                  {t.about.whatsappSubtitle}
                 </p>
                 <Button 
                   onClick={openWhatsApp}
                   className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold w-full py-3 text-lg rounded-lg transition-all duration-300"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  (786) 593-7841
+                  {t.about.whatsappButton}
                 </Button>
               </div>
             </div>
@@ -223,9 +230,9 @@ const Index = () => {
       <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-white mb-4">O que nossos clientes dizem</h3>
+            <h3 className="text-4xl font-bold text-white mb-4">{t.testimonials.title}</h3>
             <p className="text-xl text-yellow-100 max-w-2xl mx-auto">
-              Veja os depoimentos de quem já confiou no nosso trabalho
+              {t.testimonials.subtitle}
             </p>
           </div>
           
@@ -254,7 +261,7 @@ const Index = () => {
               className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-bold px-8 py-3 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <Phone className="h-5 w-5 mr-3" />
-              Seja nosso próximo cliente satisfeito!
+              {t.testimonials.callToAction}
             </Button>
           </div>
         </div>
@@ -263,14 +270,14 @@ const Index = () => {
       {/* Coverage Area */}
       <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-4xl font-bold text-white mb-8">Área de Atendimento</h3>
+          <h3 className="text-4xl font-bold text-white mb-8">{t.coverage.title}</h3>
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <MapPin className="h-12 w-12 text-white" />
             </div>
-            <h4 className="text-2xl font-semibold text-white mb-4">Miami-Dade e Broward</h4>
+            <h4 className="text-2xl font-semibold text-white mb-4">{t.coverage.subtitle}</h4>
             <p className="text-lg text-yellow-100 mb-8">
-              Atendemos toda a região de Miami-Dade e Broward com serviços de handyman profissionais e confiáveis.
+              {t.coverage.description}
             </p>
           </div>
         </div>
@@ -285,8 +292,8 @@ const Index = () => {
                 <Wrench className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Mr. Joe & Zé Handyman</h3>
-                <p className="text-[#e7bc2d]">Um resolve, o outro garante</p>
+                <h3 className="text-2xl font-bold">{t.header.title} Handyman</h3>
+                <p className="text-[#e7bc2d]">{t.footer.subtitle}</p>
               </div>
             </div>
             
@@ -296,16 +303,16 @@ const Index = () => {
                 className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-bold px-8 py-3 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <Phone className="h-5 w-5 mr-3" />
-                WhatsApp: (786) 593-7841
+                {t.footer.whatsapp}
               </Button>
             </div>
             
             <div className="border-t border-gray-700 pt-8">
               <p className="text-gray-400">
-                © 2024 Mr. Joe & Zé Handyman. Todos os direitos reservados.
+                {t.footer.copyright}
               </p>
               <p className="text-gray-400 mt-2">
-                Atendimento em Miami-Dade e Broward
+                {t.footer.coverage}
               </p>
             </div>
           </div>
