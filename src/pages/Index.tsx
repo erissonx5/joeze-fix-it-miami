@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -84,13 +85,13 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden" style={{backgroundColor: '#0b1c33'}}>
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50 backdrop-blur-md bg-white/95 transition-all duration-300">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+      <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2 animate-fade-in">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center overflow-hidden transform hover:scale-110 transition-transform duration-300">
+            <div className="flex items-center space-x-3 animate-fade-in">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-2 shadow-lg transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -98,63 +99,63 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-lg sm:text-xl font-bold text-gray-900">{t.header.title}</h1>
-                <p className="text-xs sm:text-sm text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
+                <h1 className="text-xl font-bold text-gray-900">{t.header.title}</h1>
+                <p className="text-sm text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
               </div>
             </div>
-            <div className="flex items-center gap-2 sm:gap-4 animate-fade-in animation-delay-300">
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-300">
               <div className="hidden sm:block">
                 <LanguageSelector />
               </div>
               <Button 
                 onClick={openWhatsApp}
-                className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-semibold px-3 sm:px-6 py-2 text-sm sm:text-base rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
+                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
               >
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
+                <Phone className="h-4 w-4 mr-2" />
                 <span className="hidden sm:inline">{t.header.whatsappButton}</span>
                 <span className="sm:hidden">WhatsApp</span>
               </Button>
             </div>
           </div>
-          <div className="sm:hidden mt-3 flex justify-center">
+          <div className="sm:hidden mt-4 flex justify-center">
             <LanguageSelector />
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section style={{backgroundColor: '#0b1c33'}} className="text-white py-12 sm:py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-transparent animate-pulse"></div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight animate-fade-in">
-              <span className="text-yellow-300 animate-pulse">{t.hero.title}</span>
+      <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in">
+              <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">{t.hero.title}</span>
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-yellow-100 font-light animate-fade-in animation-delay-300 px-4">
+            <p className="text-xl md:text-2xl text-yellow-100/90 font-light animate-fade-in animation-delay-300 max-w-3xl mx-auto">
               {t.hero.subtitle}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6 sm:mb-8 animate-fade-in animation-delay-500 px-4">
+            <div className="flex justify-center animate-fade-in animation-delay-500">
               <Button 
                 onClick={openWhatsApp}
                 size="lg"
-                className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               >
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2 sm:mr-3" />
+                <Phone className="h-5 w-5 mr-3" />
                 {t.hero.phone}
               </Button>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-yellow-100 animate-fade-in animation-delay-700 px-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 text-yellow-100/80 animate-fade-in animation-delay-700">
               <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                <span className="text-sm sm:text-base">{t.hero.guaranteed}</span>
+                <CheckCircle className="h-5 w-5 mr-2 text-green-400" />
+                <span>{t.hero.guaranteed}</span>
               </div>
               <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <Clock className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                <span className="text-sm sm:text-base">{t.hero.fastService}</span>
+                <Clock className="h-5 w-5 mr-2 text-blue-400" />
+                <span>{t.hero.fastService}</span>
               </div>
               <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <Users className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                <span className="text-sm sm:text-base">{t.hero.expertTeam}</span>
+                <Users className="h-5 w-5 mr-2 text-purple-400" />
+                <span>{t.hero.expertTeam}</span>
               </div>
             </div>
           </div>
@@ -162,22 +163,23 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-16 lg:py-20" style={{backgroundColor: '#0b1c33'}}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">{t.services.title}</h3>
-            <p className="text-lg sm:text-xl text-yellow-100 max-w-2xl mx-auto px-4">
+      <section className="py-20 bg-gradient-to-b from-[#0b1c33] to-[#1a2a47]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h3 className="text-4xl font-bold text-white mb-6">{t.services.title}</h3>
+            <p className="text-xl text-yellow-100/80 max-w-2xl mx-auto">
               {t.services.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-white group animate-fade-in" style={{animationDelay: `${index * 150}ms`}}>
-                <CardContent className="p-6 sm:p-8 text-center">
-                  <div className="text-3xl sm:text-4xl mb-4 transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">{service.icon}</div>
-                  <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 group-hover:text-[#e7bc2d] transition-colors duration-300">{service.title}</h4>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{service.description}</p>
+              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-white/95 backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 150}ms`}}>
+                <CardContent className="p-8 text-center relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#e7bc2d]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="text-4xl mb-6 transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10">{service.icon}</div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#e7bc2d] transition-colors duration-300 relative z-10">{service.title}</h4>
+                  <p className="text-gray-600 leading-relaxed relative z-10">{service.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -186,106 +188,110 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 lg:py-20" style={{backgroundColor: '#0b1c33'}}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 animate-fade-in">{t.about.title}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
-              <div className="text-left animate-fade-in animation-delay-300 order-2 md:order-1">
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-[rgb(231,188,45)]" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
-                      <p className="text-sm sm:text-base text-yellow-100">{t.about.quality.description}</p>
-                    </div>
+      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8 animate-fade-in animation-delay-300">
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <CheckCircle className="h-6 w-6 text-white" />
                   </div>
-                  
-                  <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-[rgb(231,188,45)]" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
-                      <p className="text-sm sm:text-base text-yellow-100">{t.about.fastService.description}</p>
-                    </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
+                    <p className="text-yellow-100/80">{t.about.quality.description}</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <Users className="h-5 w-5 sm:h-6 sm:w-6 text-[rgb(231,188,45)]" />
-                    </div>
-                    <div>
-                      <h4 className="text-lg sm:text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
-                      <p className="text-sm sm:text-base text-yellow-100">{t.about.expertTeam.description}</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Clock className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
+                    <p className="text-yellow-100/80">{t.about.fastService.description}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
+                    <p className="text-yellow-100/80">{t.about.expertTeam.description}</p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-white rounded-2xl p-6 sm:p-8 text-[rgb(231,188,45)] shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500 order-1 md:order-2">
-                <h4 className="text-xl sm:text-2xl font-bold mb-4">{t.about.whatsappTitle}</h4>
-                <p className="text-base sm:text-lg mb-6 text-gray-700">
-                  {t.about.whatsappSubtitle}
-                </p>
-                <Button 
-                  onClick={openWhatsApp}
-                  className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold w-full py-3 text-base sm:text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                >
-                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                  {t.about.whatsappButton}
-                </Button>
+              <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500">
+                <div className="text-center space-y-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-2xl flex items-center justify-center mx-auto shadow-lg">
+                    <Phone className="h-8 w-8 text-white" />
+                  </div>
+                  <h4 className="text-2xl font-bold text-gray-900">{t.about.whatsappTitle}</h4>
+                  <p className="text-lg text-gray-700">
+                    {t.about.whatsappSubtitle}
+                  </p>
+                  <Button 
+                    onClick={openWhatsApp}
+                    className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold w-full py-3 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                  >
+                    <Phone className="h-5 w-5 mr-2" />
+                    {t.about.whatsappButton}
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section - Updated with Avatar Images */}
-      <section className="py-12 sm:py-16 lg:py-20" style={{backgroundColor: '#0b1c33'}}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">{t.testimonials.title}</h3>
-            <p className="text-lg sm:text-xl text-yellow-100 max-w-2xl mx-auto px-4">
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-b from-[#0b1c33] to-[#1a2a47]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h3 className="text-4xl font-bold text-white mb-6">{t.testimonials.title}</h3>
+            <p className="text-xl text-yellow-100/80 max-w-2xl mx-auto">
               {t.testimonials.subtitle}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-white group animate-fade-in" style={{animationDelay: `${index * 100}ms`}}>
-                <CardContent className="p-4 sm:p-6">
-                  <div className="flex items-center mb-4">
-                    <Avatar className="w-12 h-12 mr-4 ring-2 ring-[#e7bc2d] ring-offset-2 group-hover:ring-4 transition-all duration-300">
+              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-white/95 backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 100}ms`}}>
+                <CardContent className="p-6 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#e7bc2d]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="flex items-center mb-6 relative z-10">
+                    <Avatar className="w-14 h-14 mr-4 ring-2 ring-[#e7bc2d] ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
                       <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                      <AvatarFallback className="bg-[#e7bc2d] text-white font-bold">
+                      <AvatarFallback className="bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] text-white font-bold">
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>
                     </Avatar>
                     <div className="flex-1">
-                      <div className="flex items-center mb-1">
+                      <div className="flex items-center mb-2">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400 transform group-hover:scale-110 transition-transform duration-300" style={{animationDelay: `${i * 50}ms`}} />
+                          <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400 transform group-hover:scale-110 transition-transform duration-300" style={{animationDelay: `${i * 50}ms`}} />
                         ))}
                       </div>
-                      <p className="text-sm sm:text-base font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-xs sm:text-sm text-gray-600">{testimonial.location}</p>
+                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-sm text-gray-600">{testimonial.location}</p>
                     </div>
                   </div>
-                  <p className="text-sm sm:text-base text-gray-700 italic group-hover:text-gray-900 transition-colors duration-300">"{testimonial.comment}"</p>
+                  <p className="text-gray-700 italic group-hover:text-gray-900 transition-colors duration-300 relative z-10">"{testimonial.comment}"</p>
                 </CardContent>
               </Card>
             ))}
           </div>
           
-          <div className="text-center mt-8 sm:mt-12 animate-fade-in animation-delay-800">
+          <div className="text-center mt-12 animate-fade-in animation-delay-800">
             <Button 
               onClick={openWhatsApp}
-              className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-bold px-6 sm:px-8 py-3 text-base sm:text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+              className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
             >
-              <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2 sm:mr-3" />
+              <Phone className="h-5 w-5 mr-3" />
               {t.testimonials.callToAction}
             </Button>
           </div>
@@ -293,26 +299,29 @@ const Index = () => {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-12 sm:py-16 lg:py-20" style={{backgroundColor: '#0b1c33'}}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 animate-fade-in">{t.coverage.title}</h3>
-          <div className="max-w-2xl mx-auto">
-            <div className="flex items-center justify-center mb-6 animate-fade-in animation-delay-300">
-              <MapPin className="h-10 w-10 sm:h-12 sm:w-12 text-white animate-bounce" />
+      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h3 className="text-4xl font-bold text-white animate-fade-in">{t.coverage.title}</h3>
+            <div className="flex items-center justify-center mb-8 animate-fade-in animation-delay-300">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center shadow-xl">
+                <MapPin className="h-10 w-10 text-white animate-bounce" />
+              </div>
             </div>
-            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4 animate-fade-in animation-delay-500">{t.coverage.subtitle}</h4>
-            <p className="text-base sm:text-lg text-yellow-100 mb-6 sm:mb-8 animate-fade-in animation-delay-700 px-4">
+            <h4 className="text-2xl font-semibold text-white animate-fade-in animation-delay-500">{t.coverage.subtitle}</h4>
+            <p className="text-lg text-yellow-100/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
               {t.coverage.description}
             </p>
           </div>
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-8 sm:py-12">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6 animate-fade-in">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center overflow-hidden transform hover:scale-110 transition-transform duration-300">
+      {/* Footer */}
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-8">
+            <div className="flex items-center justify-center space-x-3 animate-fade-in">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-3 shadow-xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -320,26 +329,26 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold">{t.header.title} Handyman</h3>
-                <p className="text-sm sm:text-base text-[#e7bc2d]">{t.footer.subtitle}</p>
+                <h3 className="text-2xl font-bold">{t.header.title} Handyman</h3>
+                <p className="text-[#e7bc2d]">{t.footer.subtitle}</p>
               </div>
             </div>
             
-            <div className="mb-6 sm:mb-8 animate-fade-in animation-delay-300">
+            <div className="animate-fade-in animation-delay-300">
               <Button 
                 onClick={openWhatsApp}
-                className="bg-[rgb(231,188,45)] hover:bg-[#e7bc2d] text-white font-bold px-6 sm:px-8 py-3 text-base sm:text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               >
-                <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2 sm:mr-3" />
+                <Phone className="h-5 w-5 mr-3" />
                 {t.footer.whatsapp}
               </Button>
             </div>
             
-            <div className="border-t border-gray-700 pt-6 sm:pt-8 animate-fade-in animation-delay-500">
-              <p className="text-sm sm:text-base text-gray-400 px-4">
+            <div className="border-t border-gray-700 pt-8 space-y-4 animate-fade-in animation-delay-500">
+              <p className="text-gray-400">
                 {t.footer.copyright}
               </p>
-              <p className="text-sm sm:text-base text-gray-400 mt-2 px-4">
+              <p className="text-gray-400">
                 {t.footer.coverage}
               </p>
             </div>
