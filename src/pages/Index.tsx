@@ -2,6 +2,7 @@
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 
@@ -43,37 +44,43 @@ const Index = () => {
       name: "Maria Silva",
       location: "Miami Beach",
       rating: 5,
-      comment: t.testimonials.reviews.maria
+      comment: t.testimonials.reviews.maria,
+      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Carlos Rodriguez",
       location: "Aventura",
       rating: 5,
-      comment: t.testimonials.reviews.carlos
+      comment: t.testimonials.reviews.carlos,
+      avatar: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Ana Costa",
       location: "Doral",
       rating: 5,
-      comment: t.testimonials.reviews.ana
+      comment: t.testimonials.reviews.ana,
+      avatar: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Roberto Santos",
       location: "Brickell",
       rating: 5,
-      comment: t.testimonials.reviews.roberto
+      comment: t.testimonials.reviews.roberto,
+      avatar: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Lucia Pereira",
       location: "Coral Gables",
       rating: 5,
-      comment: t.testimonials.reviews.lucia
+      comment: t.testimonials.reviews.lucia,
+      avatar: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Fernando Lima",
       location: "Pembroke Pines",
       rating: 5,
-      comment: t.testimonials.reviews.fernando
+      comment: t.testimonials.reviews.fernando,
+      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=150&h=150&fit=crop&crop=face"
     }
   ];
 
@@ -237,7 +244,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Updated with Avatar Images */}
       <section className="py-12 sm:py-16 lg:py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 animate-fade-in">
@@ -252,15 +259,23 @@ const Index = () => {
               <Card key={index} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-white group animate-fade-in" style={{animationDelay: `${index * 100}ms`}}>
                 <CardContent className="p-4 sm:p-6">
                   <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400 transform group-hover:scale-110 transition-transform duration-300" style={{animationDelay: `${i * 50}ms`}} />
-                    ))}
+                    <Avatar className="w-12 h-12 mr-4 ring-2 ring-[#e7bc2d] ring-offset-2 group-hover:ring-4 transition-all duration-300">
+                      <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                      <AvatarFallback className="bg-[#e7bc2d] text-white font-bold">
+                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="flex-1">
+                      <div className="flex items-center mb-1">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400 transform group-hover:scale-110 transition-transform duration-300" style={{animationDelay: `${i * 50}ms`}} />
+                        ))}
+                      </div>
+                      <p className="text-sm sm:text-base font-semibold text-gray-900">{testimonial.name}</p>
+                      <p className="text-xs sm:text-sm text-gray-600">{testimonial.location}</p>
+                    </div>
                   </div>
-                  <p className="text-sm sm:text-base text-gray-700 mb-4 italic group-hover:text-gray-900 transition-colors duration-300">"{testimonial.comment}"</p>
-                  <div className="border-t pt-4">
-                    <p className="text-sm sm:text-base font-semibold text-gray-900">{testimonial.name}</p>
-                    <p className="text-xs sm:text-sm text-gray-600">{testimonial.location}</p>
-                  </div>
+                  <p className="text-sm sm:text-base text-gray-700 italic group-hover:text-gray-900 transition-colors duration-300">"{testimonial.comment}"</p>
                 </CardContent>
               </Card>
             ))}
@@ -294,7 +309,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 sm:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
