@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -36,7 +35,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen" style={{backgroundColor: 'rgb(231,188,45)'}}>
+    <div className="min-h-screen" style={{backgroundColor: '#0b1c33'}}>
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -100,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
+      <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-white mb-4">Nossos Serviços</h3>
@@ -124,7 +123,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
+      <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-4xl font-bold text-white mb-8">Por que escolher Mr. Joe & Zé?</h3>
@@ -182,7 +181,7 @@ const Index = () => {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
+      <section className="py-20" style={{backgroundColor: '#0b1c33'}}>
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-4xl font-bold text-white mb-8">Área de Atendimento</h3>
           <div className="max-w-2xl mx-auto">
