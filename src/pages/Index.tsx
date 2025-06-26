@@ -125,7 +125,7 @@ const Index = () => {
               <Button 
                 onClick={openWhatsApp}
                 size="lg"
-                className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-2 animate-bounce"
+                className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold px-8 py-4 text-lg rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-2"
               >
                 <Phone className="h-5 w-5 mr-3" />
                 {t.hero.phone}
