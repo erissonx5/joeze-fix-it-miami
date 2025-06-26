@@ -84,8 +84,12 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-[rgb(231,188,45)] rounded-lg flex items-center justify-center">
-                <Wrench className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
+                  alt="Mr. Joe & Zé Handyman Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">{t.header.title}</h1>
@@ -288,8 +292,12 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-[rgb(231,188,45)] rounded-lg flex items-center justify-center">
-                <Wrench className="h-7 w-7 text-white" />
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
+                  alt="Mr. Joe & Zé Handyman Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">{t.header.title} Handyman</h3>
