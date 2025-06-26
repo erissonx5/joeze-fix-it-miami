@@ -100,18 +100,18 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">Nossos Serviços</h3>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h3 className="text-4xl font-bold text-white mb-4">Nossos Serviços</h3>
+            <p className="text-xl text-yellow-100 max-w-2xl mx-auto">
               Oferecemos uma ampla gama de serviços de handyman para sua casa ou escritório
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white">
                 <CardContent className="p-8 text-center">
                   <div className="text-4xl mb-4">{service.icon}</div>
                   <h4 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h4>
@@ -124,53 +124,53 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-4xl font-bold text-gray-900 mb-8">Por que escolher Mr. Joe & Zé?</h3>
+            <h3 className="text-4xl font-bold text-white mb-8">Por que escolher Mr. Joe & Zé?</h3>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[rgb(231,188,45)] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-6 w-6 text-white" />
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Qualidade Garantida</h4>
-                      <p className="text-gray-600">Um resolve com expertise, o outro garante a qualidade do serviço.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">Qualidade Garantida</h4>
+                      <p className="text-yellow-100">Um resolve com expertise, o outro garante a qualidade do serviço.</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[rgb(231,188,45)] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Clock className="h-6 w-6 text-white" />
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                      <Clock className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Atendimento Rápido</h4>
-                      <p className="text-gray-600">Resposta rápida no WhatsApp e agendamento flexível.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">Atendimento Rápido</h4>
+                      <p className="text-yellow-100">Resposta rápida no WhatsApp e agendamento flexível.</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-[rgb(231,188,45)] rounded-full flex items-center justify-center flex-shrink-0">
-                      <Users className="h-6 w-6 text-white" />
+                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                      <Users className="h-6 w-6 text-[rgb(231,188,45)]" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-gray-900 mb-2">Equipe Experiente</h4>
-                      <p className="text-gray-600">Anos de experiência em serviços residenciais e comerciais.</p>
+                      <h4 className="text-xl font-semibold text-white mb-2">Equipe Experiente</h4>
+                      <p className="text-yellow-100">Anos de experiência em serviços residenciais e comerciais.</p>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-[rgb(231,188,45)] rounded-2xl p-8 text-white">
+              <div className="bg-white rounded-2xl p-8 text-[rgb(231,188,45)]">
                 <h4 className="text-2xl font-bold mb-4">👉 Chama no Zap</h4>
-                <p className="text-lg mb-6 text-yellow-100">
+                <p className="text-lg mb-6 text-gray-700">
                   Orçamento gratuito e atendimento personalizado via WhatsApp
                 </p>
                 <Button 
                   onClick={openWhatsApp}
-                  className="bg-white text-[rgb(231,188,45)] hover:bg-gray-100 font-bold w-full py-3 text-lg rounded-lg transition-all duration-300"
+                  className="bg-[rgb(231,188,45)] text-white hover:bg-[#e7bc2d] font-bold w-full py-3 text-lg rounded-lg transition-all duration-300"
                 >
                   <Phone className="h-5 w-5 mr-2" />
                   (786) 593-7841
@@ -182,15 +182,15 @@ const Index = () => {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20" style={{backgroundColor: 'rgb(231,188,45)'}}>
         <div className="container mx-auto px-4 text-center">
-          <h3 className="text-4xl font-bold text-gray-900 mb-8">Área de Atendimento</h3>
+          <h3 className="text-4xl font-bold text-white mb-8">Área de Atendimento</h3>
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <MapPin className="h-12 w-12 text-[rgb(231,188,45)]" />
+              <MapPin className="h-12 w-12 text-white" />
             </div>
-            <h4 className="text-2xl font-semibold text-gray-900 mb-4">Miami-Dade e Broward</h4>
-            <p className="text-lg text-gray-600 mb-8">
+            <h4 className="text-2xl font-semibold text-white mb-4">Miami-Dade e Broward</h4>
+            <p className="text-lg text-yellow-100 mb-8">
               Atendemos toda a região de Miami-Dade e Broward com serviços de handyman profissionais e confiáveis.
             </p>
           </div>
