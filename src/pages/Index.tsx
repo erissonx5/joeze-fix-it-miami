@@ -100,10 +100,10 @@ const Index = () => {
     <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4 animate-fade-in">
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-3 shadow-lg transform hover:scale-110 transition-transform duration-300">
+            <div className="flex items-center space-x-6 animate-fade-in">
+              <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-4 shadow-xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -111,8 +111,8 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">{t.header.title}</h1>
-                <p className="text-base text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
+                <h1 className="text-3xl font-bold text-gray-900">{t.header.title}</h1>
+                <p className="text-lg text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-300">
@@ -139,14 +139,25 @@ const Index = () => {
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {/* Large Logo in Hero */}
+            <div className="flex justify-center animate-fade-in">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-6 md:p-8 shadow-2xl transform hover:scale-110 transition-transform duration-300">
+                <img 
+                  src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
+                  alt="Mr. Joe & Zé Handyman Logo" 
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            
+            <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">{t.hero.title}</span>
             </h2>
-            <p className="text-xl md:text-2xl text-yellow-100/90 font-light animate-fade-in animation-delay-300 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-yellow-100/90 font-light animate-fade-in animation-delay-400 max-w-3xl mx-auto">
               {t.hero.subtitle}
             </p>
-            <div className="flex justify-center animate-fade-in animation-delay-500">
+            <div className="flex justify-center animate-fade-in animation-delay-600">
               <Button 
                 onClick={openWhatsApp}
                 size="lg"
@@ -156,7 +167,7 @@ const Index = () => {
                 {t.hero.phone}
               </Button>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-8 text-yellow-100/80 animate-fade-in animation-delay-700">
+            <div className="flex flex-wrap items-center justify-center gap-8 text-yellow-100/80 animate-fade-in animation-delay-800">
               <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
                 <CheckCircle className="h-5 w-5 mr-2 text-green-400" />
                 <span>{t.hero.guaranteed}</span>
@@ -332,8 +343,8 @@ const Index = () => {
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
-            <div className="flex items-center justify-center space-x-4 animate-fade-in">
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-4 shadow-xl transform hover:scale-110 transition-transform duration-300">
+            <div className="flex items-center justify-center space-x-6 animate-fade-in">
+              <div className="w-28 h-28 rounded-3xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -341,8 +352,8 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-bold">{t.header.title}</h3>
-                <p className="text-xl text-[#e7bc2d]">{t.footer.subtitle}</p>
+                <h3 className="text-4xl font-bold">{t.header.title}</h3>
+                <p className="text-2xl text-[#e7bc2d]">{t.footer.subtitle}</p>
               </div>
             </div>
             
