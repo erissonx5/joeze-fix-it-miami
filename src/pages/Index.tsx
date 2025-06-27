@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -101,8 +102,8 @@ const Index = () => {
       <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3 animate-fade-in">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-2 shadow-lg transform hover:scale-110 transition-transform duration-300">
+            <div className="flex items-center space-x-4 animate-fade-in">
+              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-3 shadow-lg transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -110,8 +111,8 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">{t.header.title}</h1>
-                <p className="text-sm text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
+                <h1 className="text-2xl font-bold text-gray-900">{t.header.title}</h1>
+                <p className="text-base text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-300">
@@ -331,8 +332,8 @@ const Index = () => {
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
-            <div className="flex items-center justify-center space-x-3 animate-fade-in">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-3 shadow-xl transform hover:scale-110 transition-transform duration-300">
+            <div className="flex items-center justify-center space-x-4 animate-fade-in">
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-4 shadow-xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -340,8 +341,8 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">{t.header.title} Handyman</h3>
-                <p className="text-[#e7bc2d]">{t.footer.subtitle}</p>
+                <h3 className="text-3xl font-bold">{t.header.title}</h3>
+                <p className="text-xl text-[#e7bc2d]">{t.footer.subtitle}</p>
               </div>
             </div>
             
