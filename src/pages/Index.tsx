@@ -247,10 +247,14 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500">
-                <div className="text-center space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                    <WhatsAppIcon className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-br from-slate-100 via-white to-slate-50 rounded-3xl p-10 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500">
+                <div className="text-center space-y-8">
+                  <div className="w-24 h-24 mx-auto shadow-xl transform hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
+                      alt="Mr. Joe & Zé Handyman Logo" 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900">{t.about.whatsappTitle}</h4>
                   <p className="text-lg text-gray-700">
