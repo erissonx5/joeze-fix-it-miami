@@ -42,6 +42,11 @@ const Index = () => {
       icon: "🔧",
       title: t.services.repairs.title,
       description: t.services.repairs.description
+    },
+    {
+      icon: "🔐",
+      title: "Fechadura Eletrônica",
+      description: "Instalação e configuração de fechaduras eletrônicas para maior segurança e praticidade em sua casa ou escritório."
     }
   ];
 
