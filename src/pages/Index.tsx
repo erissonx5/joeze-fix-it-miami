@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -103,7 +102,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-6 animate-fade-in">
-              <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300 ring-4 ring-yellow-200/30">
+              <div className="w-32 h-32 rounded-3xl p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -142,7 +141,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Large Logo in Hero */}
             <div className="flex justify-center animate-fade-in">
-              <div className="w-44 h-44 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300 ring-8 ring-yellow-200/20">
+              <div className="w-44 h-44 md:w-56 md:h-56 rounded-full p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -344,7 +343,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <div className="flex items-center justify-center space-x-6 animate-fade-in">
-              <div className="w-36 h-36 rounded-full bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300 ring-6 ring-yellow-200/20">
+              <div className="w-36 h-36 rounded-full p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
