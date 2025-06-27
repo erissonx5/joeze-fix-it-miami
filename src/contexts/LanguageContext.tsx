@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'pt' | 'en' | 'es' | 'fr';
@@ -33,6 +32,10 @@ interface Translations {
       description: string;
     };
     repairs: {
+      title: string;
+      description: string;
+    };
+    smartLock: {
       title: string;
       description: string;
     };
@@ -114,6 +117,10 @@ const translations: Record<Language, Translations> = {
       repairs: {
         title: "Reparos Elétricos/Hidráulicos",
         description: "Troca de torneiras, maçanetas e ajustes leves"
+      },
+      smartLock: {
+        title: "Fechadura Eletrônica",
+        description: "Instalação e configuração de fechaduras eletrônicas para maior segurança e praticidade em sua casa ou escritório."
       }
     },
     about: {
@@ -191,6 +198,10 @@ const translations: Record<Language, Translations> = {
       repairs: {
         title: "Electrical/Plumbing Repairs",
         description: "Faucet replacement, door handles and light adjustments"
+      },
+      smartLock: {
+        title: "Smart Lock",
+        description: "Installation and configuration of electronic locks for greater security and convenience in your home or office."
       }
     },
     about: {
@@ -268,6 +279,10 @@ const translations: Record<Language, Translations> = {
       repairs: {
         title: "Reparaciones Eléctricas/Plomería",
         description: "Cambio de grifos, manijas y ajustes ligeros"
+      },
+      smartLock: {
+        title: "Cerradura Electrónica",
+        description: "Instalación y configuración de cerraduras electrónicas para mayor seguridad y practicidad en su hogar u oficina."
       }
     },
     about: {
@@ -345,6 +360,10 @@ const translations: Record<Language, Translations> = {
       repairs: {
         title: "Réparations Électriques/Plomberie",
         description: "Remplacement de robinets, poignées et ajustements légers"
+      },
+      smartLock: {
+        title: "Serrure Électronique",
+        description: "Installation et configuration de serrures électroniques pour plus de sécurité et de praticité dans votre maison ou bureau."
       }
     },
     about: {

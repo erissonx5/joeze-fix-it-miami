@@ -45,8 +45,8 @@ const Index = () => {
     },
     {
       icon: "🔐",
-      title: "Fechadura Eletrônica",
-      description: "Instalação e configuração de fechaduras eletrônicas para maior segurança e praticidade em sua casa ou escritório."
+      title: t.services.smartLock.title,
+      description: t.services.smartLock.description
     }
   ];
 
