@@ -103,7 +103,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-6 animate-fade-in">
-              <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-4 shadow-xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300 ring-4 ring-yellow-200/30">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -111,8 +111,8 @@ const Index = () => {
                 />
               </div>
               <div>
-                <h1 className="text-3xl font-bold text-gray-900">{t.header.title}</h1>
-                <p className="text-lg text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
+                <h1 className="text-4xl font-bold text-gray-900">{t.header.title}</h1>
+                <p className="text-xl text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
               </div>
             </div>
             <div className="flex items-center gap-4 animate-fade-in animation-delay-300">
@@ -142,7 +142,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Large Logo in Hero */}
             <div className="flex justify-center animate-fade-in">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-6 md:p-8 shadow-2xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-44 h-44 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300 ring-8 ring-yellow-200/20">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -344,7 +344,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <div className="flex items-center justify-center space-x-6 animate-fade-in">
-              <div className="w-28 h-28 rounded-3xl bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-36 h-36 rounded-full bg-gradient-to-br from-[#e7bc2d] via-[#f5d76e] to-[#fae594] p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300 ring-6 ring-yellow-200/20">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
