@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -141,9 +140,7 @@ const Index = () => {
             <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
             </h2>
-            <p className="text-xl md:text-2xl text-yellow-100/90 font-light animate-fade-in animation-delay-400 max-w-3xl mx-auto">
-              Um resolve, o outro garante
-            </p>
+            
             <div className="flex justify-center animate-fade-in animation-delay-600">
               <Button 
                 onClick={openWhatsApp}
