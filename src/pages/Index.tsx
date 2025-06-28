@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -104,7 +105,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             {/* Logo - Left Side */}
             <div className="flex items-center">
-              <div className="w-48 h-36 transform hover:scale-110 transition-transform duration-300">
+              <div className="w-56 h-44 transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -313,7 +314,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8">
             <div className="flex items-center justify-center space-x-6 animate-fade-in">
-              <div className="w-36 h-36 rounded-full p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-44 h-44 rounded-full p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
