@@ -281,16 +281,6 @@ const Index = () => {
               </Card>
             ))}
           </div>
-          
-          <div className="text-center mt-12 animate-fade-in animation-delay-800">
-            <Button 
-              onClick={openWhatsApp}
-              className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
-            >
-              <WhatsAppIcon className="h-5 w-5 mr-3" />
-              {t.testimonials.callToAction}
-            </Button>
-          </div>
         </div>
       </section>
 
