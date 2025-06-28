@@ -1,11 +1,10 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
-import LanguageSelector from '@/components/LanguageSelector';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
+import FloatingLanguageSelector from '@/components/FloatingLanguageSelector';
 import { useState, useEffect } from 'react';
 
 // WhatsApp SVG Icon Component - Now Green
@@ -124,33 +123,24 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-1">
-          <div className="flex items-center justify-between h-16">
-            {/* Logo - Left Side without margin */}
-            <div className="flex items-center">
-              <div 
-                className="w-48 h-36 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
-                onClick={handleLogoClick}
-              >
-                <img 
-                  src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
-                  alt="Mr. Joe & Zé Handyman Logo" 
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
-            
-            {/* Language Selector - Right Side, reduced size */}
-            <div className="flex items-center justify-end mr-2">
-              <div className="scale-50">
-                <LanguageSelector />
-              </div>
+          <div className="flex items-center justify-center h-20">
+            {/* Centered Logo */}
+            <div 
+              className="w-64 h-48 md:w-72 md:h-52 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              onClick={handleLogoClick}
+            >
+              <img 
+                src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
+                alt="Mr. Joe & Zé Handyman Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
         </div>
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[65px]"></div>}
+      {isScrolled && <div className="h-[85px]"></div>}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
@@ -336,6 +326,8 @@ const Index = () => {
         phoneNumber={whatsappNumber}
         message={whatsappMessage}
       />
+      
+      <FloatingLanguageSelector />
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
