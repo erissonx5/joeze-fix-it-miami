@@ -106,7 +106,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-48 h-36 transform hover:scale-110 transition-transform duration-300">
                 <img 
-                  src="/lovable-uploads/dc6a0fcb-f96a-4979-a82a-cecea8f2747c.png" 
+                  src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
@@ -315,7 +315,7 @@ const Index = () => {
             <div className="flex items-center justify-center space-x-6 animate-fade-in">
               <div className="w-36 h-36 rounded-full p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
-                  src="/lovable-uploads/416ae531-d33e-435d-8775-0dee877b4113.png" 
+                  src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
