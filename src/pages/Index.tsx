@@ -102,24 +102,19 @@ const Index = () => {
       <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            {/* Language Selector - Left Side */}
-            <div className="flex items-center flex-1">
-              <LanguageSelector />
-            </div>
-            
-            {/* Logo - Center */}
-            <div className="flex items-center justify-center flex-1">
-              <div className="w-20 h-20 transform hover:scale-110 transition-transform duration-300">
+            {/* Logo - Left Side */}
+            <div className="flex items-center">
+              <div className="w-16 h-16 transform hover:scale-110 transition-transform duration-300">
                 <img 
-                  src="/lovable-uploads/b03b3b20-8ee7-4ee3-9690-2cb4eefc4907.png" 
+                  src="/lovable-uploads/7728fdad-b1ef-4b22-8ff2-06c8dcd2306b.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
             </div>
             
-            {/* WhatsApp Button - Right Side */}
-            <div className="flex items-center justify-end flex-1">
+            {/* WhatsApp Button - Center */}
+            <div className="flex items-center justify-center">
               <Button 
                 onClick={openWhatsApp}
                 className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
@@ -128,6 +123,13 @@ const Index = () => {
                 <span className="hidden sm:inline">{t.header.whatsappButton}</span>
                 <span className="sm:hidden">WhatsApp</span>
               </Button>
+            </div>
+            
+            {/* Language Selector - Right Side */}
+            <div className="flex items-center justify-end">
+              <div className="scale-75">
+                <LanguageSelector />
+              </div>
             </div>
           </div>
         </div>
