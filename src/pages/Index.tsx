@@ -127,7 +127,7 @@ const Index = () => {
             {/* Logo - Left Side */}
             <div className="flex items-center">
               <div 
-                className="w-32 h-24 md:w-40 md:h-28 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+                className="w-40 h-32 md:w-48 md:h-36 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
                 onClick={handleLogoClick}
               >
                 <img 
@@ -149,7 +149,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[100px] md:h-[120px]"></div>}
+      {isScrolled && <div className="h-[130px] md:h-[150px]"></div>}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
