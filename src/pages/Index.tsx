@@ -100,12 +100,15 @@ const Index = () => {
     <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4 animate-fade-in">
-              <div className="hidden sm:block">
-                <LanguageSelector />
-              </div>
+            {/* Language Selector - Left Side */}
+            <div className="flex items-center">
+              <LanguageSelector />
+            </div>
+            
+            {/* WhatsApp Button - Right Side */}
+            <div className="flex items-center">
               <Button 
                 onClick={openWhatsApp}
                 className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
@@ -115,9 +118,6 @@ const Index = () => {
                 <span className="sm:hidden">WhatsApp</span>
               </Button>
             </div>
-          </div>
-          <div className="sm:hidden mt-4 flex justify-center">
-            <LanguageSelector />
           </div>
         </div>
       </header>
