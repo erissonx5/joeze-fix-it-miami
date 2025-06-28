@@ -125,8 +125,8 @@ const Index = () => {
       }`}>
         <div className="container mx-auto px-4 py-1">
           <div className="flex items-center justify-between h-16">
-            {/* Logo - Left Side with margin */}
-            <div className="flex items-center ml-2">
+            {/* Logo - Left Side without margin */}
+            <div className="flex items-center">
               <div 
                 className="w-36 h-28 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
                 onClick={handleLogoClick}
