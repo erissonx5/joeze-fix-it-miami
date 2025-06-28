@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
+import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 
 // WhatsApp SVG Icon Component - Now Green
 const WhatsAppIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
@@ -310,6 +311,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Button */}
+      <FloatingWhatsAppButton 
+        phoneNumber={whatsappNumber}
+        message={whatsappMessage}
+      />
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
