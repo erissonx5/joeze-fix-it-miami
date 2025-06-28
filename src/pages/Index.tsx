@@ -101,13 +101,7 @@ const Index = () => {
       <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-6 animate-fade-in">
-              <div>
-                <h1 className="text-4xl font-bold text-gray-900">{t.header.title}</h1>
-                <p className="text-xl text-[#e7bc2d] font-medium">{t.header.subtitle}</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 animate-fade-in animation-delay-300">
+            <div className="flex items-center gap-4 animate-fade-in">
               <div className="hidden sm:block">
                 <LanguageSelector />
               </div>
