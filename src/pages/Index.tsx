@@ -130,7 +130,7 @@ const Index = () => {
             <div className="flex justify-center animate-fade-in">
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-full p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
-                  src="/lovable-uploads/416ae531-d33e-435d-8775-0dee877b4113.png" 
+                  src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
@@ -138,10 +138,10 @@ const Index = () => {
             </div>
             
             <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-              <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">{t.hero.title}</span>
+              <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">Um resolve, o outro garante</span>
             </h2>
             <p className="text-xl md:text-2xl text-yellow-100/90 font-light animate-fade-in animation-delay-400 max-w-3xl mx-auto">
-              {t.hero.subtitle}
+              Mr. Joe & Zé Handyman Services
             </p>
             <div className="flex justify-center animate-fade-in animation-delay-600">
               <Button 
