@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -140,16 +139,6 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto space-y-12">
-            {/* Large Logo in Hero */}
-            <div className="flex justify-center animate-fade-in">
-              <div className="w-72 h-72 md:w-80 md:h-80 rounded-full p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300">
-                <img 
-                  src="/lovable-uploads/ca9105a3-f4af-497e-9e0d-a863bc6bd08a.png" 
-                  alt="Mr. Joe & Zé Handyman Logo" 
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
             
             <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
