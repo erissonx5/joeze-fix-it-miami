@@ -128,7 +128,7 @@ const Index = () => {
             {/* Logo - Left Side without margin */}
             <div className="flex items-center">
               <div 
-                className="w-36 h-28 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+                className="w-44 h-32 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
                 onClick={handleLogoClick}
               >
                 <img 
