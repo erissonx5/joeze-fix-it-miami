@@ -112,18 +112,6 @@ const Index = () => {
               </div>
             </div>
             
-            {/* WhatsApp Button - Center */}
-            <div className="flex items-center justify-center">
-              <Button 
-                onClick={openWhatsApp}
-                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:-translate-y-1"
-              >
-                <WhatsAppIcon className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline">{t.header.whatsappButton}</span>
-                <span className="sm:hidden">WhatsApp</span>
-              </Button>
-            </div>
-            
             {/* Language Selector - Right Side */}
             <div className="flex items-center justify-end">
               <div className="scale-75">
