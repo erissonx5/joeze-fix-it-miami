@@ -104,7 +104,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             {/* Logo - Left Side */}
             <div className="flex items-center">
-              <div className="w-32 h-24 transform hover:scale-110 transition-transform duration-300">
+              <div className="w-48 h-36 transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/947cde52-0a0b-4703-aab8-474e4da03e1b.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
