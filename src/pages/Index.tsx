@@ -102,7 +102,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-6 animate-fade-in">
-              <div className="w-40 h-40 rounded-3xl p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-32 h-32 rounded-3xl p-5 shadow-2xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
@@ -141,7 +141,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Large Logo in Hero */}
             <div className="flex justify-center animate-fade-in">
-              <div className="w-44 h-44 md:w-56 md:h-56 rounded-full p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300">
+              <div className="w-56 h-56 md:w-64 md:h-64 rounded-full p-8 md:p-10 shadow-3xl transform hover:scale-110 transition-transform duration-300">
                 <img 
                   src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
