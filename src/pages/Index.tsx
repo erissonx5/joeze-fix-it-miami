@@ -128,7 +128,7 @@ const Index = () => {
             {/* Logo - Left Side without margin */}
             <div className="flex items-center">
               <div 
-                className="w-44 h-32 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+                className="w-48 h-36 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
                 onClick={handleLogoClick}
               >
                 <img 
@@ -340,10 +340,11 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-8">
-            <div className="flex items-center justify-center space-x-6 animate-fade-in">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            {/* Logo and Title Section */}
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8 animate-fade-in">
               <div 
-                className="w-44 h-44 rounded-full p-6 shadow-3xl transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+                className="w-32 h-32 rounded-full p-4 shadow-3xl transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
                 onClick={handleLogoClick}
               >
                 <img 
@@ -352,16 +353,17 @@ const Index = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div>
-                <h3 className="text-4xl font-bold">{t.header.title}</h3>
-                <p className="text-2xl text-[#e7bc2d]">{t.footer.subtitle}</p>
+              <div className="text-center md:text-left">
+                <h3 className="text-3xl md:text-4xl font-bold">{t.header.title}</h3>
+                <p className="text-xl md:text-2xl text-[#e7bc2d]">{t.footer.subtitle}</p>
               </div>
             </div>
             
-            <div className="flex justify-center items-center space-x-6 animate-fade-in animation-delay-200">
+            {/* Buttons Section */}
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in animation-delay-200">
               <Button 
                 onClick={openWhatsApp}
-                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
+                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-3" />
                 {t.footer.whatsapp}
@@ -370,18 +372,19 @@ const Index = () => {
               <Button 
                 onClick={openInstagram}
                 variant="outline"
-                className="border-2 border-[#e7bc2d] text-[#e7bc2d] hover:bg-[#e7bc2d] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
+                className="border-2 border-[#e7bc2d] text-[#e7bc2d] hover:bg-[#e7bc2d] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
               >
                 <Instagram className="h-5 w-5 mr-2" />
                 Instagram
               </Button>
             </div>
             
+            {/* Footer Info */}
             <div className="border-t border-gray-700 pt-8 space-y-4 animate-fade-in animation-delay-500">
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-center">
                 {t.footer.copyright}
               </p>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-center">
                 {t.footer.coverage}
               </p>
             </div>
