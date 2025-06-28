@@ -5,6 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from '@/components/LanguageSelector';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
+import { useState, useEffect } from 'react';
 
 // WhatsApp SVG Icon Component - Now Green
 const WhatsAppIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
@@ -15,9 +16,20 @@ const WhatsAppIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
 
 const Index = () => {
   const { t } = useLanguage();
+  const [isScrolled, setIsScrolled] = useState(false);
   const whatsappNumber = "+17865937841";
   const whatsappMessage = "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
   
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const openWhatsApp = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(url, '_blank');
@@ -107,7 +119,9 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
       {/* Header */}
-      <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
+      <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 transition-all duration-300 z-50 ${
+        isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
+      }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo - Left Side */}
@@ -133,6 +147,9 @@ const Index = () => {
           </div>
         </div>
       </header>
+
+      {/* Spacer when header is fixed */}
+      {isScrolled && <div className="h-[200px]"></div>}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
