@@ -105,7 +105,7 @@ const Index = () => {
             <div className="flex items-center">
               <div className="w-48 h-36 transform hover:scale-110 transition-transform duration-300">
                 <img 
-                  src="/lovable-uploads/947cde52-0a0b-4703-aab8-474e4da03e1b.png" 
+                  src="/lovable-uploads/dc6a0fcb-f96a-4979-a82a-cecea8f2747c.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
