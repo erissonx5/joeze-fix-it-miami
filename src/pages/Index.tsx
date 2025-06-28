@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -122,12 +123,12 @@ const Index = () => {
       <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-between">
-            {/* Logo - Left Side */}
-            <div className="flex items-center">
+        <div className="container mx-auto px-4 py-1">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo - Left Side with margin */}
+            <div className="flex items-center ml-2">
               <div 
-                className="w-40 h-32 md:w-48 md:h-36 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+                className="w-36 h-28 md:w-44 md:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
                 onClick={handleLogoClick}
               >
                 <img 
@@ -138,9 +139,9 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Language Selector - Right Side */}
-            <div className="flex items-center justify-end">
-              <div className="scale-75">
+            {/* Language Selector - Right Side, reduced size */}
+            <div className="flex items-center justify-end mr-2">
+              <div className="scale-50">
                 <LanguageSelector />
               </div>
             </div>
@@ -149,7 +150,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[130px] md:h-[150px]"></div>}
+      {isScrolled && <div className="h-[65px]"></div>}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
