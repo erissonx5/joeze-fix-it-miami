@@ -23,7 +23,7 @@ const FloatingWhatsAppButton: React.FC<FloatingWhatsAppButtonProps> = ({ phoneNu
     <div className="fixed bottom-6 right-6 z-50">
       <button
         onClick={openWhatsApp}
-        className="w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-bounce"
+        className="w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
         aria-label="Contatar via WhatsApp"
       >
         <WhatsAppIcon className="h-7 w-7 mx-auto text-white" />
