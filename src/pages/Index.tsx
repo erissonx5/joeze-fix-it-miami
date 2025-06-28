@@ -249,13 +249,6 @@ const Index = () => {
               
               <div className="bg-gradient-to-br from-slate-100 via-white to-slate-50 rounded-3xl p-10 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500">
                 <div className="text-center space-y-8">
-                  <div className="w-32 h-32 mx-auto shadow-xl transform hover:scale-110 transition-transform duration-300">
-                    <img 
-                      src="/lovable-uploads/e380062f-fcc2-43b7-9586-49b26657ad05.png" 
-                      alt="Mr. Joe & Zé Handyman Logo" 
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
                   <h4 className="text-2xl font-bold text-gray-900">{t.about.whatsappTitle}</h4>
                   <p className="text-lg text-gray-700">
                     {t.about.whatsappSubtitle}
