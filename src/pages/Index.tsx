@@ -1,6 +1,4 @@
-
-
-import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star } from 'lucide-react';
+import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
@@ -27,6 +25,10 @@ const Index = () => {
 
   const handleLogoClick = () => {
     window.location.reload();
+  };
+
+  const openInstagram = () => {
+    window.open('https://www.instagram.com/mrjoeandzehandyman/', '_blank');
   };
 
   const services = [
@@ -338,13 +340,22 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="animate-fade-in animation-delay-300">
+            <div className="flex justify-center items-center space-x-6 animate-fade-in animation-delay-200">
               <Button 
                 onClick={openWhatsApp}
                 className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-3" />
                 {t.footer.whatsapp}
+              </Button>
+              
+              <Button 
+                onClick={openInstagram}
+                variant="outline"
+                className="border-2 border-[#e7bc2d] text-[#e7bc2d] hover:bg-[#e7bc2d] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
+              >
+                <Instagram className="h-5 w-5 mr-2" />
+                Instagram
               </Button>
             </div>
             
