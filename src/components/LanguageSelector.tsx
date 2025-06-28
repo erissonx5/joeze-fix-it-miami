@@ -20,14 +20,11 @@ const LanguageSelector = () => {
     { code: 'fr' as Language, name: 'Français', flag: '🇫🇷' },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === language);
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2">
-          <Globe className="h-4 w-4" />
-          {currentLanguage?.flag} {currentLanguage?.name}
+        <Button variant="outline" size="sm" className="p-2">
+          <Globe className="h-6 w-6" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
