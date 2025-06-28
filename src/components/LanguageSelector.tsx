@@ -23,7 +23,7 @@ const LanguageSelector = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="p-3">
+        <Button variant="outline" className="w-20 h-20 p-4">
           <Globe className="h-16 w-16" />
         </Button>
       </DropdownMenuTrigger>
