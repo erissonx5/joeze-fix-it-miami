@@ -119,14 +119,14 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
       {/* Header */}
-      <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100 transition-all duration-300 z-50 ${
+      <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
-        <div className="container mx-auto px-4 py-1">
-          <div className="flex items-center justify-center h-20">
+        <div className="container mx-auto px-4 py-2">
+          <div className="flex items-center justify-center h-24">
             {/* Centered Logo */}
             <div 
-              className="w-64 h-48 md:w-72 md:h-52 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-80 h-60 md:w-96 md:h-72 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -140,7 +140,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[85px]"></div>}
+      {isScrolled && <div className="h-[100px]"></div>}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
