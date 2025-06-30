@@ -191,7 +191,7 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 animate-fade-in">
                 <img 
-                  src="/lovable-uploads/ca9105a3-f4af-497e-9e0d-a863bc6bd08a.png" 
+                  src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
                   alt="Limpeza de Calhas - Mr. Joe & Zé"
                   className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
                 />
