@@ -144,9 +144,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <section 
-        className="relative py-20 text-white overflow-hidden bg-contain bg-center bg-no-repeat min-h-[500px] flex items-center"
+        className="relative py-20 text-white overflow-hidden bg-cover bg-center bg-no-repeat min-h-[500px] flex items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(11, 28, 51, 0.3), rgba(26, 42, 71, 0.3)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`
+          backgroundImage: `linear-gradient(rgba(11, 28, 51, 0.7), rgba(26, 42, 71, 0.7)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
