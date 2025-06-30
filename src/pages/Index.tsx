@@ -238,6 +238,64 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Electrical Services Section */}
+      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="order-1 lg:order-1 animate-fade-in">
+                <img 
+                  src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
+                  alt="Serviços Elétricos - Mr. Joe & Zé"
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                />
+              </div>
+              
+              <div className="order-2 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+                <h3 className="text-4xl font-bold text-white mb-6">Serviços Elétricos</h3>
+                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                  Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
+                </p>
+                
+                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                  Seja pra deixar sua casa mais fresca ou pra melhorar a iluminação, pode contar com a gente pra resolver do jeito certo.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Instalação de ventiladores e luminárias</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Troca de tomadas e interruptores</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Ajustes elétricos e serviços rápidos</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Trabalho limpo, funcional e com atenção aos detalhes</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* General Services Section */}
       <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
         <div className="container mx-auto px-4">
