@@ -162,20 +162,6 @@ const Index = () => {
                 {t.hero.phone}
               </Button>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-8 text-yellow-100/80 animate-fade-in animation-delay-800">
-              <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <CheckCircle className="h-5 w-5 mr-2 text-green-400" />
-                <span>{t.hero.guaranteed}</span>
-              </div>
-              <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <Clock className="h-5 w-5 mr-2 text-blue-400" />
-                <span>{t.hero.fastService}</span>
-              </div>
-              <div className="flex items-center transform hover:scale-110 transition-transform duration-300">
-                <Users className="h-5 w-5 mr-2 text-purple-400" />
-                <span>{t.hero.expertTeam}</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
