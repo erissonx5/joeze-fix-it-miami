@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -189,15 +190,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 animate-fade-in">
-                <img 
-                  src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
-                  alt="Limpeza de Calhas - Mr. Joe & Zé"
-                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-                />
-              </div>
-              
-              <div className="order-1 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+              <div className="order-1 lg:order-1 space-y-6 animate-fade-in">
                 <h3 className="text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
                   Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
@@ -232,6 +225,14 @@ const Index = () => {
                     Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
                   </p>
                 </div>
+              </div>
+              
+              <div className="order-2 lg:order-2 animate-fade-in animation-delay-300">
+                <img 
+                  src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
+                  alt="Limpeza de Calhas - Mr. Joe & Zé"
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                />
               </div>
             </div>
           </div>
