@@ -238,20 +238,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* General Services Section */}
-      <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
+      {/* New Handyman Services Section */}
+      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 animate-fade-in">
+              <div className="order-1 lg:order-1 animate-fade-in">
                 <img 
                   src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
-                  alt="Mr. Joe & Zé Handyman"
+                  alt="Mr. Joe & Zé Handyman Services"
                   className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
                 />
               </div>
               
-              <div className="order-1 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+              <div className="order-2 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
                 <h3 className="text-4xl font-bold text-white mb-6">Mr. Joe & Zé Handyman</h3>
                 
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
