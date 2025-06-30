@@ -185,12 +185,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gutter Cleaning Section */}
+      {/* Gutter Cleaning Section - Text left, Image right */}
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1 lg:order-1 space-y-6 animate-fade-in">
+              <div className="space-y-6 animate-fade-in">
                 <h3 className="text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
                   Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
@@ -227,7 +227,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-2 lg:order-2 animate-fade-in animation-delay-300">
+              <div className="animate-fade-in animation-delay-300">
                 <img 
                   src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
                   alt="Limpeza de Calhas - Mr. Joe & Zé"
@@ -239,12 +239,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Electrical Services Section */}
+      {/* Electrical Services Section - Image left, Text right */}
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1 lg:order-1 animate-fade-in">
+              <div className="animate-fade-in">
                 <img 
                   src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
                   alt="Serviços Elétricos - Mr. Joe & Zé"
@@ -252,7 +252,7 @@ const Index = () => {
                 />
               </div>
               
-              <div className="order-2 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+              <div className="space-y-6 animate-fade-in animation-delay-300">
                 <h3 className="text-4xl font-bold text-white mb-6">Serviços Elétricos</h3>
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
                   Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
@@ -297,12 +297,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* General Services Section */}
+      {/* General Services Section - Text left, Image right */}
       <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1 lg:order-1 space-y-6 animate-fade-in">
+              <div className="space-y-6 animate-fade-in">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Wrench className="h-6 w-6 text-white" />
@@ -349,7 +349,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-2 lg:order-2 animate-fade-in animation-delay-300">
+              <div className="animate-fade-in animation-delay-300">
                 <img 
                   src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
                   alt="Mr. Joe & Zé - Serviços Gerais"
