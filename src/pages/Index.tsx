@@ -184,6 +184,68 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Gutter Cleaning Section */}
+      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 animate-fade-in">
+                <img 
+                  src="/lovable-uploads/ca9105a3-f4af-497e-9e0d-a863bc6bd08a.png" 
+                  alt="Limpeza de Calhas - Mr. Joe & Zé"
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                />
+              </div>
+              
+              <div className="order-1 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+                <h3 className="text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
+                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                  Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
+                  Com ferramentas certas e atenção aos detalhes, removemos folhas, sujeira e tudo que atrapalha o fluxo da água.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Serviço seguro e rápido</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Equipe experiente e cuidadosa</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Atendimento com hora marcada</span>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
+                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                    Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
+                  </p>
+                </div>
+                
+                <Button 
+                  onClick={openWhatsApp}
+                  className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
+                >
+                  <WhatsAppIcon className="h-5 w-5 mr-2" />
+                  Solicitar Orçamento
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
@@ -334,9 +396,9 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in animation-delay-200">
               <Button 
                 onClick={openWhatsApp}
-                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
-                <WhatsAppIcon className="h-5 w-5 mr-3" />
+                <WhatsAppIcon className="h-5 w-5 mr-2" />
                 {t.footer.whatsapp}
               </Button>
               
