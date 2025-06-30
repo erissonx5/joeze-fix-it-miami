@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -43,34 +42,6 @@ const Index = () => {
   const openInstagram = () => {
     window.open('https://www.instagram.com/mrjoeandzehandyman/', '_blank');
   };
-
-  const services = [
-    {
-      icon: "📺",
-      title: t.services.tvInstallation.title,
-      description: t.services.tvInstallation.description
-    },
-    {
-      icon: "🛠️",
-      title: t.services.furnitureAssembly.title,
-      description: t.services.furnitureAssembly.description
-    },
-    {
-      icon: "🏠",
-      title: t.services.homeInstallations.title,
-      description: t.services.homeInstallations.description
-    },
-    {
-      icon: "🔧",
-      title: t.services.repairs.title,
-      description: t.services.repairs.description
-    },
-    {
-      icon: "🔐",
-      title: t.services.smartLock.title,
-      description: t.services.smartLock.description
-    }
-  ];
 
   const testimonials = [
     {
@@ -160,37 +131,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-gradient-to-b from-[#0b1c33] to-[#1a2a47]">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-4xl font-bold text-white mb-6">{t.services.title}</h3>
-            <p className="text-xl text-yellow-100/80 max-w-2xl mx-auto">
-              {t.services.subtitle}
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-white/95 backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 150}ms`}}>
-                <CardContent className="p-8 text-center relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#e7bc2d]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="text-4xl mb-6 transform group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10">{service.icon}</div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#e7bc2d] transition-colors duration-300 relative z-10">{service.title}</h4>
-                  <p className="text-gray-600 leading-relaxed relative z-10">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Gutter Cleaning Section - Text left, Image right */}
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-6 animate-fade-in">
+              <div className="space-y-6 animate-fade-in order-1">
                 <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
                   Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
@@ -227,7 +173,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="animate-fade-in animation-delay-300">
+              <div className="animate-fade-in animation-delay-300 order-2">
                 <div className="max-w-lg mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
@@ -246,7 +192,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1 animate-fade-in">
+              <div className="order-1 animate-fade-in">
                 <div className="max-w-lg mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
@@ -256,7 +202,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-1 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+              <div className="order-2 space-y-6 animate-fade-in animation-delay-300">
                 <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Serviços Elétricos</h3>
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
                   Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
@@ -306,7 +252,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-6 animate-fade-in">
+              <div className="space-y-6 animate-fade-in order-1">
                 <div className="flex items-center space-x-3 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Wrench className="h-6 w-6 text-white" />
@@ -353,7 +299,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="animate-fade-in animation-delay-300">
+              <div className="animate-fade-in animation-delay-300 order-2">
                 <div className="max-w-lg mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
