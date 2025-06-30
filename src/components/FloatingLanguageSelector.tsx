@@ -22,7 +22,7 @@ const FloatingLanguageSelector = () => {
   const currentLanguage = languages.find(lang => lang.code === language);
 
   return (
-    <div className="fixed bottom-24 left-6 z-50">
+    <div className="fixed bottom-24 right-6 z-50">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button
@@ -33,7 +33,7 @@ const FloatingLanguageSelector = () => {
           </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent 
-          align="start" 
+          align="end" 
           side="top"
           className="w-48 bg-white/95 backdrop-blur-md border-2 border-[#e7bc2d]/20 shadow-xl rounded-xl mb-2"
         >
