@@ -243,21 +243,23 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1 lg:order-1 space-y-6 animate-fade-in">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Wrench className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-4xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
-                </div>
+              <div className="order-2 lg:order-1 animate-fade-in">
+                <img 
+                  src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
+                  alt="Mr. Joe & Zé Handyman"
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                />
+              </div>
+              
+              <div className="order-1 lg:order-2 space-y-6 animate-fade-in animation-delay-300">
+                <h3 className="text-4xl font-bold text-white mb-6">Mr. Joe & Zé Handyman</h3>
                 
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
-                  Tá precisando instalar prateleiras ou arrumar aquela torneira que não para de pingar?
-                  A Mr. Joe & Zé cuida disso pra você — com cuidado, precisão e sem enrolação.
+                  Tá precisando instalar prateleiras, trocar um chuveiro ou arrumar aquela torneira que vive pingando? A Mr. Joe & Zé resolve isso pra você — com cuidado, precisão e serviço de primeira.
                 </p>
                 
                 <p className="text-lg text-yellow-100/90 leading-relaxed">
-                  Seja para dar um toque novo na sala ou fazer aquele conserto no banheiro, pode contar com a gente.
+                  A gente cuida dos detalhes pra você não ter dor de cabeça. Seja pra dar um upgrade na sua casa ou fazer aquele conserto que ficou pra depois, pode chamar que a gente vai.
                 </p>
                 
                 <div className="space-y-4">
@@ -265,37 +267,36 @@ const Index = () => {
                     <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
                       <CheckCircle className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Prateleiras alinhadas e seguras</span>
+                    <span className="text-yellow-100/90 text-lg">🔧 Instalação de acessórios e equipamentos</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
                       <CheckCircle className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Torneiras ajustadas e funcionando direitinho</span>
+                    <span className="text-yellow-100/90 text-lg">🚿 Troca e ajuste de torneiras e chuveiros</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
                     <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
                       <CheckCircle className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Serviço limpo, rápido e bem feito</span>
+                    <span className="text-yellow-100/90 text-lg">🪛 Montagens em geral</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">🧰 Reparos rápidos e com acabamento caprichado</span>
                   </div>
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
                   <p className="text-xl font-semibold text-[#e7bc2d] text-center">
-                    Mr. Joe & Zé – Simples, prático e resolvido.
+                    Tudo bem feito, limpo e funcionando como tem que ser.
                   </p>
                 </div>
-              </div>
-              
-              <div className="order-2 lg:order-2 animate-fade-in animation-delay-300">
-                <img 
-                  src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
-                  alt="Mr. Joe & Zé - Serviços Gerais"
-                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-                />
               </div>
             </div>
           </div>
