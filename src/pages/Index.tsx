@@ -232,14 +232,70 @@ const Index = () => {
                     Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* General Services Section */}
+      <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="order-1 lg:order-1 space-y-6 animate-fade-in">
+                <div className="flex items-center space-x-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Wrench className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-4xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
+                </div>
                 
-                <Button 
-                  onClick={openWhatsApp}
-                  className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
-                >
-                  <WhatsAppIcon className="h-5 w-5 mr-2" />
-                  Solicitar Orçamento
-                </Button>
+                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                  Tá precisando instalar prateleiras ou arrumar aquela torneira que não para de pingar?
+                  A Mr. Joe & Zé cuida disso pra você — com cuidado, precisão e sem enrolação.
+                </p>
+                
+                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                  Seja para dar um toque novo na sala ou fazer aquele conserto no banheiro, pode contar com a gente.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Prateleiras alinhadas e seguras</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Torneiras ajustadas e funcionando direitinho</span>
+                  </div>
+                  
+                  <div className="flex items-center space-x-3">
+                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-4 w-4 text-white" />
+                    </div>
+                    <span className="text-yellow-100/90 text-lg">Serviço limpo, rápido e bem feito</span>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
+                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                    Mr. Joe & Zé – Simples, prático e resolvido.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="order-2 lg:order-2 animate-fade-in animation-delay-300">
+                <img 
+                  src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
+                  alt="Mr. Joe & Zé - Serviços Gerais"
+                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                />
               </div>
             </div>
           </div>
