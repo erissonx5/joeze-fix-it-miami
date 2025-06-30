@@ -143,25 +143,18 @@ const Index = () => {
       {isScrolled && <div className="h-[100px]"></div>}
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0b1c33] via-[#1a2a47] to-[#0b1c33] text-white py-20 relative overflow-hidden">
+      <section 
+        className="relative py-20 text-white overflow-hidden bg-cover bg-center bg-no-repeat min-h-[500px] flex items-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(11, 28, 51, 0.7), rgba(26, 42, 71, 0.7)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`
+        }}
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto space-y-12">
-            
             <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
               <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
             </h2>
-            
-            <div className="flex justify-center animate-fade-in animation-delay-600">
-              <Button 
-                onClick={openWhatsApp}
-                size="lg"
-                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
-              >
-                <WhatsAppIcon className="h-5 w-5 mr-3" />
-                {t.hero.phone}
-              </Button>
-            </div>
           </div>
         </div>
       </section>
