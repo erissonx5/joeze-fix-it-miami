@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -189,49 +188,49 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in">
-                <h3 className="text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+            <div className="grid grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="col-span-1 space-y-4 md:space-y-6 animate-fade-in">
+                <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6">Limpeza de Calhas</h3>
+                <p className="text-sm md:text-lg text-yellow-100/90 leading-relaxed">
                   Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
                   Com ferramentas certas e atenção aos detalhes, removemos folhas, sujeira e tudo que atrapalha o fluxo da água.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-2 md:space-y-4">
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Serviço seguro e rápido</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Serviço seguro e rápido</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Equipe experiente e cuidadosa</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Equipe experiente e cuidadosa</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Atendimento com hora marcada</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Atendimento com hora marcada</span>
                   </div>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
-                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 mt-4 md:mt-8">
+                  <p className="text-sm md:text-xl font-semibold text-[#e7bc2d] text-center">
                     Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
                   </p>
                 </div>
               </div>
               
-              <div className="animate-fade-in animation-delay-300">
+              <div className="col-span-1 animate-fade-in animation-delay-300">
                 <img 
                   src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
                   alt="Limpeza de Calhas - Mr. Joe & Zé"
-                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                  className="w-full h-auto rounded-xl md:rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
                 />
               </div>
             </div>
@@ -243,52 +242,52 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="animate-fade-in">
+            <div className="grid grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="col-span-1 animate-fade-in">
                 <img 
                   src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
                   alt="Serviços Elétricos - Mr. Joe & Zé"
-                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                  className="w-full h-auto rounded-xl md:rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
                 />
               </div>
               
-              <div className="space-y-6 animate-fade-in animation-delay-300">
-                <h3 className="text-4xl font-bold text-white mb-6">Serviços Elétricos</h3>
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+              <div className="col-span-1 space-y-4 md:space-y-6 animate-fade-in animation-delay-300">
+                <h3 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6">Serviços Elétricos</h3>
+                <p className="text-sm md:text-lg text-yellow-100/90 leading-relaxed">
                   Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
                 </p>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-sm md:text-lg text-yellow-100/90 leading-relaxed">
                   Seja pra deixar sua casa mais fresca ou pra melhorar a iluminação, pode contar com a gente pra resolver do jeito certo.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-2 md:space-y-4">
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Instalação de ventiladores e luminárias</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Instalação de ventiladores e luminárias</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Troca de tomadas e interruptores</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Troca de tomadas e interruptores</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Ajustes elétricos e serviços rápidos</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Ajustes elétricos e serviços rápidos</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Trabalho limpo, funcional e com atenção aos detalhes</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Trabalho limpo, funcional e com atenção aos detalhes</span>
                   </div>
                 </div>
               </div>
@@ -301,59 +300,59 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6 animate-fade-in">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Wrench className="h-6 w-6 text-white" />
+            <div className="grid grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="col-span-1 space-y-4 md:space-y-6 animate-fade-in">
+                <div className="flex items-center space-x-2 md:space-x-3 mb-4 md:mb-6">
+                  <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Wrench className="h-4 w-4 md:h-6 md:w-6 text-white" />
                   </div>
-                  <h3 className="text-4xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
+                  <h3 className="text-xl md:text-4xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
                 </div>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-sm md:text-lg text-yellow-100/90 leading-relaxed">
                   Tá precisando instalar prateleiras ou arrumar aquela torneira que não para de pingar?
                   A Mr. Joe & Zé cuida disso pra você — com cuidado, precisão e sem enrolação.
                 </p>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-sm md:text-lg text-yellow-100/90 leading-relaxed">
                   Seja para dar um toque novo na sala ou fazer aquele conserto no banheiro, pode contar com a gente.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-2 md:space-y-4">
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Prateleiras alinhadas e seguras</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Prateleiras alinhadas e seguras</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Torneiras ajustadas e funcionando direitinho</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Torneiras ajustadas e funcionando direitinho</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-2 md:space-x-3">
+                    <div className="w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-2 w-2 md:h-4 md:w-4 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Serviço limpo, rápido e bem feito</span>
+                    <span className="text-yellow-100/90 text-sm md:text-lg">Serviço limpo, rápido e bem feito</span>
                   </div>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
-                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 mt-4 md:mt-8">
+                  <p className="text-sm md:text-xl font-semibold text-[#e7bc2d] text-center">
                     Mr. Joe & Zé – Simples, prático e resolvido.
                   </p>
                 </div>
               </div>
               
-              <div className="animate-fade-in animation-delay-300">
+              <div className="col-span-1 animate-fade-in animation-delay-300">
                 <img 
                   src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
                   alt="Mr. Joe & Zé - Serviços Gerais"
-                  className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
+                  className="w-full h-auto rounded-xl md:rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
                 />
               </div>
             </div>
