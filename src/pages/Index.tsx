@@ -49,56 +49,35 @@ const Index = () => {
       location: "Miami Beach",
       rating: 5,
       comment: t.testimonials.reviews.maria,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b17c?w=150&h=150&fit=crop&crop=face"
+      initials: "M"
     },
     {
       name: "Carlos Rodriguez",
       location: "Aventura",
       rating: 5,
       comment: t.testimonials.reviews.carlos,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Ana Costa",
-      location: "Doral",
-      rating: 5,
-      comment: t.testimonials.reviews.ana,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Roberto Santos",
-      location: "Brickell",
-      rating: 5,
-      comment: t.testimonials.reviews.roberto,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Lucia Pereira",
-      location: "Coral Gables",
-      rating: 5,
-      comment: t.testimonials.reviews.lucia,
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
+      initials: "C"
     },
     {
       name: "Fernando Lima",
       location: "Pembroke Pines",
       rating: 5,
       comment: t.testimonials.reviews.fernando,
-      avatar: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=150&h=150&fit=crop&crop=face"
+      initials: "F"
     }
   ];
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
       {/* Header */}
-      <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
+      <header className={`bg-[#8cbbc3] shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-center h-24">
-            {/* Centered Logo - Larger but fits within header */}
+          <div className="flex items-center justify-start h-28">
+            {/* Left-aligned Logo - Larger size */}
             <div 
-              className="w-[450px] h-20 md:w-[500px] md:h-22 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[550px] h-24 md:w-[650px] md:h-28 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -112,7 +91,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[108px]"></div>}
+      {isScrolled && <div className="h-[124px]"></div>}
 
       {/* Hero Section */}
       <section 
@@ -315,12 +294,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - Removed WhatsApp button */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
               <div className="space-y-8 animate-fade-in animation-delay-300">
                 <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -352,28 +331,12 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="bg-gradient-to-br from-slate-100 via-white to-slate-50 rounded-3xl p-10 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 animate-fade-in animation-delay-500">
-                <div className="text-center space-y-8">
-                  <h4 className="text-2xl font-bold text-gray-900">{t.about.whatsappTitle}</h4>
-                  <p className="text-lg text-gray-700">
-                    {t.about.whatsappSubtitle}
-                  </p>
-                  <Button 
-                    onClick={openWhatsApp}
-                    className="bg-gradient-to-r from-[#95430c] to-orange-600 hover:from-[#7a350a] hover:to-[#95430c] text-white font-bold w-full py-3 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                  >
-                    <WhatsAppIcon className="h-5 w-5 mr-2" />
-                    {t.about.whatsappButton}
-                  </Button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - Only 3 comments with initials */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
@@ -390,9 +353,8 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-[#95430c]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex items-center mb-6 relative z-10">
                     <Avatar className="w-14 h-14 mr-4 ring-2 ring-[#95430c] ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
-                      <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                      <AvatarFallback className="bg-gradient-to-br from-[#95430c] to-orange-600 text-white font-bold">
-                        {testimonial.name.split(' ').map(n => n[0]).join('')}
+                      <AvatarFallback className="bg-gradient-to-br from-[#95430c] to-orange-600 text-white font-bold text-lg">
+                        {testimonial.initials}
                       </AvatarFallback>
                     </Avatar>
                     <div className="flex-1">
@@ -439,23 +401,13 @@ const Index = () => {
       
       <FloatingLanguageSelector />
 
-      {/* Footer */}
+      {/* Footer - Logo removed */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Logo and Title Section */}
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-8 animate-fade-in">
-              <div 
-                className="w-32 h-32 rounded-full p-4 shadow-3xl transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
-                onClick={handleLogoClick}
-              >
-                <img 
-                  src="/lovable-uploads/c1e8c03d-3cd0-4452-bfb1-2df182bdd43f.png" 
-                  alt="Mr. Joe & Zé Handyman Logo" 
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div className="text-center md:text-left">
+            {/* Title Section - Logo removed */}
+            <div className="flex flex-col items-center justify-center space-y-6 animate-fade-in">
+              <div className="text-center">
                 <h3 className="text-3xl md:text-4xl font-bold">{t.header.title}</h3>
                 <p className="text-xl md:text-2xl text-[#95430c]">{t.footer.subtitle}</p>
               </div>
