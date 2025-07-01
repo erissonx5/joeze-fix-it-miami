@@ -94,11 +94,11 @@ const Index = () => {
       <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-center h-40">
-            {/* Centered Logo - Almost double size */}
+        <div className="container mx-auto px-4 py-3">
+          <div className="flex items-center justify-center h-24">
+            {/* Centered Logo - Larger but fits within header */}
             <div 
-              className="w-[600px] h-36 md:w-[700px] md:h-40 transform hover:scale-110 transition-transform duration-300 cursor-pointer shadow-lg rounded-lg overflow-hidden bg-white/50 backdrop-blur-sm p-2"
+              className="w-[450px] h-20 md:w-[500px] md:h-22 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -112,7 +112,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[176px]"></div>}
+      {isScrolled && <div className="h-[108px]"></div>}
 
       {/* Hero Section */}
       <section 
