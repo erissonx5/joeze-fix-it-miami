@@ -103,7 +103,7 @@ const Index = () => {
               onClick={handleLogoClick}
             >
               <img 
-                src="/lovable-uploads/5a427d09-fb8d-4c2d-9108-eeeb38ed9e89.png" 
+                src="/lovable-uploads/c1e8c03d-3cd0-4452-bfb1-2df182bdd43f.png" 
                 alt="Mr. Joe & Zé Handyman Logo" 
                 className="w-full h-full object-contain"
               />
@@ -451,7 +451,7 @@ const Index = () => {
                 onClick={handleLogoClick}
               >
                 <img 
-                  src="/lovable-uploads/5a427d09-fb8d-4c2d-9108-eeeb38ed9e89.png" 
+                  src="/lovable-uploads/c1e8c03d-3cd0-4452-bfb1-2df182bdd43f.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
