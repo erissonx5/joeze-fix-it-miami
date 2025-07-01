@@ -246,7 +246,7 @@
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(231, 188, 45, 0.4);
+  box-shadow: 0 0 30px rgba(149, 67, 12, 0.4);
 }
 
 /* Smooth Scrolling */
@@ -295,7 +295,7 @@ html {
 
 /* Gradient Animation */
 .gradient-animation {
-  background: linear-gradient(45deg, #e7bc2d, #f5d76e, #e7bc2d);
+  background: linear-gradient(45deg, #95430c, #bf6f1a, #95430c);
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
 }
@@ -314,7 +314,7 @@ html {
 
 /* Text Animation */
 .text-shimmer {
-  background: linear-gradient(90deg, #fff 25%, #e7bc2d 50%, #fff 75%);
+  background: linear-gradient(90deg, #fff 25%, #95430c 50%, #fff 75%);
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;

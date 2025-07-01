@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -89,7 +90,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden bg-[#0b1c33]">
+    <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
       {/* Header */}
       <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
@@ -102,7 +103,7 @@ const Index = () => {
               onClick={handleLogoClick}
             >
               <img 
-                src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
+                src="/lovable-uploads/5a427d09-fb8d-4c2d-9108-eeeb38ed9e89.png" 
                 alt="Mr. Joe & Zé Handyman Logo" 
                 className="w-full h-full object-contain"
               />
@@ -118,63 +119,65 @@ const Index = () => {
       <section 
         className="relative py-20 text-white overflow-hidden bg-contain bg-center bg-no-repeat min-h-[500px] flex items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(11, 28, 51, 0.3), rgba(26, 42, 71, 0.3)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`
+          background: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-transparent animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#8cbbc3]/10 to-transparent animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto space-y-12">
             <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-              <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
+              <span className="bg-gradient-to-r from-[#95430c] to-orange-600 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
             </h2>
           </div>
         </div>
       </section>
 
       {/* Gutter Cleaning Section - Text left, Image right */}
-      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-6 animate-fade-in order-1">
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Limpeza de Calhas</h3>
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+              <div className="space-y-8 animate-fade-in order-1">
+                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8">Limpeza de Calhas</h3>
+                <p className="text-xl text-white/90 leading-relaxed">
                   Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
                   Com ferramentas certas e atenção aos detalhes, removemos folhas, sujeira e tudo que atrapalha o fluxo da água.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Serviço seguro e rápido</span>
+                    <span className="text-white/90 text-xl">Serviço seguro e rápido</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Equipe experiente e cuidadosa</span>
+                    <span className="text-white/90 text-xl">Equipe experiente e cuidadosa</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Atendimento com hora marcada</span>
+                    <span className="text-white/90 text-xl">Atendimento com hora marcada</span>
                   </div>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
-                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mt-10">
+                  <p className="text-2xl font-semibold text-white text-center">
                     Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
                   </p>
                 </div>
               </div>
               
               <div className="animate-fade-in animation-delay-300 order-2">
-                <div className="max-w-lg mx-auto lg:max-w-none">
+                <div className="max-w-2xl mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
                     alt="Limpeza de Calhas - Mr. Joe & Zé"
@@ -188,12 +191,12 @@ const Index = () => {
       </section>
 
       {/* Electrical Services Section - Image left, Text right */}
-      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-1 animate-fade-in">
-                <div className="max-w-lg mx-auto lg:max-w-none">
+                <div className="max-w-2xl mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
                     alt="Serviços Elétricos - Mr. Joe & Zé"
@@ -202,43 +205,43 @@ const Index = () => {
                 </div>
               </div>
               
-              <div className="order-2 space-y-6 animate-fade-in animation-delay-300">
-                <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">Serviços Elétricos</h3>
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+              <div className="order-2 space-y-8 animate-fade-in animation-delay-300">
+                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8">Serviços Elétricos</h3>
+                <p className="text-xl text-white/90 leading-relaxed">
                   Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
                 </p>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-xl text-white/90 leading-relaxed">
                   Seja pra deixar sua casa mais fresca ou pra melhorar a iluminação, pode contar com a gente pra resolver do jeito certo.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Instalação de ventiladores e luminárias</span>
+                    <span className="text-white/90 text-xl">Instalação de ventiladores e luminárias</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Troca de tomadas e interruptores</span>
+                    <span className="text-white/90 text-xl">Troca de tomadas e interruptores</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Ajustes elétricos e serviços rápidos</span>
+                    <span className="text-white/90 text-xl">Ajustes elétricos e serviços rápidos</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Trabalho limpo, funcional e com atenção aos detalhes</span>
+                    <span className="text-white/90 text-xl">Trabalho limpo, funcional e com atenção aos detalhes</span>
                   </div>
                 </div>
               </div>
@@ -248,59 +251,59 @@ const Index = () => {
       </section>
 
       {/* General Services Section - Text left, Image right */}
-      <section className="py-20 bg-gradient-to-br from-[#0b1c33] to-[#1a2a47]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-6 animate-fade-in order-1">
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Wrench className="h-6 w-6 text-white" />
+              <div className="space-y-8 animate-fade-in order-1">
+                <div className="flex items-center space-x-4 mb-8">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Wrench className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
+                  <h3 className="text-4xl lg:text-5xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
                 </div>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-xl text-white/90 leading-relaxed">
                   Tá precisando instalar prateleiras ou arrumar aquela torneira que não para de pingar?
                   A Mr. Joe & Zé cuida disso pra você — com cuidado, precisão e sem enrolação.
                 </p>
                 
-                <p className="text-lg text-yellow-100/90 leading-relaxed">
+                <p className="text-xl text-white/90 leading-relaxed">
                   Seja para dar um toque novo na sala ou fazer aquele conserto no banheiro, pode contar com a gente.
                 </p>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Prateleiras alinhadas e seguras</span>
+                    <span className="text-white/90 text-xl">Prateleiras alinhadas e seguras</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Torneiras ajustadas e funcionando direitinho</span>
+                    <span className="text-white/90 text-xl">Torneiras ajustadas e funcionando direitinho</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-4 w-4 text-white" />
+                  <div className="flex items-center space-x-4">
+                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                      <CheckCircle className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-yellow-100/90 text-lg">Serviço limpo, rápido e bem feito</span>
+                    <span className="text-white/90 text-xl">Serviço limpo, rápido e bem feito</span>
                   </div>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-8">
-                  <p className="text-xl font-semibold text-[#e7bc2d] text-center">
+                <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mt-10">
+                  <p className="text-2xl font-semibold text-white text-center">
                     Mr. Joe & Zé – Simples, prático e resolvido.
                   </p>
                 </div>
               </div>
               
               <div className="animate-fade-in animation-delay-300 order-2">
-                <div className="max-w-lg mx-auto lg:max-w-none">
+                <div className="max-w-2xl mx-auto lg:max-w-none">
                   <img 
                     src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
                     alt="Mr. Joe & Zé - Serviços Gerais"
@@ -314,39 +317,39 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8 animate-fade-in animation-delay-300">
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                     <CheckCircle className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
-                    <p className="text-yellow-100/80">{t.about.quality.description}</p>
+                    <p className="text-white/80">{t.about.quality.description}</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
-                    <p className="text-yellow-100/80">{t.about.fastService.description}</p>
+                    <p className="text-white/80">{t.about.fastService.description}</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/5 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
                     <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
-                    <p className="text-yellow-100/80">{t.about.expertTeam.description}</p>
+                    <p className="text-white/80">{t.about.expertTeam.description}</p>
                   </div>
                 </div>
               </div>
@@ -359,7 +362,7 @@ const Index = () => {
                   </p>
                   <Button 
                     onClick={openWhatsApp}
-                    className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold w-full py-3 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                    className="bg-gradient-to-r from-[#95430c] to-orange-600 hover:from-[#7a350a] hover:to-[#95430c] text-white font-bold w-full py-3 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl"
                   >
                     <WhatsAppIcon className="h-5 w-5 mr-2" />
                     {t.about.whatsappButton}
@@ -372,11 +375,11 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-[#0b1c33] to-[#1a2a47]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h3 className="text-4xl font-bold text-white mb-6">{t.testimonials.title}</h3>
-            <p className="text-xl text-yellow-100/80 max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
               {t.testimonials.subtitle}
             </p>
           </div>
@@ -385,11 +388,11 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-white/95 backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 100}ms`}}>
                 <CardContent className="p-6 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#e7bc2d]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#95430c]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex items-center mb-6 relative z-10">
-                    <Avatar className="w-14 h-14 mr-4 ring-2 ring-[#e7bc2d] ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
+                    <Avatar className="w-14 h-14 mr-4 ring-2 ring-[#95430c] ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
                       <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                      <AvatarFallback className="bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] text-white font-bold">
+                      <AvatarFallback className="bg-gradient-to-br from-[#95430c] to-orange-600 text-white font-bold">
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>
                     </Avatar>
@@ -412,17 +415,17 @@ const Index = () => {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-20 bg-gradient-to-br from-[#1a2a47] to-[#0b1c33]">
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h3 className="text-4xl font-bold text-white animate-fade-in">{t.coverage.title}</h3>
             <div className="flex items-center justify-center mb-8 animate-fade-in animation-delay-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#e7bc2d] to-[#f5d76e] rounded-full flex items-center justify-center shadow-xl">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center shadow-xl">
                 <MapPin className="h-10 w-10 text-white animate-bounce" />
               </div>
             </div>
             <h4 className="text-2xl font-semibold text-white animate-fade-in animation-delay-500">{t.coverage.subtitle}</h4>
-            <p className="text-lg text-yellow-100/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
+            <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
               {t.coverage.description}
             </p>
           </div>
@@ -448,14 +451,14 @@ const Index = () => {
                 onClick={handleLogoClick}
               >
                 <img 
-                  src="/lovable-uploads/557e5974-f1e0-4660-bb57-97f7347a0e34.png" 
+                  src="/lovable-uploads/5a427d09-fb8d-4c2d-9108-eeeb38ed9e89.png" 
                   alt="Mr. Joe & Zé Handyman Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="text-center md:text-left">
                 <h3 className="text-3xl md:text-4xl font-bold">{t.header.title}</h3>
-                <p className="text-xl md:text-2xl text-[#e7bc2d]">{t.footer.subtitle}</p>
+                <p className="text-xl md:text-2xl text-[#95430c]">{t.footer.subtitle}</p>
               </div>
             </div>
             
@@ -463,7 +466,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in animation-delay-200">
               <Button 
                 onClick={openWhatsApp}
-                className="bg-gradient-to-r from-[#e7bc2d] to-[#f5d76e] hover:from-[#d4a824] hover:to-[#e7bc2d] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
+                className="bg-gradient-to-r from-[#95430c] to-orange-600 hover:from-[#7a350a] hover:to-[#95430c] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
                 <WhatsAppIcon className="h-5 w-5 mr-2" />
                 {t.footer.whatsapp}
@@ -472,7 +475,7 @@ const Index = () => {
               <Button 
                 onClick={openInstagram}
                 variant="outline"
-                className="border-2 border-[#e7bc2d] text-[#e7bc2d] hover:bg-[#e7bc2d] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+                className="border-2 border-[#95430c] text-[#95430c] hover:bg-[#95430c] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
               >
                 <Instagram className="h-5 w-5 mr-2" />
                 Instagram
