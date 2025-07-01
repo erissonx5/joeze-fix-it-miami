@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -96,10 +95,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-center h-24">
+          <div className="flex items-center justify-center h-20">
             {/* Centered Logo */}
             <div 
-              className="w-80 h-60 md:w-96 md:h-72 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-48 h-16 md:w-56 md:h-18 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -113,7 +112,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[100px]"></div>}
+      {isScrolled && <div className="h-[88px]"></div>}
 
       {/* Hero Section */}
       <section 
