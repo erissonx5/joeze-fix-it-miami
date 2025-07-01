@@ -94,17 +94,17 @@ const Index = () => {
       <header className={`bg-white/95 backdrop-blur-md shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-center h-28">
-            {/* Centered Logo */}
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-center h-40">
+            {/* Centered Logo - Almost double size */}
             <div 
-              className="w-80 h-24 md:w-96 md:h-28 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[600px] h-36 md:w-[700px] md:h-40 transform hover:scale-110 transition-transform duration-300 cursor-pointer shadow-lg rounded-lg overflow-hidden bg-white/50 backdrop-blur-sm p-2"
               onClick={handleLogoClick}
             >
               <img 
                 src="/lovable-uploads/c1e8c03d-3cd0-4452-bfb1-2df182bdd43f.png" 
                 alt="Mr. Joe & Zé Handyman Logo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain filter drop-shadow-lg"
               />
             </div>
           </div>
@@ -112,7 +112,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[120px]"></div>}
+      {isScrolled && <div className="h-[176px]"></div>}
 
       {/* Hero Section */}
       <section 
