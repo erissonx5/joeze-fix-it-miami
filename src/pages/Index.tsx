@@ -696,7 +696,7 @@ const Index = () => {
             {/* Title Section */}
             <div className="flex flex-col items-center justify-center space-y-6 animate-fade-in">
               <div className="text-center">
-                <h3 className="text-3xl md:text-4xl font-bold">{t.header?.title || "Mr. Joe & Zé Handyman"}</h3>
+                <h3 className="text-3xl md:text-4xl font-bold">{t.footer?.title || "Mr. Joe & Zé – SOLUTIONS A2 CORP."}</h3>
                 <p className="text-xl md:text-2xl text-[#95430c]">{t.footer?.subtitle || "Seu parceiro em soluções residenciais"}</p>
               </div>
             </div>
@@ -709,7 +709,7 @@ const Index = () => {
                 className="border-2 border-[#95430c] text-[#95430c] hover:bg-[#95430c] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               >
                 <Instagram className="h-5 w-5 mr-2" />
-                Instagram
+                {t.footer?.instagram || "Instagram"}
               </Button>
             </div>
             

@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'pt' | 'en' | 'es' | 'fr';
@@ -77,10 +78,12 @@ interface Translations {
     description: string;
   };
   footer: {
+    title: string;
     subtitle: string;
     whatsapp: string;
     copyright: string;
     coverage: string;
+    instagram: string;
   };
 }
 
@@ -160,10 +163,12 @@ const translations: Record<Language, Translations> = {
       description: "Atendemos toda a região de Miami-Dade e Broward com serviços de handyman profissionais e confiáveis."
     },
     footer: {
+      title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "Um resolve, o outro garante",
       whatsapp: "WhatsApp: (786) 593-7841",
       copyright: "© 2024 Mr. Joe & Zé Handyman. Todos os direitos reservados.",
-      coverage: "Atendimento em Miami-Dade e Broward"
+      coverage: "Atendimento em Miami-Dade e Broward",
+      instagram: "Instagram"
     }
   },
   en: {
@@ -241,10 +246,12 @@ const translations: Record<Language, Translations> = {
       description: "We serve the entire Miami-Dade and Broward region with professional and reliable handyman services."
     },
     footer: {
+      title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "One fixes, the other guarantees",
       whatsapp: "WhatsApp: (786) 593-7841",
       copyright: "© 2024 Mr. Joe & Zé Handyman. All rights reserved.",
-      coverage: "Serving Miami-Dade and Broward"
+      coverage: "Serving Miami-Dade and Broward",
+      instagram: "Instagram"
     }
   },
   es: {
@@ -322,10 +329,12 @@ const translations: Record<Language, Translations> = {
       description: "Servimos toda la región de Miami-Dade y Broward con servicios de mantenimiento profesionales y confiables."
     },
     footer: {
+      title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "Uno resuelve, el otro garantiza",
       whatsapp: "WhatsApp: (786) 593-7841",
       copyright: "© 2024 Mr. Joe & Zé Handyman. Todos los derechos reservados.",
-      coverage: "Servicio en Miami-Dade y Broward"
+      coverage: "Servicio en Miami-Dade y Broward",
+      instagram: "Instagram"
     }
   },
   fr: {
@@ -403,10 +412,12 @@ const translations: Record<Language, Translations> = {
       description: "Nous servons toute la région de Miami-Dade et Broward avec des services de bricolage professionnels et fiables."
     },
     footer: {
+      title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "L'un répare, l'autre garantit",
       whatsapp: "WhatsApp: (786) 593-7841",
       copyright: "© 2024 Mr. Joe & Zé Handyman. Tous droits réservés.",
-      coverage: "Service à Miami-Dade et Broward"
+      coverage: "Service à Miami-Dade et Broward",
+      instagram: "Instagram"
     }
   }
 };
