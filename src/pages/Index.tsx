@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -74,10 +75,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-start h-32 md:h-28">
-            {/* Logo posicionada completamente à esquerda no mobile */}
+          <div className="flex items-center justify-center h-32 md:h-28">
+            {/* Logo centralizada */}
             <div 
-              className="w-[300px] h-20 sm:w-[400px] sm:h-24 md:w-[550px] md:h-30 lg:w-[650px] lg:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0 ml-0"
+              className="w-[300px] h-20 sm:w-[400px] sm:h-24 md:w-[550px] md:h-30 lg:w-[650px] lg:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
