@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -75,9 +76,9 @@ const Index = () => {
       }`}>
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-start h-32 md:h-28">
-            {/* Left-aligned Logo - Increased size for mobile and desktop */}
+            {/* Logo posicionada à esquerda com tamanho aumentado */}
             <div 
-              className="w-[400px] h-28 sm:w-[500px] sm:h-30 md:w-[600px] md:h-32 lg:w-[650px] lg:h-34 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[450px] h-28 sm:w-[550px] sm:h-30 md:w-[650px] md:h-32 lg:w-[700px] lg:h-34 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -93,14 +94,15 @@ const Index = () => {
       {/* Spacer when header is fixed */}
       {isScrolled && <div className="h-[140px] md:h-[124px]"></div>}
 
-      {/* Hero Section with improved image handling */}
+      {/* Hero Section com imagem otimizada para mobile */}
       <section 
         className="relative py-20 text-white overflow-hidden min-h-[500px] md:min-h-[600px] flex items-center"
         style={{
           background: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat'
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'scroll'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#8cbbc3]/10 to-transparent animate-pulse"></div>
