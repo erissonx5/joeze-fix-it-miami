@@ -74,10 +74,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-start h-28">
-            {/* Left-aligned Logo - Increased size */}
+          <div className="flex items-center justify-start h-32 md:h-28">
+            {/* Left-aligned Logo - Increased size for mobile and desktop */}
             <div 
-              className="w-[550px] h-24 md:w-[600px] md:h-26 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[400px] h-28 sm:w-[500px] sm:h-30 md:w-[600px] md:h-32 lg:w-[650px] lg:h-34 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -91,15 +91,16 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[124px]"></div>}
+      {isScrolled && <div className="h-[140px] md:h-[124px]"></div>}
 
-      {/* Hero Section with new image */}
+      {/* Hero Section with improved image handling */}
       <section 
-        className="relative py-20 text-white overflow-hidden bg-contain bg-center bg-no-repeat min-h-[500px] flex items-center"
+        className="relative py-20 text-white overflow-hidden min-h-[500px] md:min-h-[600px] flex items-center"
         style={{
           background: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#8cbbc3]/10 to-transparent animate-pulse"></div>
