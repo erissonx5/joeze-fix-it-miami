@@ -75,9 +75,9 @@ const Index = () => {
       }`}>
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-start h-32 md:h-28">
-            {/* Logo posicionada à esquerda */}
+            {/* Logo posicionada completamente à esquerda no mobile */}
             <div 
-              className="w-[350px] h-24 sm:w-[450px] sm:h-28 md:w-[550px] md:h-30 lg:w-[650px] lg:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[300px] h-20 sm:w-[400px] sm:h-24 md:w-[550px] md:h-30 lg:w-[650px] lg:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0 ml-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -93,14 +93,13 @@ const Index = () => {
       {/* Spacer when header is fixed */}
       {isScrolled && <div className="h-[140px] md:h-[124px]"></div>}
 
-      {/* Hero Section com imagem redimensionada para melhor visualização */}
+      {/* Hero Section com imagem ajustada */}
       <section 
         className="relative py-16 text-white overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center"
         style={{
           background: `linear-gradient(rgba(140, 187, 195, 0.4), rgba(149, 67, 12, 0.4)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
           backgroundSize: 'contain',
-          backgroundPosition: 'center center',
-          backgroundRepeat: 'no-repeat'
+          backgroundPosition: 'center center'
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#8cbbc3]/10 to-transparent animate-pulse"></div>
