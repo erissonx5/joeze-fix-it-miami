@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,7 +18,7 @@ const Index = () => {
   const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const whatsappNumber = "+17865937841";
-  const whatsappMessage = "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
+  const whatsappMessage = t.hero.phone || "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
   
   useEffect(() => {
     const handleScroll = () => {
@@ -75,10 +74,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-center h-32 md:h-28">
-            {/* Logo centralizada */}
+          <div className="flex items-center justify-center h-40 md:h-36">
+            {/* Logo aumentada */}
             <div 
-              className="w-[300px] h-20 sm:w-[400px] sm:h-24 md:w-[550px] md:h-30 lg:w-[650px] lg:h-32 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[400px] h-28 sm:w-[500px] sm:h-32 md:w-[700px] md:h-40 lg:w-[800px] lg:h-44 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -92,7 +91,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[140px] md:h-[124px]"></div>}
+      {isScrolled && <div className="h-[172px] md:h-[156px]"></div>}
 
       {/* Hero Section com imagem ajustada */}
       <section 
@@ -111,48 +110,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
-              <div className="space-y-8 animate-fade-in animation-delay-300">
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <CheckCircle className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
-                    <p className="text-white/80">{t.about.quality.description}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Clock className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
-                    <p className="text-white/80">{t.about.fastService.description}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Users className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
-                    <p className="text-white/80">{t.about.expertTeam.description}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
@@ -165,110 +122,58 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
-                    alt="Instalação de TV na Parede"
+                    alt={t.services.tvInstallation.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de TV na Parede ou Painel</h4>
-                  <p className="text-white/90">
-                    Fixamos sua TV com segurança, precisão e acabamento impecável — seja direto na parede ou em painel. 
-                    Utilizamos ferramentas adequadas e nivelamento a laser para garantir alinhamento perfeito.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem busca:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ Organização dos fios</li>
-                      <li>✔ Estética limpa e moderna</li>
-                      <li>✔ Segurança para crianças e pets</li>
-                      <li>✔ Aproveitamento de espaço</li>
-                    </ul>
-                    <p className="font-medium text-white mt-4">Chame quem entende do assunto e faz com capricho!</p>
-                  </div>
+                  <h4 className="text-2xl font-bold text-white">{t.services.tvInstallation.title}</h4>
+                  <p className="text-white/90">{t.services.tvInstallation.description}</p>
                 </div>
               </div>
 
-              {/* Foto 2m - Door Locks */}
+              {/* Foto 2m - Smart Lock */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
-                    alt="Instalação e Reparo de Fechaduras"
+                    alt={t.services.smartLock.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
-                  <p className="text-white/90">
-                    Instalamos e reparamos todos os tipos de fechaduras — desde modelos tradicionais até fechaduras 
-                    eletrônicas com senha ou biometria. Serviço rápido, discreto e com foco total na sua segurança.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ Instalação de fechadura inteligente</li>
-                      <li>✔ Troca por motivo de segurança</li>
-                      <li>✔ Reparo em fechaduras danificadas</li>
-                      <li>✔ Atualização para controle de acesso moderno</li>
-                    </ul>
-                    <p className="font-medium text-white mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
-                  </div>
+                  <h4 className="text-2xl font-bold text-white">{t.services.smartLock.title}</h4>
+                  <p className="text-white/90">{t.services.smartLock.description}</p>
                 </div>
               </div>
 
-              {/* Foto 3m - Food Disposer */}
+              {/* Foto 3m - Furniture Assembly */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
-                    alt="Instalação de Triturador de Alimentos"
+                    alt={t.services.furnitureAssembly.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Triturador de Alimentos</h4>
-                  <p className="text-white/90">
-                    Instalamos trituradores de alimentos de forma segura, eficiente e com todos os cuidados necessários 
-                    para o bom funcionamento da sua pia. Serviço feito com atenção aos detalhes e seguindo as recomendações do fabricante.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem busca:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ Praticidade na rotina da cozinha</li>
-                      <li>✔ Fim do mau cheiro na pia</li>
-                      <li>✔ Instalação correta sem riscos de vazamentos</li>
-                      <li>✔ Funcionamento silencioso e seguro</li>
-                    </ul>
-                    <p className="font-medium text-white mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
-                  </div>
+                  <h4 className="text-2xl font-bold text-white">{t.services.furnitureAssembly.title}</h4>
+                  <p className="text-white/90">{t.services.furnitureAssembly.description}</p>
                 </div>
               </div>
 
-              {/* Foto 4m - Picture Hanging */}
+              {/* Foto 4m - Home Installations */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
-                    alt="Fixação de Quadros e Decoração"
+                    alt={t.services.homeInstallations.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
-                  <p className="text-white/90">
-                    Deixe sua casa ou escritório com tudo no lugar certo! Fazemos a fixação de quadros, espelhos, prateleiras leves, 
-                    esculturas e peças decorativas com alinhamento preciso e acabamento limpo. Tudo fixado com segurança e sem danificar suas paredes.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem valoriza:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ Nivelamento perfeito com laser</li>
-                      <li>✔ Fixação segura em drywall, alvenaria ou madeira</li>
-                      <li>✔ Harmonia na decoração</li>
-                      <li>✔ Instalação sem sujeira nem bagunça</li>
-                    </ul>
-                    <p className="font-medium text-white mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
-                  </div>
+                  <h4 className="text-2xl font-bold text-white">{t.services.homeInstallations.title}</h4>
+                  <p className="text-white/90">{t.services.homeInstallations.description}</p>
                 </div>
               </div>
 
@@ -277,26 +182,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
-                    alt="Pequenos Reparos Elétricos"
+                    alt={t.services.repairs.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Elétricos</h4>
-                  <p className="text-white/90">
-                    Tomada queimada? Interruptor com mau contato? A gente resolve! Fazemos pequenos reparos elétricos 
-                    com segurança, agilidade e aquele capricho que você já conhece.
-                  </p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ Troca de tomadas e interruptores</li>
-                      <li>✔ Solução de curtos e fios soltos</li>
-                      <li>✔ Instalação de dimmers e sensores</li>
-                      <li>✔ Ajustes em pontos de luz</li>
-                    </ul>
-                    <p className="font-medium text-white mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
-                  </div>
+                  <h4 className="text-2xl font-bold text-white">{t.services.repairs.title}</h4>
+                  <p className="text-white/90">{t.services.repairs.description}</p>
                 </div>
               </div>
 
@@ -606,6 +498,48 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section - Moved after Services */}
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+              <div className="space-y-8 animate-fade-in animation-delay-300">
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <CheckCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
+                    <p className="text-white/80">{t.about.quality.description}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Clock className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
+                    <p className="text-white/80">{t.about.fastService.description}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Users className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
+                    <p className="text-white/80">{t.about.expertTeam.description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section - Only 3 comments with initials */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
@@ -671,11 +605,11 @@ const Index = () => {
       
       <FloatingLanguageSelector />
 
-      {/* Footer - Logo removed */}
+      {/* Footer - WhatsApp button removed */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Title Section - Logo removed */}
+            {/* Title Section */}
             <div className="flex flex-col items-center justify-center space-y-6 animate-fade-in">
               <div className="text-center">
                 <h3 className="text-3xl md:text-4xl font-bold">{t.header.title}</h3>
@@ -683,20 +617,12 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Buttons Section */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in animation-delay-200">
-              <Button 
-                onClick={openWhatsApp}
-                className="bg-gradient-to-r from-[#95430c] to-orange-600 hover:from-[#7a350a] hover:to-[#95430c] text-white font-bold px-8 py-4 text-lg rounded-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl w-full sm:w-auto"
-              >
-                <WhatsAppIcon className="h-5 w-5 mr-2" />
-                {t.footer.whatsapp}
-              </Button>
-              
+            {/* Buttons Section - Only Instagram now */}
+            <div className="flex justify-center items-center animate-fade-in animation-delay-200">
               <Button 
                 onClick={openInstagram}
                 variant="outline"
-                className="border-2 border-[#95430c] text-[#95430c] hover:bg-[#95430c] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2 w-full sm:w-auto"
+                className="border-2 border-[#95430c] text-[#95430c] hover:bg-[#95430c] hover:text-white font-bold px-6 py-4 text-lg rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               >
                 <Instagram className="h-5 w-5 mr-2" />
                 Instagram
