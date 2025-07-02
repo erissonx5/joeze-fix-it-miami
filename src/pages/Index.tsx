@@ -122,13 +122,26 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
-                    alt={t.services?.tvInstallation?.title || "Instalação de TV"}
+                    alt="Instalação de TV na Parede ou Painel"
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.tvInstallation?.title || "Instalação de TV na Parede"}</h4>
-                  <p className="text-white/90">{t.services?.tvInstallation?.description || "Instalação segura e profissional de TVs na parede com nivelamento perfeito e organização de cabos."}</p>
+                  <h4 className="text-2xl font-bold text-white">Instalação de TV na Parede ou Painel</h4>
+                  <p className="text-white/90">
+                    Fixamos sua TV com segurança, precisão e acabamento impecável — seja direto na parede ou em painel. 
+                    Utilizamos ferramentas adequadas e nivelamento a laser para garantir alinhamento perfeito.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Organização dos fios</li>
+                      <li>✔ Estética limpa e moderna</li>
+                      <li>✔ Segurança para crianças e pets</li>
+                      <li>✔ Aproveitamento de espaço</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Chame quem entende do assunto e faz com capricho!</p>
+                  </div>
                 </div>
               </div>
 
@@ -137,28 +150,54 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
-                    alt={t.services?.smartLock?.title || "Fechadura Inteligente"}
+                    alt="Instalação e Reparo de Fechaduras"
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.smartLock?.title || "Instalação de Fechadura Inteligente"}</h4>
-                  <p className="text-white/90">{t.services?.smartLock?.description || "Instalação e configuração de fechaduras inteligentes para maior segurança e conveniência do seu lar."}</p>
+                  <h4 className="text-2xl font-bold text-white">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
+                  <p className="text-white/90">
+                    Instalamos e reparamos todos os tipos de fechaduras — desde modelos tradicionais até fechaduras 
+                    eletrônicas com senha ou biometria. Serviço rápido, discreto e com foco total na sua segurança.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Instalação de fechadura inteligente</li>
+                      <li>✔ Troca por motivo de segurança</li>
+                      <li>✔ Reparo em fechaduras danificadas</li>
+                      <li>✔ Atualização para controle de acesso moderno</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
+                  </div>
                 </div>
               </div>
 
-              {/* Foto 3m - Furniture Assembly */}
+              {/* Foto 3m - Food Disposal Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
-                    alt={t.services?.furnitureAssembly?.title || "Montagem de Móveis"}
+                    alt="Instalação de Triturador de Alimentos"
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.furnitureAssembly?.title || "Montagem de Móveis IKEA e Outros"}</h4>
-                  <p className="text-white/90">{t.services?.furnitureAssembly?.description || "Montagem profissional de móveis IKEA, Wayfair e outras marcas com garantia de qualidade e acabamento perfeito."}</p>
+                  <h4 className="text-2xl font-bold text-white">Instalação de Triturador de Alimentos</h4>
+                  <p className="text-white/90">
+                    Instalamos trituradores de alimentos de forma segura, eficiente e com todos os cuidados necessários 
+                    para o bom funcionamento da sua pia. Serviço feito com atenção aos detalhes e seguindo as recomendações do fabricante.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Praticidade na rotina da cozinha</li>
+                      <li>✔ Fim do mau cheiro na pia</li>
+                      <li>✔ Instalação correta sem riscos de vazamentos</li>
+                      <li>✔ Funcionamento silencioso e seguro</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
+                  </div>
                 </div>
               </div>
 
@@ -167,13 +206,27 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
-                    alt={t.services?.homeInstallations?.title || "Instalações Residenciais"}
+                    alt="Fixação de Quadros, Espelhos, Esculturas e Decoração"
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.homeInstallations?.title || "Instalações Residenciais Diversas"}</h4>
-                  <p className="text-white/90">{t.services?.homeInstallations?.description || "Instalação de espelhos, quadros, suportes e diversos itens residenciais com precisão e cuidado."}</p>
+                  <h4 className="text-2xl font-bold text-white">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
+                  <p className="text-white/90">
+                    Deixe sua casa ou escritório com tudo no lugar certo! Fazemos a fixação de quadros, espelhos, 
+                    prateleiras leves, esculturas e peças decorativas com alinhamento preciso e acabamento limpo. 
+                    Tudo fixado com segurança e sem danificar suas paredes.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Ideal para quem valoriza:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Nivelamento perfeito com laser</li>
+                      <li>✔ Fixação segura em drywall, alvenaria ou madeira</li>
+                      <li>✔ Harmonia na decoração</li>
+                      <li>✔ Instalação sem sujeira nem bagunça</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
+                  </div>
                 </div>
               </div>
 
@@ -182,13 +235,26 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
-                    alt={t.services?.repairs?.title || "Reparos Elétricos"}
+                    alt="Pequenos Reparos Elétricos"
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.repairs?.title || "Pequenos Reparos Elétricos"}</h4>
-                  <p className="text-white/90">{t.services?.repairs?.description || "Reparos elétricos menores, troca de tomadas, interruptores e manutenção básica do sistema elétrico residencial."}</p>
+                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Elétricos</h4>
+                  <p className="text-white/90">
+                    Tomada queimada? Interruptor com mau contato? A gente resolve! Fazemos pequenos reparos elétricos 
+                    com segurança, agilidade e aquele capricho que você já conhece.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Troca de tomadas e interruptores</li>
+                      <li>✔ Solução de curtos e fios soltos</li>
+                      <li>✔ Instalação de dimmers e sensores</li>
+                      <li>✔ Ajustes em pontos de luz</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
+                  </div>
                 </div>
               </div>
 
