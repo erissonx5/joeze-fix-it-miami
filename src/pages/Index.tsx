@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -93,13 +94,13 @@ const Index = () => {
       {/* Spacer when header is fixed */}
       {isScrolled && <div className="h-[172px] md:h-[156px]"></div>}
 
-      {/* Hero Section - Imagem completa e sem texto */}
+      {/* Hero Section - Imagem centralizada no desktop */}
       <section 
         className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
           backgroundSize: 'contain',
-          backgroundPosition: 'center center',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
