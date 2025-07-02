@@ -5,6 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 import FloatingLanguageSelector from '@/components/FloatingLanguageSelector';
+import ImportantNoticeDialog from '@/components/ImportantNoticeDialog';
 import { useState, useEffect } from 'react';
 
 // WhatsApp SVG Icon Component - Now Green
@@ -69,6 +70,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
+      {/* Important Notice Dialog */}
+      <ImportantNoticeDialog />
+      
       {/* Header */}
       <header className={`bg-[#8cbbc3] shadow-lg transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
