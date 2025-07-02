@@ -155,10 +155,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-center mb-16 text-[#95430c] animate-fade-in">{t.services?.title || "Nossos Serviços"}</h3>
+            <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title || "Nossos Serviços"}</h3>
             
             <div className="space-y-16">
               {/* Foto 1m - TV Installation */}
@@ -171,20 +171,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de TV na Parede ou Painel</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de TV na Parede ou Painel</h4>
+                  <p className="text-white/90">
                     Fixamos sua TV com segurança, precisão e acabamento impecável — seja direto na parede ou em painel. 
                     Utilizamos ferramentas adequadas e nivelamento a laser para garantir alinhamento perfeito.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal para quem busca:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Organização dos fios</li>
                       <li>✔ Estética limpa e moderna</li>
                       <li>✔ Segurança para crianças e pets</li>
                       <li>✔ Aproveitamento de espaço</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Chame quem entende do assunto e faz com capricho!</p>
+                    <p className="font-medium text-white mt-4">Chame quem entende do assunto e faz com capricho!</p>
                   </div>
                 </div>
               </div>
@@ -199,20 +199,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
+                  <p className="text-white/90">
                     Instalamos e reparamos todos os tipos de fechaduras — desde modelos tradicionais até fechaduras 
                     eletrônicas com senha ou biometria. Serviço rápido, discreto e com foco total na sua segurança.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal para quem precisa de:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Instalação de fechadura inteligente</li>
                       <li>✔ Troca por motivo de segurança</li>
                       <li>✔ Reparo em fechaduras danificadas</li>
                       <li>✔ Atualização para controle de acesso moderno</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
                   </div>
                 </div>
               </div>
@@ -227,20 +227,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Triturador de Alimentos</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Triturador de Alimentos</h4>
+                  <p className="text-white/90">
                     Instalamos trituradores de alimentos de forma segura, eficiente e com todos os cuidados necessários 
                     para o bom funcionamento da sua pia. Serviço feito com atenção aos detalhes e seguindo as recomendações do fabricante.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal para quem busca:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Praticidade na rotina da cozinha</li>
                       <li>✔ Fim do mau cheiro na pia</li>
                       <li>✔ Instalação correta sem riscos de vazamentos</li>
                       <li>✔ Funcionamento silencioso e seguro</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
                   </div>
                 </div>
               </div>
@@ -255,20 +255,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
+                  <p className="text-white/90">
                     Deixe sua casa ou escritório com tudo no lugar certo! Fazemos a fixação de quadros, espelhos, prateleiras leves, 
                     esculturas e peças decorativas com alinhamento preciso e acabamento limpo. Tudo fixado com segurança e sem danificar suas paredes.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal para quem valoriza:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal para quem valoriza:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Nivelamento perfeito com laser</li>
                       <li>✔ Fixação segura em drywall, alvenaria ou madeira</li>
                       <li>✔ Harmonia na decoração</li>
                       <li>✔ Instalação sem sujeira nem bagunça</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
                   </div>
                 </div>
               </div>
@@ -283,20 +283,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos Elétricos</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Elétricos</h4>
+                  <p className="text-white/90">
                     Tomada queimada? Interruptor com mau contato? A gente resolve! Fazemos pequenos reparos elétricos 
                     com segurança, agilidade e aquele capricho que você já conhece.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Troca de tomadas e interruptores</li>
                       <li>✔ Solução de curtos e fios soltos</li>
                       <li>✔ Instalação de dimmers e sensores</li>
                       <li>✔ Ajustes em pontos de luz</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
+                    <p className="font-medium text-white mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
                   </div>
                 </div>
               </div>
@@ -311,20 +311,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Ventilador de Teto, Luminárias e Mais</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Ventilador de Teto, Luminárias e Mais</h4>
+                  <p className="text-white/90">
                     Instalamos ventiladores de teto, plafons, lustres e luminárias com segurança, nivelamento e aquele acabamento 
                     limpo que faz toda a diferença. Tudo funcionando certinho, sem barulho, sem balanço e com visual impecável.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Perfeito para quem precisa de:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Perfeito para quem precisa de:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Ventilador firme e bem alinhado</li>
                       <li>✔ Instalação elétrica segura</li>
                       <li>✔ Substituição de luminárias antigas</li>
                       <li>✔ Iluminação bem distribuída no ambiente</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Deixa que a gente sobe na escada por você! 💡🛠</p>
+                    <p className="font-medium text-white mt-4">Deixa que a gente sobe na escada por você! 💡🛠</p>
                   </div>
                 </div>
               </div>
@@ -339,20 +339,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos Hidráulicos (inclusive a querida duchinha!)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Hidráulicos (inclusive a querida duchinha!)</h4>
+                  <p className="text-white/90">
                     Vazamento no chuveiro? Torneira pingando? Quer instalar aquela duchinha no vaso sanitário que brasileiro não vive sem? 
                     Pode deixar com a gente!
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Cuidamos de:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Troca de duchas e chuveiros</li>
                       <li>✔ Instalação de duchinha higiênica</li>
                       <li>✔ Vazamentos e pingos em pias ou tanques</li>
                       <li>✔ Ajustes rápidos em registros e sifões</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Serviço rápido, limpo e bem feito. Mr. Joe & Zé resolve — do jeitinho que você gosta!</p>
+                    <p className="font-medium text-white mt-4">Serviço rápido, limpo e bem feito. Mr. Joe & Zé resolve — do jeitinho que você gosta!</p>
                   </div>
                 </div>
               </div>
@@ -367,20 +367,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Prateleiras, Nichos e Itens de Parede</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Prateleiras, Nichos e Itens de Parede</h4>
+                  <p className="text-white/90">
                     Instalamos prateleiras, nichos, suportes e pequenos armários com segurança e alinhamento perfeito. 
                     Serviço limpo, bem fixado e com acabamento profissional — seja em drywall, madeira ou alvenaria.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal pra quem busca:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal pra quem busca:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Organização com estilo</li>
                       <li>✔ Fixação firme e nivelada</li>
                       <li>✔ Ganho de espaço e funcionalidade</li>
                       <li>✔ Instalação sem bagunça</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Seu espaço do jeitinho que você imaginou — e fixado do jeito certo com Mr. Joe & Zé! 🛠📐</p>
+                    <p className="font-medium text-white mt-4">Seu espaço do jeitinho que você imaginou — e fixado do jeito certo com Mr. Joe & Zé! 🛠📐</p>
                   </div>
                 </div>
               </div>
@@ -395,20 +395,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Cortinas, Persianas e Acessórios de Janela</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Cortinas, Persianas e Acessórios de Janela</h4>
+                  <p className="text-white/90">
                     Instalamos todos os tipos de cortinas e persianas com precisão e acabamento profissional. 
                     Nivelamos e fixamos com segurança, respeitando o tipo de parede e estrutura da janela.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Cortinas de trilho ou varão</li>
                       <li>✔ Persianas rolô, horizontais ou verticais</li>
                       <li>✔ Instalação de suportes e trilhos</li>
                       <li>✔ Fixação em drywall, madeira ou alvenaria</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Visual bonito, nivelado e funcional? Pode chamar Mr. Joe & Zé! 🪟🔧</p>
+                    <p className="font-medium text-white mt-4">Visual bonito, nivelado e funcional? Pode chamar Mr. Joe & Zé! 🪟🔧</p>
                   </div>
                 </div>
               </div>
@@ -423,20 +423,20 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos de Parede e Pintura</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos de Parede e Pintura</h4>
+                  <p className="text-white/90">
                     Fazemos aquele retoque que sua parede precisa: rachaduras, buracos de suporte antigo, manchas de umidade 
                     ou só uma pintura nova pra dar vida ao ambiente. Serviço limpo, bem feito e com acabamento caprichado.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Ideal pra:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Ideal pra:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Fechar buracos e imperfeições</li>
                       <li>✔ Corrigir danos em drywall ou alvenaria</li>
                       <li>✔ Pintura em cômodos ou áreas específicas</li>
                       <li>✔ Preparação antes de mudança ou vistoria</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Paredes lisinhas, pintura uniforme e zero bagunça. Com Mr. Joe & Zé é assim! 🎨🧱</p>
+                    <p className="font-medium text-white mt-4">Paredes lisinhas, pintura uniforme e zero bagunça. Com Mr. Joe & Zé é assim! 🎨🧱</p>
                   </div>
                 </div>
               </div>
@@ -451,19 +451,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Reparos em Portas, Dobradiças e Ajustes de Alinhamento</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Reparos em Portas, Dobradiças e Ajustes de Alinhamento</h4>
+                  <p className="text-white/90">
                     Porta arrastando, fazendo barulho ou fora do prumo? A gente resolve! Realinhamos dobradiças, ajustamos fechaduras e deixamos sua porta funcionando lisinha como deve ser.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Serviço ideal para:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Serviço ideal para:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Alinhamento e nivelamento de portas</li>
                       <li>✔ Substituição ou fixação de dobradiças</li>
                       <li>✔ Portas que não fecham direito</li>
                       <li>✔ Reforço em parafusos soltos ou danificados</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Porta funcionando como nova, sem esforço, sem barulho e com o toque certo do Mr. Joe & Zé! 🚪🔩</p>
+                    <p className="font-medium text-white mt-4">Porta funcionando como nova, sem esforço, sem barulho e com o toque certo do Mr. Joe & Zé! 🚪🔩</p>
                   </div>
                 </div>
               </div>
@@ -478,19 +478,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Número Residencial, Placas e Itens de Fachada</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Número Residencial, Placas e Itens de Fachada</h4>
+                  <p className="text-white/90">
                     Fixamos o número da casa, placas decorativas, sinalizações e outros itens externos com precisão e acabamento profissional — sempre respeitando o estilo da fachada e garantindo durabilidade.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Instalação de números residenciais</li>
                       <li>✔ Placas de sinalização (entrada, private, etc.)</li>
                       <li>✔ Suportes de correspondência ou delivery</li>
                       <li>✔ Fixação nivelada e resistente ao tempo</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">A primeira impressão da sua casa começa na fachada — e com Mr. Joe & Zé, ela fica no capricho! 🏠🔩</p>
+                    <p className="font-medium text-white mt-4">A primeira impressão da sua casa começa na fachada — e com Mr. Joe & Zé, ela fica no capricho! 🏠🔩</p>
                   </div>
                 </div>
               </div>
@@ -505,19 +505,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Caixa de Correio, Suportes Externos e Fixações no Solo</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Caixa de Correio, Suportes Externos e Fixações no Solo</h4>
+                  <p className="text-white/90">
                     Instalamos caixas de correio com base firme, nivelamento e acabamento limpo. Também fixamos outros itens no solo com segurança e durabilidade, seja em concreto, grama ou terra compactada.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Instalação de mailbox com concreto</li>
                       <li>✔ Fixação de postes para cercas leves</li>
                       <li>✔ Suportes de jardim, sinalização ou iluminação solar</li>
                       <li>✔ Reforço de estruturas já existentes</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Tudo reto, bem fixado e pronto pra durar — pode confiar na dupla Mr. Joe & Zé! 📬🧱</p>
+                    <p className="font-medium text-white mt-4">Tudo reto, bem fixado e pronto pra durar — pode confiar na dupla Mr. Joe & Zé! 📬🧱</p>
                   </div>
                 </div>
               </div>
@@ -532,19 +532,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Detectores de Fumaça, Sensores e Dispositivos de Segurança</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Detectores de Fumaça, Sensores e Dispositivos de Segurança</h4>
+                  <p className="text-white/90">
                     Instalamos detectores de fumaça, monóxido de carbono, sensores de presença, alarmes e outros dispositivos de segurança doméstica. Tudo com o posicionamento correto e fixação segura no teto ou parede.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Instalação de smoke detectors e CO detectors</li>
                       <li>✔ Alarmes de segurança e campainhas inteligentes</li>
                       <li>✔ Sensores de movimento e iluminação automática</li>
                       <li>✔ Substituição e manutenção de unidades antigas</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Sua casa mais segura com instalação profissional e zero dor de cabeça. Mr. Joe & Zé cuidam disso pra você! 🔧🛡</p>
+                    <p className="font-medium text-white mt-4">Sua casa mais segura com instalação profissional e zero dor de cabeça. Mr. Joe & Zé cuidam disso pra você! 🔧🛡</p>
                   </div>
                 </div>
               </div>
@@ -559,19 +559,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Limpeza de Calhas (Gutters)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Limpeza de Calhas (Gutters)</h4>
+                  <p className="text-white/90">
                     Fazemos a limpeza completa das calhas e dutos de escoamento da sua casa. Removemos folhas, sujeira e obstruções para evitar infiltrações, danos à estrutura e acúmulo de água.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Benefícios do serviço:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Benefícios do serviço:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Prevenção contra entupimentos e transbordamentos</li>
                       <li>✔ Evita danos ao telhado e infiltrações nas paredes</li>
                       <li>✔ Ideal antes do período de chuvas</li>
                       <li>✔ Serviço limpo, seguro e com descarte adequado dos resíduos</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Sua calha funcionando como deve ser — sem bagunça, sem riscos. Pode chamar Mr. Joe & Zé! 🍂🧤</p>
+                    <p className="font-medium text-white mt-4">Sua calha funcionando como deve ser — sem bagunça, sem riscos. Pode chamar Mr. Joe & Zé! 🍂🧤</p>
                   </div>
                 </div>
               </div>
@@ -586,19 +586,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-[#95430c]">Lavagem de Calçadas com Jato de Alta Pressão (Pressure Washing)</h4>
-                  <p className="text-gray-700">
+                  <h4 className="text-2xl font-bold text-white">Lavagem de Calçadas com Jato de Alta Pressão (Pressure Washing)</h4>
+                  <p className="text-white/90">
                     Sua calçada tá encardida, cheia de limo ou com manchas difíceis? A gente resolve com lavagem de alta pressão! Removemos sujeira pesada, mofo, gordura e até aquelas marcas de pneu que parecem eternas.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-800">Atendemos:</p>
-                    <ul className="space-y-1 text-gray-700">
+                    <p className="font-semibold text-white">Atendemos:</p>
+                    <ul className="space-y-1 text-white/80">
                       <li>✔ Calçadas, varandas e entradas de garagem</li>
                       <li>✔ Pátios, muros e paredes externas</li>
                       <li>✔ Limpeza profunda sem produtos agressivos</li>
                       <li>✔ Equipamento profissional e resultado visível na hora</li>
                     </ul>
-                    <p className="font-medium text-[#95430c] mt-4">Sua área externa como nova — limpa, segura e com visual renovado. Com Mr. Joe & Zé, é pressão e perfeição! 💦🧼</p>
+                    <p className="font-medium text-white mt-4">Sua área externa como nova — limpa, segura e com visual renovado. Com Mr. Joe & Zé, é pressão e perfeição! 💦🧼</p>
                   </div>
                 </div>
               </div>
