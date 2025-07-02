@@ -14,7 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ImportantNoticeDialog = () => {
   const [open, setOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
 
   useEffect(() => {
     // Show popup after 2 seconds of page load
@@ -72,8 +72,7 @@ const ImportantNoticeDialog = () => {
     }
   };
 
-  // Fix the TypeScript error by accessing the language properly
-  const currentLanguage = t.language || 'pt';
+  // Use currentLanguage from useLanguage hook
   const currentNotice = notice[currentLanguage as keyof typeof notice] || notice.pt;
 
   return (
