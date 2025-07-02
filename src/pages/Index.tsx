@@ -93,35 +93,19 @@ const Index = () => {
       {/* Spacer when header is fixed */}
       {isScrolled && <div className="h-[172px] md:h-[156px]"></div>}
 
-      {/* Hero Section - Uma imagem única e organizada */}
+      {/* Hero Section - Imagem completa e sem texto */}
       <section 
-        className="relative py-20 text-white overflow-hidden min-h-[500px] md:min-h-[600px] flex items-center justify-center"
+        className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
-          backgroundSize: 'cover',
+          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
+          backgroundSize: 'contain',
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-                {t.hero?.title || "Serviços de Handyman Profissionais"}
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-md">
-                {t.hero?.subtitle || "Qualidade, confiança e experiência em Miami-Dade e Broward County"}
-              </p>
-              <Button 
-                onClick={openWhatsApp}
-                size="lg"
-                className="bg-[#25D366] hover:bg-[#1da851] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-              >
-                <WhatsAppIcon className="h-6 w-6 mr-3" />
-                {t.hero?.cta || "Solicite seu Orçamento"}
-              </Button>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            {/* Seção vazia - apenas imagem de fundo */}
           </div>
         </div>
       </section>
