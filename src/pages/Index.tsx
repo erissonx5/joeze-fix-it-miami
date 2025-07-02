@@ -154,6 +154,297 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Section */}
+      <section className="py-20" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-4xl font-bold text-center mb-16 text-[#95430c] animate-fade-in">{t.services?.title || "Nossos Serviços"}</h3>
+            
+            <div className="space-y-16">
+              {/* Foto 1m - TV Installation */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
+                    alt="Instalação de TV na Parede"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de TV na Parede ou Painel</h4>
+                  <p className="text-gray-700">
+                    Fixamos sua TV com segurança, precisão e acabamento impecável — seja direto na parede ou em painel. 
+                    Utilizamos ferramentas adequadas e nivelamento a laser para garantir alinhamento perfeito.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Organização dos fios</li>
+                      <li>✔ Estética limpa e moderna</li>
+                      <li>✔ Segurança para crianças e pets</li>
+                      <li>✔ Aproveitamento de espaço</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Chame quem entende do assunto e faz com capricho!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 2m - Door Locks */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
+                    alt="Instalação e Reparo de Fechaduras"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
+                  <p className="text-gray-700">
+                    Instalamos e reparamos todos os tipos de fechaduras — desde modelos tradicionais até fechaduras 
+                    eletrônicas com senha ou biometria. Serviço rápido, discreto e com foco total na sua segurança.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal para quem precisa de:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Instalação de fechadura inteligente</li>
+                      <li>✔ Troca por motivo de segurança</li>
+                      <li>✔ Reparo em fechaduras danificadas</li>
+                      <li>✔ Atualização para controle de acesso moderno</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 3m - Food Disposer */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
+                    alt="Instalação de Triturador de Alimentos"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Triturador de Alimentos</h4>
+                  <p className="text-gray-700">
+                    Instalamos trituradores de alimentos de forma segura, eficiente e com todos os cuidados necessários 
+                    para o bom funcionamento da sua pia. Serviço feito com atenção aos detalhes e seguindo as recomendações do fabricante.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal para quem busca:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Praticidade na rotina da cozinha</li>
+                      <li>✔ Fim do mau cheiro na pia</li>
+                      <li>✔ Instalação correta sem riscos de vazamentos</li>
+                      <li>✔ Funcionamento silencioso e seguro</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 4m - Picture Hanging */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
+                    alt="Fixação de Quadros e Decoração"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
+                  <p className="text-gray-700">
+                    Deixe sua casa ou escritório com tudo no lugar certo! Fazemos a fixação de quadros, espelhos, prateleiras leves, 
+                    esculturas e peças decorativas com alinhamento preciso e acabamento limpo. Tudo fixado com segurança e sem danificar suas paredes.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal para quem valoriza:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Nivelamento perfeito com laser</li>
+                      <li>✔ Fixação segura em drywall, alvenaria ou madeira</li>
+                      <li>✔ Harmonia na decoração</li>
+                      <li>✔ Instalação sem sujeira nem bagunça</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 5m - Electrical Repairs */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
+                    alt="Pequenos Reparos Elétricos"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos Elétricos</h4>
+                  <p className="text-gray-700">
+                    Tomada queimada? Interruptor com mau contato? A gente resolve! Fazemos pequenos reparos elétricos 
+                    com segurança, agilidade e aquele capricho que você já conhece.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Troca de tomadas e interruptores</li>
+                      <li>✔ Solução de curtos e fios soltos</li>
+                      <li>✔ Instalação de dimmers e sensores</li>
+                      <li>✔ Ajustes em pontos de luz</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 6m - Ceiling Fan Installation */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/17e20262-a7c4-4674-9869-aa599595bd1f.png" 
+                    alt="Instalação de Ventilador de Teto"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Ventilador de Teto, Luminárias e Mais</h4>
+                  <p className="text-gray-700">
+                    Instalamos ventiladores de teto, plafons, lustres e luminárias com segurança, nivelamento e aquele acabamento 
+                    limpo que faz toda a diferença. Tudo funcionando certinho, sem barulho, sem balanço e com visual impecável.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Perfeito para quem precisa de:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Ventilador firme e bem alinhado</li>
+                      <li>✔ Instalação elétrica segura</li>
+                      <li>✔ Substituição de luminárias antigas</li>
+                      <li>✔ Iluminação bem distribuída no ambiente</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Deixa que a gente sobe na escada por você! 💡🛠</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 7m - Plumbing Repairs */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/8dfc4109-a3bb-4b25-a21e-6a98bbacaaaa.png" 
+                    alt="Pequenos Reparos Hidráulicos"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos Hidráulicos (inclusive a querida duchinha!)</h4>
+                  <p className="text-gray-700">
+                    Vazamento no chuveiro? Torneira pingando? Quer instalar aquela duchinha no vaso sanitário que brasileiro não vive sem? 
+                    Pode deixar com a gente!
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Cuidamos de:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Troca de duchas e chuveiros</li>
+                      <li>✔ Instalação de duchinha higiênica</li>
+                      <li>✔ Vazamentos e pingos em pias ou tanques</li>
+                      <li>✔ Ajustes rápidos em registros e sifões</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Serviço rápido, limpo e bem feito. Mr. Joe & Zé resolve — do jeitinho que você gosta!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 8m - Shelves Installation */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/cd1a6d6c-9428-4d53-9251-d39814956814.png" 
+                    alt="Instalação de Prateleiras"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Prateleiras, Nichos e Itens de Parede</h4>
+                  <p className="text-gray-700">
+                    Instalamos prateleiras, nichos, suportes e pequenos armários com segurança e alinhamento perfeito. 
+                    Serviço limpo, bem fixado e com acabamento profissional — seja em drywall, madeira ou alvenaria.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal pra quem busca:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Organização com estilo</li>
+                      <li>✔ Fixação firme e nivelada</li>
+                      <li>✔ Ganho de espaço e funcionalidade</li>
+                      <li>✔ Instalação sem bagunça</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Seu espaço do jeitinho que você imaginou — e fixado do jeito certo com Mr. Joe & Zé! 🛠📐</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 9m - Curtains Installation */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/c178f191-bc1a-4458-82d8-fda327c94522.png" 
+                    alt="Instalação de Cortinas"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Cortinas, Persianas e Acessórios de Janela</h4>
+                  <p className="text-gray-700">
+                    Instalamos todos os tipos de cortinas e persianas com precisão e acabamento profissional. 
+                    Nivelamos e fixamos com segurança, respeitando o tipo de parede e estrutura da janela.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Cortinas de trilho ou varão</li>
+                      <li>✔ Persianas rolô, horizontais ou verticais</li>
+                      <li>✔ Instalação de suportes e trilhos</li>
+                      <li>✔ Fixação em drywall, madeira ou alvenaria</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Visual bonito, nivelado e funcional? Pode chamar Mr. Joe & Zé! 🪟🔧</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 10m - Wall Repairs and Painting */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/f8159c24-eccd-4242-be65-bad0e47a7e84.png" 
+                    alt="Pequenos Reparos de Parede"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Pequenos Reparos de Parede e Pintura</h4>
+                  <p className="text-gray-700">
+                    Fazemos aquele retoque que sua parede precisa: rachaduras, buracos de suporte antigo, manchas de umidade 
+                    ou só uma pintura nova pra dar vida ao ambiente. Serviço limpo, bem feito e com acabamento caprichado.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Ideal pra:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Fechar buracos e imperfeições</li>
+                      <li>✔ Corrigir danos em drywall ou alvenaria</li>
+                      <li>✔ Pintura em cômodos ou áreas específicas</li>
+                      <li>✔ Preparação antes de mudança ou vistoria</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Paredes lisinhas, pintura uniforme e zero bagunça. Com Mr. Joe & Zé é assim! 🎨🧱</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section - Only 3 comments with initials */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
