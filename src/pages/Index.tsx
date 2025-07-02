@@ -111,6 +111,23 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Segunda Imagem Hero - Airbnb */}
+      <section 
+        className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/5c3d0cc6-3e12-4463-a620-b02611e4163d.png')`,
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            {/* Seção vazia - apenas imagem de fundo */}
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
