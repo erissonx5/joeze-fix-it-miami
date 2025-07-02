@@ -440,6 +440,168 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Foto 11m - Door Repairs */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/414c64ad-9cc0-45bd-9961-a21ee20d7c63.png" 
+                    alt="Reparos em Portas"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Reparos em Portas, Dobradiças e Ajustes de Alinhamento</h4>
+                  <p className="text-gray-700">
+                    Porta arrastando, fazendo barulho ou fora do prumo? A gente resolve! Realinhamos dobradiças, ajustamos fechaduras e deixamos sua porta funcionando lisinha como deve ser.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Serviço ideal para:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Alinhamento e nivelamento de portas</li>
+                      <li>✔ Substituição ou fixação de dobradiças</li>
+                      <li>✔ Portas que não fecham direito</li>
+                      <li>✔ Reforço em parafusos soltos ou danificados</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Porta funcionando como nova, sem esforço, sem barulho e com o toque certo do Mr. Joe & Zé! 🚪🔩</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 12m - House Numbers */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/959fb1fd-674c-4ddd-a395-bf6d5ab4766f.png" 
+                    alt="Instalação de Número Residencial"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Número Residencial, Placas e Itens de Fachada</h4>
+                  <p className="text-gray-700">
+                    Fixamos o número da casa, placas decorativas, sinalizações e outros itens externos com precisão e acabamento profissional — sempre respeitando o estilo da fachada e garantindo durabilidade.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Instalação de números residenciais</li>
+                      <li>✔ Placas de sinalização (entrada, private, etc.)</li>
+                      <li>✔ Suportes de correspondência ou delivery</li>
+                      <li>✔ Fixação nivelada e resistente ao tempo</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">A primeira impressão da sua casa começa na fachada — e com Mr. Joe & Zé, ela fica no capricho! 🏠🔩</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 13m - Mailbox Installation */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/d37cac64-4de4-43be-bc47-e1aed44d0749.png" 
+                    alt="Instalação de Caixa de Correio"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Caixa de Correio, Suportes Externos e Fixações no Solo</h4>
+                  <p className="text-gray-700">
+                    Instalamos caixas de correio com base firme, nivelamento e acabamento limpo. Também fixamos outros itens no solo com segurança e durabilidade, seja em concreto, grama ou terra compactada.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Instalação de mailbox com concreto</li>
+                      <li>✔ Fixação de postes para cercas leves</li>
+                      <li>✔ Suportes de jardim, sinalização ou iluminação solar</li>
+                      <li>✔ Reforço de estruturas já existentes</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Tudo reto, bem fixado e pronto pra durar — pode confiar na dupla Mr. Joe & Zé! 📬🧱</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 14m - Safety Devices */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/55b236dd-dd0e-4c37-8552-0da5e06c60e5.png" 
+                    alt="Instalação de Detectores de Fumaça"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Instalação de Detectores de Fumaça, Sensores e Dispositivos de Segurança</h4>
+                  <p className="text-gray-700">
+                    Instalamos detectores de fumaça, monóxido de carbono, sensores de presença, alarmes e outros dispositivos de segurança doméstica. Tudo com o posicionamento correto e fixação segura no teto ou parede.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Instalação de smoke detectors e CO detectors</li>
+                      <li>✔ Alarmes de segurança e campainhas inteligentes</li>
+                      <li>✔ Sensores de movimento e iluminação automática</li>
+                      <li>✔ Substituição e manutenção de unidades antigas</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Sua casa mais segura com instalação profissional e zero dor de cabeça. Mr. Joe & Zé cuidam disso pra você! 🔧🛡</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 15m - Gutter Cleaning */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/11826f76-fa7d-4411-91bf-7a6dec1746a8.png" 
+                    alt="Limpeza de Calhas"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Limpeza de Calhas (Gutters)</h4>
+                  <p className="text-gray-700">
+                    Fazemos a limpeza completa das calhas e dutos de escoamento da sua casa. Removemos folhas, sujeira e obstruções para evitar infiltrações, danos à estrutura e acúmulo de água.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Benefícios do serviço:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Prevenção contra entupimentos e transbordamentos</li>
+                      <li>✔ Evita danos ao telhado e infiltrações nas paredes</li>
+                      <li>✔ Ideal antes do período de chuvas</li>
+                      <li>✔ Serviço limpo, seguro e com descarte adequado dos resíduos</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Sua calha funcionando como deve ser — sem bagunça, sem riscos. Pode chamar Mr. Joe & Zé! 🍂🧤</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Foto 16m - Pressure Washing */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/1dcff3c4-6126-4109-89f6-c8509077ec91.png" 
+                    alt="Lavagem com Jato de Alta Pressão"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-[#95430c]">Lavagem de Calçadas com Jato de Alta Pressão (Pressure Washing)</h4>
+                  <p className="text-gray-700">
+                    Sua calçada tá encardida, cheia de limo ou com manchas difíceis? A gente resolve com lavagem de alta pressão! Removemos sujeira pesada, mofo, gordura e até aquelas marcas de pneu que parecem eternas.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-gray-800">Atendemos:</p>
+                    <ul className="space-y-1 text-gray-700">
+                      <li>✔ Calçadas, varandas e entradas de garagem</li>
+                      <li>✔ Pátios, muros e paredes externas</li>
+                      <li>✔ Limpeza profunda sem produtos agressivos</li>
+                      <li>✔ Equipamento profissional e resultado visível na hora</li>
+                    </ul>
+                    <p className="font-medium text-[#95430c] mt-4">Sua área externa como nova — limpa, segura e com visual renovado. Com Mr. Joe & Zé, é pressão e perfeição! 💦🧼</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
