@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -70,14 +71,14 @@ const Index = () => {
   return (
     <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
       {/* Header */}
-      <header className={`bg-[#8cbbc3] shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
+      <header className={`bg-[#8cbbc3] shadow-lg transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-start h-24">
-            {/* Left-aligned Logo */}
+          <div className="flex items-center justify-start h-28">
+            {/* Left-aligned Logo - Increased size */}
             <div 
-              className="w-[450px] h-20 md:w-[500px] md:h-22 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[550px] h-24 md:w-[600px] md:h-26 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -91,13 +92,13 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[108px]"></div>}
+      {isScrolled && <div className="h-[124px]"></div>}
 
-      {/* Hero Section */}
+      {/* Hero Section with new image */}
       <section 
         className="relative py-20 text-white overflow-hidden bg-contain bg-center bg-no-repeat min-h-[500px] flex items-center"
         style={{
-          background: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/234561c0-771c-4702-a7a2-ddafe172368f.png')`,
+          background: `linear-gradient(rgba(140, 187, 195, 0.3), rgba(149, 67, 12, 0.3)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
