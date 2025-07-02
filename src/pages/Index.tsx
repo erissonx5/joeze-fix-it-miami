@@ -74,10 +74,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-start h-28">
-            {/* Left-aligned Logo - Larger size */}
+          <div className="flex items-center justify-start h-24">
+            {/* Left-aligned Logo */}
             <div 
-              className="w-[550px] h-24 md:w-[650px] md:h-28 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="w-[450px] h-20 md:w-[500px] md:h-22 transform hover:scale-110 transition-transform duration-300 cursor-pointer"
               onClick={handleLogoClick}
             >
               <img 
@@ -91,7 +91,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[124px]"></div>}
+      {isScrolled && <div className="h-[108px]"></div>}
 
       {/* Hero Section */}
       <section 
@@ -112,189 +112,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gutter Cleaning Section - Text left, Image right */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-8 animate-fade-in order-1">
-                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8">Limpeza de Calhas</h3>
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Na Mr. Joe & Zé, cuidamos da limpeza das suas calhas para evitar entupimentos, infiltrações e danos à sua casa.
-                  Com ferramentas certas e atenção aos detalhes, removemos folhas, sujeira e tudo que atrapalha o fluxo da água.
-                </p>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Serviço seguro e rápido</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Equipe experiente e cuidadosa</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Atendimento com hora marcada</span>
-                  </div>
-                </div>
-                
-                <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mt-10">
-                  <p className="text-2xl font-semibold text-white text-center">
-                    Chame a Mr. Joe & Zé e mantenha suas calhas limpas o ano todo
-                  </p>
-                </div>
-              </div>
-              
-              <div className="animate-fade-in animation-delay-300 order-2">
-                <div className="max-w-2xl mx-auto lg:max-w-none">
-                  <img 
-                    src="/lovable-uploads/cab8cc46-6838-40e3-a443-bcd9e64c5858.png" 
-                    alt="Limpeza de Calhas - Mr. Joe & Zé"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Electrical Services Section - Image left, Text right */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-1 animate-fade-in">
-                <div className="max-w-2xl mx-auto lg:max-w-none">
-                  <img 
-                    src="/lovable-uploads/b3f178d0-5e61-46eb-b629-bc67565836d6.png" 
-                    alt="Serviços Elétricos - Mr. Joe & Zé"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-                  />
-                </div>
-              </div>
-              
-              <div className="order-2 space-y-8 animate-fade-in animation-delay-300">
-                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8">Serviços Elétricos</h3>
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Vai instalar um ventilador de teto, trocar luminária ou fazer aquele ajuste elétrico que tá pendente faz tempo? A Mr. Joe & Zé faz isso pra você — com segurança, cuidado e capricho no acabamento.
-                </p>
-                
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Seja pra deixar sua casa mais fresca ou pra melhorar a iluminação, pode contar com a gente pra resolver do jeito certo.
-                </p>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Instalação de ventiladores e luminárias</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Troca de tomadas e interruptores</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Ajustes elétricos e serviços rápidos</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Trabalho limpo, funcional e com atenção aos detalhes</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* General Services Section - Text left, Image right */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="space-y-8 animate-fade-in order-1">
-                <div className="flex items-center space-x-4 mb-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Wrench className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-4xl lg:text-5xl font-bold text-white">Mr. Joe & Zé – Deixa que a gente resolve!</h3>
-                </div>
-                
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Tá precisando instalar prateleiras ou arrumar aquela torneira que não para de pingar?
-                  A Mr. Joe & Zé cuida disso pra você — com cuidado, precisão e sem enrolação.
-                </p>
-                
-                <p className="text-xl text-white/90 leading-relaxed">
-                  Seja para dar um toque novo na sala ou fazer aquele conserto no banheiro, pode contar com a gente.
-                </p>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Prateleiras alinhadas e seguras</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Torneiras ajustadas e funcionando direitinho</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="w-8 h-8 bg-gradient-to-br from-[#95430c] to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" />
-                    </div>
-                    <span className="text-white/90 text-xl">Serviço limpo, rápido e bem feito</span>
-                  </div>
-                </div>
-                
-                <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mt-10">
-                  <p className="text-2xl font-semibold text-white text-center">
-                    Mr. Joe & Zé – Simples, prático e resolvido.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="animate-fade-in animation-delay-300 order-2">
-                <div className="max-w-2xl mx-auto lg:max-w-none">
-                  <img 
-                    src="/lovable-uploads/7d32791e-976c-49c4-886a-14063006cbac.png" 
-                    alt="Mr. Joe & Zé - Serviços Gerais"
-                    className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section - Removed WhatsApp button */}
+      {/* About Section */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
