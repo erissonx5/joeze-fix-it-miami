@@ -68,9 +68,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden" style={{ background: 'linear-gradient(180deg, #8cbbc3 0%, #95430c 50%, #8cbbc3 100%)' }}>
+    <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
       {/* Header */}
-      <header className={`bg-gradient-to-r from-[#8cbbc3] to-[#95430c] shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
+      <header className={`bg-[#8cbbc3] shadow-lg border-b-4 border-gray-100 transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-3">
@@ -113,7 +113,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
@@ -155,7 +155,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
+      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title || "Nossos Serviços"}</h3>
@@ -673,7 +673,7 @@ const Index = () => {
       <FloatingLanguageSelector />
 
       {/* Footer - Logo removed */}
-      <footer className="bg-gradient-to-b from-[#95430c] via-gray-900 to-black text-white py-16">
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             {/* Title Section - Logo removed */}
