@@ -633,14 +633,6 @@ const Index = () => {
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            {/* Title Section */}
-            <div className="flex flex-col items-center justify-center space-y-6 animate-fade-in">
-              <div className="text-center">
-                <h3 className="text-3xl md:text-4xl font-bold">{t.footer?.title || "Mr. Joe & Zé – SOLUTIONS A2 CORP."}</h3>
-                <p className="text-xl md:text-2xl text-[#95430c]">{t.footer?.subtitle || "Seu parceiro em soluções residenciais"}</p>
-              </div>
-            </div>
-            
             {/* Pre-Instagram Text */}
             <div className="animate-fade-in animation-delay-100">
               <p className="text-xl md:text-2xl text-white/90 font-medium">
