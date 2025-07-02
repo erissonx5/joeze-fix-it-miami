@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -106,9 +105,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#8cbbc3]/10 to-transparent animate-pulse"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto space-y-12">
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight animate-fade-in animation-delay-200">
-              <span className="bg-gradient-to-r from-[#95430c] to-orange-600 bg-clip-text text-transparent animate-pulse">Mr. Joe & Zé Handyman Services</span>
-            </h2>
+            {/* Title removed as requested */}
           </div>
         </div>
       </section>
