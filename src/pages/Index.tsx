@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -132,448 +131,389 @@ const Index = () => {
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title || "Nossos Serviços"}</h3>
+            <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
-              {/* Foto 1m - TV Installation */}
+              {/* TV Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
-                    alt="Instalação de TV na Parede ou Painel"
+                    alt={t.services.tvInstallation.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de TV na Parede ou Painel</h4>
-                  <p className="text-white/90">
-                    Fixamos sua TV com segurança, precisão e acabamento impecável — seja direto na parede ou em painel. 
-                    Utilizamos ferramentas adequadas e nivelamento a laser para garantir alinhamento perfeito.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.tvInstallation.title}</h4>
+                  <p className="text-white/90">{t.services.tvInstallation.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <p className="font-semibold text-white">{t.services.tvInstallation.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Organização dos fios</li>
-                      <li>✔ Estética limpa e moderna</li>
-                      <li>✔ Segurança para crianças e pets</li>
-                      <li>✔ Aproveitamento de espaço</li>
+                      {t.services.tvInstallation.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Chame quem entende do assunto e faz com capricho!</p>
+                    <p className="font-medium text-white mt-4">{t.services.tvInstallation.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 2m - Smart Lock */}
+              {/* Smart Lock */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
-                    alt="Instalação e Reparo de Fechaduras"
+                    alt={t.services.smartLock.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação e Reparo de Fechaduras (Convencionais ou Eletrônicas)</h4>
-                  <p className="text-white/90">
-                    Instalamos e reparamos todos os tipos de fechaduras — desde modelos tradicionais até fechaduras 
-                    eletrônicas com senha ou biometria. Serviço rápido, discreto e com foco total na sua segurança.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.smartLock.title}</h4>
+                  <p className="text-white/90">{t.services.smartLock.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
+                    <p className="font-semibold text-white">{t.services.smartLock.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Instalação de fechadura inteligente</li>
-                      <li>✔ Troca por motivo de segurança</li>
-                      <li>✔ Reparo em fechaduras danificadas</li>
-                      <li>✔ Atualização para controle de acesso moderno</li>
+                      {t.services.smartLock.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Confiança, cuidado e experiência — pode deixar com o Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">{t.services.smartLock.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 3m - Food Disposal Installation */}
+              {/* Food Disposal Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
-                    alt="Instalação de Triturador de Alimentos"
+                    alt={t.services.foodDisposal.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Triturador de Alimentos</h4>
-                  <p className="text-white/90">
-                    Instalamos trituradores de alimentos de forma segura, eficiente e com todos os cuidados necessários 
-                    para o bom funcionamento da sua pia. Serviço feito com atenção aos detalhes e seguindo as recomendações do fabricante.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.foodDisposal.title}</h4>
+                  <p className="text-white/90">{t.services.foodDisposal.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem busca:</p>
+                    <p className="font-semibold text-white">{t.services.foodDisposal.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Praticidade na rotina da cozinha</li>
-                      <li>✔ Fim do mau cheiro na pia</li>
-                      <li>✔ Instalação correta sem riscos de vazamentos</li>
-                      <li>✔ Funcionamento silencioso e seguro</li>
+                      {t.services.foodDisposal.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Seu triturador instalado com qualidade é com Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">{t.services.foodDisposal.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 4m - Home Installations */}
+              {/* Decoration */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
-                    alt="Fixação de Quadros, Espelhos, Esculturas e Decoração"
+                    alt={t.services.decoration.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Fixação de Quadros, Espelhos, Esculturas e Decoração</h4>
-                  <p className="text-white/90">
-                    Deixe sua casa ou escritório com tudo no lugar certo! Fazemos a fixação de quadros, espelhos, 
-                    prateleiras leves, esculturas e peças decorativas com alinhamento preciso e acabamento limpo. 
-                    Tudo fixado com segurança e sem danificar suas paredes.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.decoration.title}</h4>
+                  <p className="text-white/90">{t.services.decoration.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem valoriza:</p>
+                    <p className="font-semibold text-white">{t.services.decoration.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Nivelamento perfeito com laser</li>
-                      <li>✔ Fixação segura em drywall, alvenaria ou madeira</li>
-                      <li>✔ Harmonia na decoração</li>
-                      <li>✔ Instalação sem sujeira nem bagunça</li>
+                      {t.services.decoration.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Capricho nos detalhes é com o Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">{t.services.decoration.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 5m - Electrical Repairs */}
+              {/* Electrical Repairs */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
-                    alt="Pequenos Reparos Elétricos"
+                    alt={t.services.electrical.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Elétricos</h4>
-                  <p className="text-white/90">
-                    Tomada queimada? Interruptor com mau contato? A gente resolve! Fazemos pequenos reparos elétricos 
-                    com segurança, agilidade e aquele capricho que você já conhece.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.electrical.title}</h4>
+                  <p className="text-white/90">{t.services.electrical.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.electrical.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Troca de tomadas e interruptores</li>
-                      <li>✔ Solução de curtos e fios soltos</li>
-                      <li>✔ Instalação de dimmers e sensores</li>
-                      <li>✔ Ajustes em pontos de luz</li>
+                      {t.services.electrical.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Serviço feito do jeito certo, sem enrolação. É com a dupla que resolve!</p>
+                    <p className="font-medium text-white mt-4">{t.services.electrical.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 6m - Ceiling Fan Installation */}
+              {/* Ceiling Fan Installation */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/17e20262-a7c4-4674-9869-aa599595bd1f.png" 
-                    alt="Instalação de Ventilador de Teto"
+                    alt={t.services.ceilingFan.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Ventilador de Teto, Luminárias e Mais</h4>
-                  <p className="text-white/90">
-                    Instalamos ventiladores de teto, plafons, lustres e luminárias com segurança, nivelamento e aquele acabamento 
-                    limpo que faz toda a diferença. Tudo funcionando certinho, sem barulho, sem balanço e com visual impecável.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.ceilingFan.title}</h4>
+                  <p className="text-white/90">{t.services.ceilingFan.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Perfeito para quem precisa de:</p>
+                    <p className="font-semibold text-white">{t.services.ceilingFan.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Ventilador firme e bem alinhado</li>
-                      <li>✔ Instalação elétrica segura</li>
-                      <li>✔ Substituição de luminárias antigas</li>
-                      <li>✔ Iluminação bem distribuída no ambiente</li>
+                      {t.services.ceilingFan.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Deixa que a gente sobe na escada por você! 💡🛠</p>
+                    <p className="font-medium text-white mt-4">{t.services.ceilingFan.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 7m - Plumbing Repairs */}
+              {/* Plumbing Repairs */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/8dfc4109-a3bb-4b25-a21e-6a98bbacaaaa.png" 
-                    alt="Pequenos Reparos Hidráulicos"
+                    alt={t.services.plumbing.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos Hidráulicos (inclusive a querida duchinha!)</h4>
-                  <p className="text-white/90">
-                    Vazamento no chuveiro? Torneira pingando? Quer instalar aquela duchinha no vaso sanitário que brasileiro não vive sem? 
-                    Pode deixar com a gente!
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.plumbing.title}</h4>
+                  <p className="text-white/90">{t.services.plumbing.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <p className="font-semibold text-white">{t.services.plumbing.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Troca de duchas e chuveiros</li>
-                      <li>✔ Instalação de duchinha higiênica</li>
-                      <li>✔ Vazamentos e pingos em pias ou tanques</li>
-                      <li>✔ Ajustes rápidos em registros e sifões</li>
+                      {t.services.plumbing.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Serviço rápido, limpo e bem feito. Mr. Joe & Zé resolve — do jeitinho que você gosta!</p>
+                    <p className="font-medium text-white mt-4">{t.services.plumbing.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 8m - Shelves Installation */}
+              {/* Shelves Installation */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/cd1a6d6c-9428-4d53-9251-d39814956814.png" 
-                    alt="Instalação de Prateleiras"
+                    alt={t.services.shelves.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Prateleiras, Nichos e Itens de Parede</h4>
-                  <p className="text-white/90">
-                    Instalamos prateleiras, nichos, suportes e pequenos armários com segurança e alinhamento perfeito. 
-                    Serviço limpo, bem fixado e com acabamento profissional — seja em drywall, madeira ou alvenaria.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.shelves.title}</h4>
+                  <p className="text-white/90">{t.services.shelves.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal pra quem busca:</p>
+                    <p className="font-semibold text-white">{t.services.shelves.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Organização com estilo</li>
-                      <li>✔ Fixação firme e nivelada</li>
-                      <li>✔ Ganho de espaço e funcionalidade</li>
-                      <li>✔ Instalação sem bagunça</li>
+                      {t.services.shelves.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Seu espaço do jeitinho que você imaginou — e fixado do jeito certo com Mr. Joe & Zé! 🛠📐</p>
+                    <p className="font-medium text-white mt-4">{t.services.shelves.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 9m - Curtains Installation */}
+              {/* Curtains Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/c178f191-bc1a-4458-82d8-fda327c94522.png" 
-                    alt="Instalação de Cortinas"
+                    alt={t.services.curtains.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Cortinas, Persianas e Acessórios de Janela</h4>
-                  <p className="text-white/90">
-                    Instalamos todos os tipos de cortinas e persianas com precisão e acabamento profissional. 
-                    Nivelamos e fixamos com segurança, respeitando o tipo de parede e estrutura da janela.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.curtains.title}</h4>
+                  <p className="text-white/90">{t.services.curtains.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.curtains.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Cortinas de trilho ou varão</li>
-                      <li>✔ Persianas rolô, horizontais ou verticais</li>
-                      <li>✔ Instalação de suportes e trilhos</li>
-                      <li>✔ Fixação em drywall, madeira ou alvenaria</li>
+                      {t.services.curtains.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Visual bonito, nivelado e funcional? Pode chamar Mr. Joe & Zé! 🪟🔧</p>
+                    <p className="font-medium text-white mt-4">{t.services.curtains.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 10m - Wall Repairs and Painting */}
+              {/* Wall Repairs and Painting */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f8159c24-eccd-4242-be65-bad0e47a7e84.png" 
-                    alt="Pequenos Reparos de Parede"
+                    alt={t.services.wallRepairs.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Pequenos Reparos de Parede e Pintura</h4>
-                  <p className="text-white/90">
-                    Fazemos aquele retoque que sua parede precisa: rachaduras, buracos de suporte antigo, manchas de umidade 
-                    ou só uma pintura nova pra dar vida ao ambiente. Serviço limpo, bem feito e com acabamento caprichado.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.wallRepairs.title}</h4>
+                  <p className="text-white/90">{t.services.wallRepairs.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal pra:</p>
+                    <p className="font-semibold text-white">{t.services.wallRepairs.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Fechar buracos e imperfeições</li>
-                      <li>✔ Corrigir danos em drywall ou alvenaria</li>
-                      <li>✔ Pintura em cômodos ou áreas específicas</li>
-                      <li>✔ Preparação antes de mudança ou vistoria</li>
+                      {t.services.wallRepairs.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Paredes lisinhas, pintura uniforme e zero bagunça. Com Mr. Joe & Zé é assim! 🎨🧱</p>
+                    <p className="font-medium text-white mt-4">{t.services.wallRepairs.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 11m - Door Repairs */}
+              {/* Door Repairs */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/414c64ad-9cc0-45bd-9961-a21ee20d7c63.png" 
-                    alt="Reparos em Portas"
+                    alt={t.services.doorRepairs.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Reparos em Portas, Dobradiças e Ajustes de Alinhamento</h4>
-                  <p className="text-white/90">
-                    Porta arrastando, fazendo barulho ou fora do prumo? A gente resolve! Realinhamos dobradiças, ajustamos fechaduras e deixamos sua porta funcionando lisinha como deve ser.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.doorRepairs.title}</h4>
+                  <p className="text-white/90">{t.services.doorRepairs.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Serviço ideal para:</p>
+                    <p className="font-semibold text-white">{t.services.doorRepairs.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Alinhamento e nivelamento de portas</li>
-                      <li>✔ Substituição ou fixação de dobradiças</li>
-                      <li>✔ Portas que não fecham direito</li>
-                      <li>✔ Reforço em parafusos soltos ou danificados</li>
+                      {t.services.doorRepairs.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Porta funcionando como nova, sem esforço, sem barulho e com o toque certo do Mr. Joe & Zé! 🚪🔩</p>
+                    <p className="font-medium text-white mt-4">{t.services.doorRepairs.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 12m - House Numbers */}
+              {/* House Numbers */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/959fb1fd-674c-4ddd-a395-bf6d5ab4766f.png" 
-                    alt="Instalação de Número Residencial"
+                    alt={t.services.houseNumbers.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Número Residencial, Placas e Itens de Fachada</h4>
-                  <p className="text-white/90">
-                    Fixamos o número da casa, placas decorativas, sinalizações e outros itens externos com precisão e acabamento profissional — sempre respeitando o estilo da fachada e garantindo durabilidade.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.houseNumbers.title}</h4>
+                  <p className="text-white/90">{t.services.houseNumbers.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.houseNumbers.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Instalação de números residenciais</li>
-                      <li>✔ Placas de sinalização (entrada, private, etc.)</li>
-                      <li>✔ Suportes de correspondência ou delivery</li>
-                      <li>✔ Fixação nivelada e resistente ao tempo</li>
+                      {t.services.houseNumbers.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">A primeira impressão da sua casa começa na fachada — e com Mr. Joe & Zé, ela fica no capricho! 🏠🔩</p>
+                    <p className="font-medium text-white mt-4">{t.services.houseNumbers.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 13m - Mailbox Installation */}
+              {/* Mailbox Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/d37cac64-4de4-43be-bc47-e1aed44d0749.png" 
-                    alt="Instalação de Caixa de Correio"
+                    alt={t.services.mailbox.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Caixa de Correio, Suportes Externos e Fixações no Solo</h4>
-                  <p className="text-white/90">
-                    Instalamos caixas de correio com base firme, nivelamento e acabamento limpo. Também fixamos outros itens no solo com segurança e durabilidade, seja em concreto, grama ou terra compactada.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.mailbox.title}</h4>
+                  <p className="text-white/90">{t.services.mailbox.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.mailbox.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Instalação de mailbox com concreto</li>
-                      <li>✔ Fixação de postes para cercas leves</li>
-                      <li>✔ Suportes de jardim, sinalização ou iluminação solar</li>
-                      <li>✔ Reforço de estruturas já existentes</li>
+                      {t.services.mailbox.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Tudo reto, bem fixado e pronto pra durar — pode confiar na dupla Mr. Joe & Zé! 📬🧱</p>
+                    <p className="font-medium text-white mt-4">{t.services.mailbox.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 14m - Safety Devices */}
+              {/* Safety Devices */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/55b236dd-dd0e-4c37-8552-0da5e06c60e5.png" 
-                    alt="Instalação de Detectores de Fumaça"
+                    alt={t.services.safetyDevices.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Detectores de Fumaça, Sensores e Dispositivos de Segurança</h4>
-                  <p className="text-white/90">
-                    Instalamos detectores de fumaça, monóxido de carbono, sensores de presença, alarmes e outros dispositivos de segurança doméstica. Tudo com o posicionamento correto e fixação segura no teto ou parede.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.safetyDevices.title}</h4>
+                  <p className="text-white/90">{t.services.safetyDevices.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.safetyDevices.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Instalação de smoke detectors e CO detectors</li>
-                      <li>✔ Alarmes de segurança e campainhas inteligentes</li>
-                      <li>✔ Sensores de movimento e iluminação automática</li>
-                      <li>✔ Substituição e manutenção de unidades antigas</li>
+                      {t.services.safetyDevices.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Sua casa mais segura com instalação profissional e zero dor de cabeça. Mr. Joe & Zé cuidam disso pra você! 🔧🛡</p>
+                    <p className="font-medium text-white mt-4">{t.services.safetyDevices.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 15m - Gutter Cleaning */}
+              {/* Gutter Cleaning */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/11826f76-fa7d-4411-91bf-7a6dec1746a8.png" 
-                    alt="Limpeza de Calhas"
+                    alt={t.services.gutterCleaning.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Limpeza de Calhas (Gutters)</h4>
-                  <p className="text-white/90">
-                    Fazemos a limpeza completa das calhas e dutos de escoamento da sua casa. Removemos folhas, sujeira e obstruções para evitar infiltrações, danos à estrutura e acúmulo de água.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.gutterCleaning.title}</h4>
+                  <p className="text-white/90">{t.services.gutterCleaning.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Benefícios do serviço:</p>
+                    <p className="font-semibold text-white">{t.services.gutterCleaning.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Prevenção contra entupimentos e transbordamentos</li>
-                      <li>✔ Evita danos ao telhado e infiltrações nas paredes</li>
-                      <li>✔ Ideal antes do período de chuvas</li>
-                      <li>✔ Serviço limpo, seguro e com descarte adequado dos resíduos</li>
+                      {t.services.gutterCleaning.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Sua calha funcionando como deve ser — sem bagunça, sem riscos. Pode chamar Mr. Joe & Zé! 🍂🧤</p>
+                    <p className="font-medium text-white mt-4">{t.services.gutterCleaning.benefits.footer}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Foto 16m - Pressure Washing */}
+              {/* Pressure Washing */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1dcff3c4-6126-4109-89f6-c8509077ec91.png" 
-                    alt="Lavagem com Jato de Alta Pressão"
+                    alt={t.services.pressureWashing.title}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Lavagem de Calçadas com Jato de Alta Pressão (Pressure Washing)</h4>
-                  <p className="text-white/90">
-                    Sua calçada tá encardida, cheia de limo ou com manchas difíceis? A gente resolve com lavagem de alta pressão! Removemos sujeira pesada, mofo, gordura e até aquelas marcas de pneu que parecem eternas.
-                  </p>
+                  <h4 className="text-2xl font-bold text-white">{t.services.pressureWashing.title}</h4>
+                  <p className="text-white/90">{t.services.pressureWashing.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Atendemos:</p>
+                    <p className="font-semibold text-white">{t.services.pressureWashing.benefits.title}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Calçadas, varandas e entradas de garagem</li>
-                      <li>✔ Pátios, muros e paredes externas</li>
-                      <li>✔ Limpeza profunda sem produtos agressivos</li>
-                      <li>✔ Equipamento profissional e resultado visível na hora</li>
+                      {t.services.pressureWashing.benefits.items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">Sua área externa como nova — limpa, segura e com visual renovado. Com Mr. Joe & Zé, é pressão e perfeição! 💦🧼</p>
+                    <p className="font-medium text-white mt-4">{t.services.pressureWashing.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -699,6 +639,13 @@ const Index = () => {
                 <h3 className="text-3xl md:text-4xl font-bold">{t.footer?.title || "Mr. Joe & Zé – SOLUTIONS A2 CORP."}</h3>
                 <p className="text-xl md:text-2xl text-[#95430c]">{t.footer?.subtitle || "Seu parceiro em soluções residenciais"}</p>
               </div>
+            </div>
+            
+            {/* Pre-Instagram Text */}
+            <div className="animate-fade-in animation-delay-100">
+              <p className="text-xl md:text-2xl text-white/90 font-medium">
+                {t.footer?.preInstagram}
+              </p>
             </div>
             
             {/* Buttons Section - Only Instagram now */}
