@@ -75,9 +75,9 @@ const Index = () => {
       }`}>
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-center h-40 md:h-36">
-            {/* Logo aumentada */}
+            {/* Logo aumentada significativamente */}
             <div 
-              className="w-[400px] h-28 sm:w-[500px] sm:h-32 md:w-[700px] md:h-40 lg:w-[800px] lg:h-44 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[500px] h-36 sm:w-[650px] sm:h-44 md:w-[900px] md:h-52 lg:w-[1100px] lg:h-60 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -122,13 +122,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
-                    alt={t.services.tvInstallation.title}
+                    alt={t.services?.tvInstallation?.title || "Instalação de TV"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.tvInstallation.title}</h4>
-                  <p className="text-white/90">{t.services.tvInstallation.description}</p>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.tvInstallation?.title || "Instalação de TV na Parede"}</h4>
+                  <p className="text-white/90">{t.services?.tvInstallation?.description || "Instalação segura e profissional de TVs na parede com nivelamento perfeito e organização de cabos."}</p>
                 </div>
               </div>
 
@@ -137,13 +137,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
-                    alt={t.services.smartLock.title}
+                    alt={t.services?.smartLock?.title || "Fechadura Inteligente"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.smartLock.title}</h4>
-                  <p className="text-white/90">{t.services.smartLock.description}</p>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.smartLock?.title || "Instalação de Fechadura Inteligente"}</h4>
+                  <p className="text-white/90">{t.services?.smartLock?.description || "Instalação e configuração de fechaduras inteligentes para maior segurança e conveniência do seu lar."}</p>
                 </div>
               </div>
 
@@ -152,13 +152,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
-                    alt={t.services.furnitureAssembly.title}
+                    alt={t.services?.furnitureAssembly?.title || "Montagem de Móveis"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.furnitureAssembly.title}</h4>
-                  <p className="text-white/90">{t.services.furnitureAssembly.description}</p>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.furnitureAssembly?.title || "Montagem de Móveis IKEA e Outros"}</h4>
+                  <p className="text-white/90">{t.services?.furnitureAssembly?.description || "Montagem profissional de móveis IKEA, Wayfair e outras marcas com garantia de qualidade e acabamento perfeito."}</p>
                 </div>
               </div>
 
@@ -167,13 +167,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
-                    alt={t.services.homeInstallations.title}
+                    alt={t.services?.homeInstallations?.title || "Instalações Residenciais"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.homeInstallations.title}</h4>
-                  <p className="text-white/90">{t.services.homeInstallations.description}</p>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.homeInstallations?.title || "Instalações Residenciais Diversas"}</h4>
+                  <p className="text-white/90">{t.services?.homeInstallations?.description || "Instalação de espelhos, quadros, suportes e diversos itens residenciais com precisão e cuidado."}</p>
                 </div>
               </div>
 
@@ -182,13 +182,13 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
-                    alt={t.services.repairs.title}
+                    alt={t.services?.repairs?.title || "Reparos Elétricos"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.repairs.title}</h4>
-                  <p className="text-white/90">{t.services.repairs.description}</p>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.repairs?.title || "Pequenos Reparos Elétricos"}</h4>
+                  <p className="text-white/90">{t.services?.repairs?.description || "Reparos elétricos menores, troca de tomadas, interruptores e manutenção básica do sistema elétrico residencial."}</p>
                 </div>
               </div>
 
@@ -502,7 +502,7 @@ const Index = () => {
       <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about.title}</h3>
+            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about?.title || "Sobre Nós"}</h3>
             <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
               <div className="space-y-8 animate-fade-in animation-delay-300">
                 <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
@@ -510,8 +510,8 @@ const Index = () => {
                     <CheckCircle className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.quality.title}</h4>
-                    <p className="text-white/80">{t.about.quality.description}</p>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.quality?.title || "Qualidade Garantida"}</h4>
+                    <p className="text-white/80">{t.about?.quality?.description || "Trabalho profissional com garantia de qualidade em todos os serviços prestados."}</p>
                   </div>
                 </div>
                 
@@ -520,8 +520,8 @@ const Index = () => {
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.fastService.title}</h4>
-                    <p className="text-white/80">{t.about.fastService.description}</p>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.fastService?.title || "Atendimento Rápido"}</h4>
+                    <p className="text-white/80">{t.about?.fastService?.description || "Serviço ágil e pontual, respeitando sempre o prazo combinado com o cliente."}</p>
                   </div>
                 </div>
                 
@@ -530,8 +530,8 @@ const Index = () => {
                     <Users className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about.expertTeam.title}</h4>
-                    <p className="text-white/80">{t.about.expertTeam.description}</p>
+                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.expertTeam?.title || "Equipe Especializada"}</h4>
+                    <p className="text-white/80">{t.about?.expertTeam?.description || "Profissionais experientes e qualificados para atender todas as suas necessidades."}</p>
                   </div>
                 </div>
               </div>
@@ -544,9 +544,9 @@ const Index = () => {
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-4xl font-bold text-white mb-6">{t.testimonials.title}</h3>
+            <h3 className="text-4xl font-bold text-white mb-6">{t.testimonials?.title || "Depoimentos"}</h3>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              {t.testimonials.subtitle}
+              {t.testimonials?.subtitle || "Veja o que nossos clientes dizem sobre nosso trabalho"}
             </p>
           </div>
           
@@ -583,15 +583,15 @@ const Index = () => {
       <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <h3 className="text-4xl font-bold text-white animate-fade-in">{t.coverage.title}</h3>
+            <h3 className="text-4xl font-bold text-white animate-fade-in">{t.coverage?.title || "Área de Atendimento"}</h3>
             <div className="flex items-center justify-center mb-8 animate-fade-in animation-delay-300">
               <div className="w-20 h-20 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center shadow-xl">
                 <MapPin className="h-10 w-10 text-white animate-bounce" />
               </div>
             </div>
-            <h4 className="text-2xl font-semibold text-white animate-fade-in animation-delay-500">{t.coverage.subtitle}</h4>
+            <h4 className="text-2xl font-semibold text-white animate-fade-in animation-delay-500">{t.coverage?.subtitle || "Miami-Dade e Broward County"}</h4>
             <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
-              {t.coverage.description}
+              {t.coverage?.description || "Atendemos toda a região metropolitana de Miami com qualidade e pontualidade."}
             </p>
           </div>
         </div>
@@ -605,15 +605,15 @@ const Index = () => {
       
       <FloatingLanguageSelector />
 
-      {/* Footer - WhatsApp button removed */}
+      {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             {/* Title Section */}
             <div className="flex flex-col items-center justify-center space-y-6 animate-fade-in">
               <div className="text-center">
-                <h3 className="text-3xl md:text-4xl font-bold">{t.header.title}</h3>
-                <p className="text-xl md:text-2xl text-[#95430c]">{t.footer.subtitle}</p>
+                <h3 className="text-3xl md:text-4xl font-bold">{t.header?.title || "Mr. Joe & Zé Handyman"}</h3>
+                <p className="text-xl md:text-2xl text-[#95430c]">{t.footer?.subtitle || "Seu parceiro em soluções residenciais"}</p>
               </div>
             </div>
             
@@ -632,10 +632,10 @@ const Index = () => {
             {/* Footer Info */}
             <div className="border-t border-gray-700 pt-8 space-y-4 animate-fade-in animation-delay-500">
               <p className="text-gray-400 text-center">
-                {t.footer.copyright}
+                {t.footer?.copyright || "© 2024 Mr. Joe & Zé Handyman. Todos os direitos reservados."}
               </p>
               <p className="text-gray-400 text-center">
-                {t.footer.coverage}
+                {t.footer?.coverage || "Atendemos Miami-Dade e Broward County"}
               </p>
             </div>
           </div>
