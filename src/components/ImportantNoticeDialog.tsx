@@ -14,7 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ImportantNoticeDialog = () => {
   const [open, setOpen] = useState(false);
-  const { currentLanguage } = useLanguage();
+  const { language } = useLanguage();
 
   useEffect(() => {
     // Show popup after 2 seconds of page load
@@ -73,54 +73,54 @@ const ImportantNoticeDialog = () => {
   };
 
   // Use language from useLanguage hook
-  const currentNotice = notice[currentLanguage as keyof typeof notice] || notice.pt;
+  const currentNotice = notice[language as keyof typeof notice] || notice.pt;
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
-      <AlertDialogContent className="max-w-lg mx-4 bg-gradient-to-br from-white to-orange-50 border-2 border-orange-200 shadow-2xl">
-        <AlertDialogHeader className="text-center space-y-4">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
-            <AlertTriangle className="h-8 w-8 text-white" />
+      <AlertDialogContent className="max-w-[95vw] sm:max-w-lg mx-2 sm:mx-4 bg-gradient-to-br from-white to-orange-50 border-2 border-orange-200 shadow-2xl">
+        <AlertDialogHeader className="text-center space-y-3 sm:space-y-4">
+          <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+            <AlertTriangle className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
           </div>
           
-          <AlertDialogTitle className="text-xl font-bold text-gray-900 leading-tight px-2">
+          <AlertDialogTitle className="text-lg sm:text-xl font-bold text-gray-900 leading-tight px-1 sm:px-2">
             {currentNotice.title}
           </AlertDialogTitle>
         </AlertDialogHeader>
         
-        <AlertDialogDescription className="space-y-4 text-gray-700 leading-relaxed">
-          <p className="text-center text-base">
+        <AlertDialogDescription className="space-y-3 sm:space-y-4 text-gray-700 leading-relaxed">
+          <p className="text-center text-sm sm:text-base px-1">
             {currentNotice.description}
           </p>
           
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-3">
-            <p className="font-semibold text-blue-900 flex items-center gap-2">
-              <Wrench className="h-4 w-4" />
-              {currentNotice.priority}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 space-y-2 sm:space-y-3">
+            <p className="font-semibold text-blue-900 flex items-center gap-2 text-sm sm:text-base">
+              <Wrench className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+              <span>{currentNotice.priority}</span>
             </p>
-            <div className="space-y-2 text-blue-800">
+            <div className="space-y-1 sm:space-y-2 text-blue-800 text-sm sm:text-base">
               <p>{currentNotice.emergencies}</p>
               <p>{currentNotice.airbnb}</p>
             </div>
           </div>
           
-          <div className="text-center space-y-2 pt-2">
-            <p className="font-medium text-gray-800">
+          <div className="text-center space-y-2 pt-1 sm:pt-2">
+            <p className="font-medium text-gray-800 text-sm sm:text-base">
               {currentNotice.thanks}
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-sm sm:text-base px-1">
               {currentNotice.working}
             </p>
-            <p className="font-semibold text-orange-600 pt-2">
+            <p className="font-semibold text-orange-600 pt-1 sm:pt-2 text-sm sm:text-base">
               {currentNotice.team}
             </p>
           </div>
         </AlertDialogDescription>
         
-        <AlertDialogFooter className="flex justify-center pt-4">
+        <AlertDialogFooter className="flex justify-center pt-3 sm:pt-4">
           <AlertDialogAction 
             onClick={() => setOpen(false)}
-            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-8 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-6 sm:px-8 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
           >
             {currentNotice.understood}
           </AlertDialogAction>
