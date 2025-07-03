@@ -14,7 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ImportantNoticeDialog = () => {
   const [open, setOpen] = useState(false);
-  const { t, currentLanguage } = useLanguage();
+  const { t, language } = useLanguage();
 
   useEffect(() => {
     // Show popup after 2 seconds of page load
@@ -27,7 +27,7 @@ const ImportantNoticeDialog = () => {
 
   const notice = {
     pt: {
-      title: "AVISO IMPORTANTE ⚠",
+      title: "AVISO IMPORTANTE",
       description: "Devido à alta demanda de serviços, informamos que o atendimento está sendo realizado por ordem de chegada.",
       priority: "🔧 Damos prioridade imediata para:",
       emergencies: "• Situações de emergência (como vazamentos ou riscos elétricos)",
@@ -38,7 +38,7 @@ const ImportantNoticeDialog = () => {
       understood: "Entendi"
     },
     en: {
-      title: "IMPORTANT NOTICE ⚠",
+      title: "IMPORTANT NOTICE",
       description: "Due to high demand for services, we inform that service is being provided on a first-come, first-served basis.",
       priority: "🔧 We give immediate priority to:",
       emergencies: "• Emergency situations (such as leaks or electrical risks)",
@@ -49,7 +49,7 @@ const ImportantNoticeDialog = () => {
       understood: "Understood"
     },
     es: {
-      title: "AVISO IMPORTANTE ⚠",
+      title: "AVISO IMPORTANTE",
       description: "Debido a la alta demanda de servicios, informamos que la atención se está realizando por orden de llegada.",
       priority: "🔧 Damos prioridad inmediata a:",
       emergencies: "• Situaciones de emergencia (como fugas o riesgos eléctricos)",
@@ -60,7 +60,7 @@ const ImportantNoticeDialog = () => {
       understood: "Entendido"
     },
     fr: {
-      title: "AVIS IMPORTANT ⚠",
+      title: "AVIS IMPORTANT",
       description: "En raison de la forte demande de services, nous informons que le service est fourni selon le principe du premier arrivé, premier servi.",
       priority: "🔧 Nous donnons la priorité immédiate à:",
       emergencies: "• Situations d'urgence (comme les fuites ou les risques électriques)",
@@ -72,8 +72,8 @@ const ImportantNoticeDialog = () => {
     }
   };
 
-  // Use currentLanguage from useLanguage hook
-  const currentNotice = notice[currentLanguage as keyof typeof notice] || notice.pt;
+  // Use language from useLanguage hook
+  const currentNotice = notice[language as keyof typeof notice] || notice.pt;
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>

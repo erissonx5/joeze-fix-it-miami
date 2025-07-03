@@ -131,39 +131,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Security Camera Installation Section */}
-      <section className="py-16" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
-              <div className="lg:w-1/2">
-                <img 
-                  src="/lovable-uploads/50c94986-939d-40b4-a295-d72bf635ffbc.png" 
-                  alt="Instalação de Câmeras de Segurança"
-                  className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
-              <div className="lg:w-1/2 space-y-4">
-                <h4 className="text-2xl font-bold text-white">Instalação de Câmeras de Segurança (Residenciais ou Comerciais)</h4>
-                <p className="text-white/90">
-                  Proteja sua casa ou comércio com a instalação profissional de câmeras de segurança. Trabalhamos com sistemas modernos — com acesso por aplicativo, visão noturna e gravação em nuvem. Serviço limpo, discreto e funcional.
-                </p>
-                <div className="space-y-2">
-                  <p className="font-semibold text-white">Ideal para quem precisa de:</p>
-                  <ul className="space-y-1 text-white/80">
-                    <li>✔ Monitoramento remoto em tempo real</li>
-                    <li>✔ Instalar câmeras com gravação por movimento</li>
-                    <li>✔ Aumentar a segurança de áreas externas e internas</li>
-                    <li>✔ Ter mais controle e tranquilidade no dia a dia</li>
-                  </ul>
-                  <p className="font-medium text-white mt-4">Segurança e tecnologia na medida certa — com Mr. Joe & Zé!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
         <div className="container mx-auto px-4">
@@ -219,8 +186,35 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Food Disposal Installation */}
+              {/* Security Camera Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/50c94986-939d-40b4-a295-d72bf635ffbc.png" 
+                    alt="Instalação de Câmeras de Segurança"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-white">Instalação de Câmeras de Segurança (Residenciais ou Comerciais)</h4>
+                  <p className="text-white/90">
+                    Proteja sua casa ou comércio com a instalação profissional de câmeras de segurança. Trabalhamos com sistemas modernos — com acesso por aplicativo, visão noturna e gravação em nuvem. Serviço limpo, discreto e funcional.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Monitoramento remoto em tempo real</li>
+                      <li>✔ Instalar câmeras com gravação por movimento</li>
+                      <li>✔ Aumentar a segurança de áreas externas e internas</li>
+                      <li>✔ Ter mais controle e tranquilidade no dia a dia</li>
+                    </ul>
+                    <p className="font-medium text-white mt-4">Segurança e tecnologia na medida certa — com Mr. Joe & Zé!</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Food Disposal Installation */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/6a28c4d8-c515-44a8-9734-50222c0cc991.png" 
@@ -244,7 +238,7 @@ const Index = () => {
               </div>
 
               {/* Decoration */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/a5d6d146-656b-459a-a38b-6019ec7c2556.png" 
@@ -268,7 +262,7 @@ const Index = () => {
               </div>
 
               {/* Electrical Repairs */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f19000d5-5bfc-4d03-8916-db223b89f76a.png" 
@@ -292,7 +286,7 @@ const Index = () => {
               </div>
 
               {/* Ceiling Fan Installation */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/17e20262-a7c4-4674-9869-aa599595bd1f.png" 
@@ -316,7 +310,7 @@ const Index = () => {
               </div>
 
               {/* Plumbing Repairs */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/8dfc4109-a3bb-4b25-a21e-6a98bbacaaaa.png" 
@@ -340,7 +334,7 @@ const Index = () => {
               </div>
 
               {/* Shelves Installation */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/cd1a6d6c-9428-4d53-9251-d39814956814.png" 
@@ -364,7 +358,7 @@ const Index = () => {
               </div>
 
               {/* Curtains Installation */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/c178f191-bc1a-4458-82d8-fda327c94522.png" 
@@ -388,7 +382,7 @@ const Index = () => {
               </div>
 
               {/* Wall Repairs and Painting */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/f8159c24-eccd-4242-be65-bad0e47a7e84.png" 
@@ -412,7 +406,7 @@ const Index = () => {
               </div>
 
               {/* Door Repairs */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/414c64ad-9cc0-45bd-9961-a21ee20d7c63.png" 
@@ -436,7 +430,7 @@ const Index = () => {
               </div>
 
               {/* House Numbers */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-400">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/959fb1fd-674c-4ddd-a395-bf6d5ab4766f.png" 
@@ -460,7 +454,7 @@ const Index = () => {
               </div>
 
               {/* Mailbox Installation */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-500">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/d37cac64-4de4-43be-bc47-e1aed44d0749.png" 
@@ -484,7 +478,7 @@ const Index = () => {
               </div>
 
               {/* Safety Devices */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-600">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/55b236dd-dd0e-4c37-8552-0da5e06c60e5.png" 
@@ -508,7 +502,7 @@ const Index = () => {
               </div>
 
               {/* Gutter Cleaning */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-700">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/11826f76-fa7d-4411-91bf-7a6dec1746a8.png" 
@@ -532,7 +526,7 @@ const Index = () => {
               </div>
 
               {/* Pressure Washing */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-800">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1dcff3c4-6126-4109-89f6-c8509077ec91.png" 
