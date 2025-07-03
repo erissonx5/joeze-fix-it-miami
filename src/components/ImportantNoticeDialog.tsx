@@ -14,7 +14,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const ImportantNoticeDialog = () => {
   const [open, setOpen] = useState(false);
-  const { t, language } = useLanguage();
+  const { currentLanguage } = useLanguage();
 
   useEffect(() => {
     // Show popup after 2 seconds of page load
@@ -27,53 +27,53 @@ const ImportantNoticeDialog = () => {
 
   const notice = {
     pt: {
-      title: "AVISO IMPORTANTE",
-      description: "Devido à alta demanda de serviços, informamos que o atendimento está sendo realizado por ordem de chegada.",
-      priority: "🔧 Damos prioridade imediata para:",
-      emergencies: "• Situações de emergência (como vazamentos ou riscos elétricos)",
-      airbnb: "• Airbnbs com hóspedes atualmente na unidade",
-      thanks: "Agradecemos pela compreensão e confiança de sempre.",
-      working: "Estamos trabalhando com capricho pra atender cada cliente da melhor forma possível!",
+      title: "⚠ AVISO IMPORTANTE",
+      description: "Devido à alta demanda, os atendimentos estão sendo realizados por ordem em que foram recebidos.",
+      priority: "🚨 Damos prioridade apenas para:",
+      emergencies: "• Emergências",
+      airbnb: "• Airbnbs com hospedagem em andamento",
+      thanks: "Agradecemos pela confiança!",
+      working: "Estamos trabalhando com capricho para atender todos da melhor forma.",
       team: "— Equipe Mr. Joe & Zé Handyman",
       understood: "Entendi"
     },
     en: {
-      title: "IMPORTANT NOTICE",
-      description: "Due to high demand for services, we inform that service is being provided on a first-come, first-served basis.",
-      priority: "🔧 We give immediate priority to:",
-      emergencies: "• Emergency situations (such as leaks or electrical risks)",
-      airbnb: "• Airbnbs with guests currently in the unit",
-      thanks: "We appreciate your understanding and trust as always.",
-      working: "We are working with care to serve each client in the best possible way!",
+      title: "⚠ IMPORTANT NOTICE",
+      description: "Due to high demand, services are being provided in the order they were received.",
+      priority: "🚨 We give priority only to:",
+      emergencies: "• Emergencies",
+      airbnb: "• Airbnbs with ongoing hosting",
+      thanks: "Thank you for your trust!",
+      working: "We are working with care to serve everyone in the best way possible.",
       team: "— Mr. Joe & Zé Handyman Team",
       understood: "Understood"
     },
     es: {
-      title: "AVISO IMPORTANTE",
-      description: "Debido a la alta demanda de servicios, informamos que la atención se está realizando por orden de llegada.",
-      priority: "🔧 Damos prioridad inmediata a:",
-      emergencies: "• Situaciones de emergencia (como fugas o riesgos eléctricos)",
-      airbnb: "• Airbnbs con huéspedes actualmente en la unidad",
-      thanks: "Agradecemos su comprensión y confianza de siempre.",
-      working: "¡Estamos trabajando con esmero para atender a cada cliente de la mejor manera posible!",
+      title: "⚠ AVISO IMPORTANTE",
+      description: "Debido a la alta demanda, las atenciones se están realizando por orden en que fueron recibidas.",
+      priority: "🚨 Damos prioridad solo a:",
+      emergencies: "• Emergencias",
+      airbnb: "• Airbnbs con hospedaje en curso",
+      thanks: "¡Agradecemos la confianza!",
+      working: "Estamos trabajando con esmero para atender a todos de la mejor manera.",
       team: "— Equipo Mr. Joe & Zé Handyman",
       understood: "Entendido"
     },
     fr: {
-      title: "AVIS IMPORTANT",
-      description: "En raison de la forte demande de services, nous informons que le service est fourni selon le principe du premier arrivé, premier servi.",
-      priority: "🔧 Nous donnons la priorité immédiate à:",
-      emergencies: "• Situations d'urgence (comme les fuites ou les risques électriques)",
-      airbnb: "• Airbnbs avec des invités actuellement dans l'unité",
-      thanks: "Nous apprécions votre compréhension et votre confiance comme toujours.",
-      working: "Nous travaillons avec soin pour servir chaque client de la meilleure façon possible!",
+      title: "⚠ AVIS IMPORTANT",
+      description: "En raison de la forte demande, les services sont fournis dans l'ordre où ils ont été reçus.",
+      priority: "🚨 Nous donnons la priorité uniquement à:",
+      emergencies: "• Urgences",
+      airbnb: "• Airbnbs avec hébergement en cours",
+      thanks: "Merci pour votre confiance!",
+      working: "Nous travaillons avec soin pour servir tout le monde de la meilleure façon possible.",
       team: "— Équipe Mr. Joe & Zé Handyman",
       understood: "Compris"
     }
   };
 
   // Use language from useLanguage hook
-  const currentNotice = notice[language as keyof typeof notice] || notice.pt;
+  const currentNotice = notice[currentLanguage as keyof typeof notice] || notice.pt;
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
