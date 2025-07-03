@@ -77,7 +77,7 @@ const ImportantNoticeDialog = () => {
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
-      <AlertDialogContent className="max-w-[95vw] sm:max-w-lg mx-2 sm:mx-4 bg-gradient-to-br from-white to-orange-50 border-2 border-orange-200 shadow-2xl">
+      <AlertDialogContent className="w-[calc(100vw-2rem)] max-w-lg mx-auto bg-gradient-to-br from-white to-orange-50 border-2 border-orange-200 shadow-2xl">
         <AlertDialogHeader className="text-center space-y-3 sm:space-y-4">
           <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
             <AlertTriangle className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
