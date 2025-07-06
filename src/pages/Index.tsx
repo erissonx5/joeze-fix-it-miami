@@ -138,8 +138,8 @@ const Index = () => {
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
-              {/* Professional Laundry Service - NEW SECTION */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+              {/* Professional Laundry Service - Layout alterado: imagem à direita, texto à esquerda */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/d47abdfb-3770-412d-a0c4-ac40584ee276.png" 
