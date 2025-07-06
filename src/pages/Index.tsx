@@ -143,31 +143,31 @@ const Index = () => {
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/d47abdfb-3770-412d-a0c4-ac40584ee276.png" 
-                    alt="Lavagem Profissional para Salões, Spas e Negócios Locais"
+                    alt={t.services?.laundryService?.title || "Lavagem Profissional para Salões, Spas e Negócios Locais"}
                     className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">🧼 Lavagem Profissional para Salões, Spas e Negócios Locais</h4>
+                  <h4 className="text-2xl font-bold text-white">🧼 {t.services?.laundryService?.title || "Lavagem Profissional para Salões, Spas e Negócios Locais"}</h4>
                   <div className="space-y-4 text-white/90">
-                    <p>Tem salão de beleza, clínica estética, barbearia ou spa?</p>
-                    <p>Ainda perde tempo lavando toalhas, lençóis ou roupões?</p>
-                    <p className="font-semibold">Pode deixar com a gente!</p>
-                    <p>A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso.</p>
+                    <p>{t.services?.laundryService?.question1 || "Tem salão de beleza, clínica estética, barbearia ou spa?"}</p>
+                    <p>{t.services?.laundryService?.question2 || "Ainda perde tempo lavando toalhas, lençóis ou roupões?"}</p>
+                    <p className="font-semibold">{t.services?.laundryService?.solution || "Pode deixar com a gente!"}</p>
+                    <p>{t.services?.laundryService?.description || "A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso."}</p>
                   </div>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <p className="font-semibold text-white">{t.services?.laundryService?.weHandleTitle || "Cuidamos de:"}</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Toalhas de salão, clínica ou estética</li>
-                      <li>✔ Roupões, lençóis, fronhas e mantas</li>
-                      <li>✔ Lavagem e dobra com padrão profissional</li>
-                      <li>✔ Produtos de qualidade que cuidam dos tecidos</li>
-                      <li>✔ Entrega pontual direto no seu estabelecimento</li>
+                      <li>{t.services?.laundryService?.item1 || "✔ Toalhas de salão, clínica ou estética"}</li>
+                      <li>{t.services?.laundryService?.item2 || "✔ Roupões, lençóis, fronhas e mantas"}</li>
+                      <li>{t.services?.laundryService?.item3 || "✔ Lavagem e dobra com padrão profissional"}</li>
+                      <li>{t.services?.laundryService?.item4 || "✔ Produtos de qualidade que cuidam dos tecidos"}</li>
+                      <li>{t.services?.laundryService?.item5 || "✔ Entrega pontual direto no seu estabelecimento"}</li>
                     </ul>
                     <div className="mt-4 space-y-2">
-                      <p className="font-medium text-white">🚐 Serviço completo tipo wash and fold.</p>
-                      <p className="text-white/90">Você não se preocupa com nada — é só usar e pronto.</p>
-                      <p className="font-medium text-white">Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!</p>
+                      <p className="font-medium text-white">{t.services?.laundryService?.serviceType || "🚐 Serviço completo tipo wash and fold."}</p>
+                      <p className="text-white/90">{t.services?.laundryService?.convenience || "Você não se preocupa com nada — é só usar e pronto."}</p>
+                      <p className="font-medium text-white">{t.services?.laundryService?.footer || "Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!"}</p>
                     </div>
                   </div>
                 </div>
