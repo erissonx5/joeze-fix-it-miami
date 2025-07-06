@@ -138,6 +138,41 @@ const Index = () => {
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
+              {/* Professional Laundry Service - NEW SECTION */}
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/d47abdfb-3770-412d-a0c4-ac40584ee276.png" 
+                    alt="Lavagem Profissional para Salões, Spas e Negócios Locais"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-white">🧼 Lavagem Profissional para Salões, Spas e Negócios Locais</h4>
+                  <div className="space-y-4 text-white/90">
+                    <p>Tem salão de beleza, clínica estética, barbearia ou spa?</p>
+                    <p>Ainda perde tempo lavando toalhas, lençóis ou roupões?</p>
+                    <p className="font-semibold">Pode deixar com a gente!</p>
+                    <p>A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso.</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Toalhas de salão, clínica ou estética</li>
+                      <li>✔ Roupões, lençóis, fronhas e mantas</li>
+                      <li>✔ Lavagem e dobra com padrão profissional</li>
+                      <li>✔ Produtos de qualidade que cuidam dos tecidos</li>
+                      <li>✔ Entrega pontual direto no seu estabelecimento</li>
+                    </ul>
+                    <div className="mt-4 space-y-2">
+                      <p className="font-medium text-white">🚐 Serviço completo tipo wash and fold.</p>
+                      <p className="text-white/90">Você não se preocupa com nada — é só usar e pronto.</p>
+                      <p className="font-medium text-white">Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* TV Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
