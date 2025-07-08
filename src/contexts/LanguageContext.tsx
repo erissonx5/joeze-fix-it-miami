@@ -13,6 +13,12 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const translations = {
   pt: {
+    importantNotice: {
+      title: "Aviso Importante",
+      subtitle: "Atendemos Miami-Dade e Broward County",
+      description: "Para um atendimento mais rápido, entre em contato pelo WhatsApp clicando no botão flutuante.",
+      button: "Entendi"
+    },
     nav: {
       home: "Início",
       services: "Serviços",
@@ -22,7 +28,8 @@ const translations = {
     hero: {
       title: "Mr. Joe & Zé Handyman Miami",
       subtitle: "Serviços profissionais de reparo e manutenção residencial em Miami",
-      cta: "Entre em Contato"
+      cta: "Entre em Contato",
+      phone: "Olá! Gostaria de solicitar um orçamento para serviços de handyman."
     },
     services: {
       title: "Nossos Serviços",
@@ -44,267 +51,225 @@ const translations = {
         footer: "Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!"
       },
       tvInstallation: {
-        title: "Instalação de TV",
-        description: "Instalação profissional de TVs na parede com suporte incluído",
+        title: "📺 Instalação de TV na Parede",
+        description: "Instalação profissional de TVs na parede com suporte incluído. Deixe sua sala moderna e organizada.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Instalação segura e profissional",
-            "Suporte incluído no serviço",
-            "Organização dos cabos",
-            "Garantia do serviço"
+            "✔ Instalação segura e profissional",
+            "✔ Suporte incluído no serviço",
+            "✔ Organização dos cabos",
+            "✔ Garantia do serviço"
           ],
           footer: "Sua TV instalada do jeito certo!"
         }
       },
       smartLock: {
-        title: "Fechadura Inteligente",
-        description: "Instalação de fechaduras inteligentes para maior segurança",
+        title: "🔐 Fechadura Inteligente",
+        description: "Instalação de fechaduras inteligentes para maior segurança da sua casa ou negócio.",
         benefits: {
           title: "Vantagens:",
           items: [
-            "Acesso por código ou aplicativo",
-            "Maior segurança para sua casa",
-            "Instalação profissional",
-            "Suporte técnico incluído"
+            "✔ Acesso por código ou aplicativo",
+            "✔ Maior segurança para sua casa",
+            "✔ Instalação profissional",
+            "✔ Suporte técnico incluído"
           ],
           footer: "Tecnologia e segurança em suas mãos!"
         }
       },
-      furnitureAssembly: {
-        title: "Montagem de Móveis",
-        description: "Montamos seus móveis de forma rápida e eficiente.",
-        benefits: {
-          title: "Benefícios:",
-          items: [
-            "Montagem rápida e eficiente",
-            "Profissionais qualificados",
-            "Serviço com garantia",
-            "Evite o estresse da montagem"
-          ],
-          footer: "Seus móveis montados sem complicação!"
-        }
-      },
-      electricalRepair: {
-        title: "Reparos Elétricos",
-        description: "Serviços de reparo elétrico para sua casa ou empresa.",
-        benefits: {
-          title: "Benefícios:",
-          items: [
-            "Diagnóstico preciso",
-            "Reparos seguros e eficientes",
-            "Profissionais certificados",
-            "Atendimento rápido"
-          ],
-          footer: "Seus problemas elétricos resolvidos!"
-        }
-      },
-      plumbingRepair: {
-        title: "Reparos Hidráulicos",
-        description: "Serviços de reparo hidráulico para vazamentos e instalações.",
-        benefits: {
-          title: "Benefícios:",
-          items: [
-            "Detecção de vazamentos",
-            "Reparos duráveis",
-            "Instalações seguras",
-            "Orçamento detalhado"
-          ],
-          footer: "Soluções para seus problemas hidráulicos!"
-        }
-      },
       foodDisposal: {
-        title: "Instalação de Triturador de Alimentos",
-        description: "Instalação profissional de trituradores de alimentos para sua cozinha",
+        title: "🗑️ Instalação de Triturador de Alimentos",
+        description: "Instalação profissional de trituradores de alimentos para sua cozinha. Mais praticidade no dia a dia.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Maior praticidade na cozinha",
-            "Redução de resíduos orgânicos",
-            "Instalação segura e profissional",
-            "Manutenção incluída"
+            "✔ Maior praticidade na cozinha",
+            "✔ Redução de resíduos orgânicos",
+            "✔ Instalação segura e profissional",
+            "✔ Manutenção incluída"
           ],
           footer: "Sua cozinha mais prática e limpa!"
         }
       },
       decoration: {
-        title: "Decoração e Organização",
-        description: "Serviços de decoração e organização para deixar sua casa mais bonita",
+        title: "🎨 Decoração e Organização",
+        description: "Serviços de decoração e organização para deixar sua casa mais bonita e funcional.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Ambiente mais organizado",
-            "Decoração personalizada",
-            "Otimização de espaços",
-            "Consultoria profissional"
+            "✔ Ambiente mais organizado",
+            "✔ Decoração personalizada",
+            "✔ Otimização de espaços",
+            "✔ Consultoria profissional"
           ],
           footer: "Sua casa mais bonita e organizada!"
         }
       },
       electrical: {
-        title: "Reparos Elétricos",
-        description: "Serviços completos de reparo e instalação elétrica",
+        title: "⚡ Reparos Elétricos",
+        description: "Serviços completos de reparo e instalação elétrica com segurança e qualidade.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Diagnóstico preciso de problemas",
-            "Reparos seguros e duráveis",
-            "Profissionais certificados",
-            "Atendimento rápido e eficiente"
+            "✔ Diagnóstico preciso de problemas",
+            "✔ Reparos seguros e duráveis",
+            "✔ Profissionais certificados",
+            "✔ Atendimento rápido e eficiente"
           ],
           footer: "Seus problemas elétricos resolvidos com segurança!"
         }
       },
       ceilingFan: {
-        title: "Instalação de Ventilador de Teto",
-        description: "Instalação profissional de ventiladores de teto para maior conforto",
+        title: "💨 Instalação de Ventilador de Teto",
+        description: "Instalação profissional de ventiladores de teto para maior conforto e economia.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Instalação segura e profissional",
-            "Melhora a circulação de ar",
-            "Reduz custos com ar condicionado",
-            "Garantia do serviço"
+            "✔ Instalação segura e profissional",
+            "✔ Melhora a circulação de ar",
+            "✔ Reduz custos com ar condicionado",
+            "✔ Garantia do serviço"
           ],
           footer: "Mais conforto e economia na sua casa!"
         }
       },
       plumbing: {
-        title: "Reparos Hidráulicos",
-        description: "Serviços completos de reparo e instalação hidráulica",
+        title: "🔧 Reparos Hidráulicos",
+        description: "Serviços completos de reparo e instalação hidráulica com materiais de qualidade.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Detecção precisa de vazamentos",
-            "Reparos duráveis e eficientes",
-            "Instalações seguras",
-            "Orçamento detalhado"
+            "✔ Detecção precisa de vazamentos",
+            "✔ Reparos duráveis e eficientes",
+            "✔ Instalações seguras",
+            "✔ Orçamento detalhado"
           ],
           footer: "Soluções completas para seus problemas hidráulicos!"
         }
       },
       shelves: {
-        title: "Instalação de Prateleiras",
-        description: "Instalação de prateleiras para otimizar o espaço da sua casa",
+        title: "📚 Instalação de Prateleiras",
+        description: "Instalação de prateleiras para otimizar o espaço da sua casa com estilo.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Otimização de espaços",
-            "Instalação segura na parede",
-            "Diversos modelos disponíveis",
-            "Organização personalizada"
+            "✔ Otimização de espaços",
+            "✔ Instalação segura na parede",
+            "✔ Diversos modelos disponíveis",
+            "✔ Organização personalizada"
           ],
           footer: "Mais organização e aproveitamento de espaço!"
         }
       },
       curtains: {
-        title: "Instalação de Cortinas",
-        description: "Instalação profissional de cortinas e persianas",
+        title: "🪟 Instalação de Cortinas",
+        description: "Instalação profissional de cortinas e persianas para maior privacidade e elegância.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Instalação precisa e segura",
-            "Melhora a privacidade",
-            "Controle de luminosidade",
-            "Acabamento profissional"
+            "✔ Instalação precisa e segura",
+            "✔ Melhora a privacidade",
+            "✔ Controle de luminosidade",
+            "✔ Acabamento profissional"
           ],
           footer: "Sua casa mais privativa e elegante!"
         }
       },
       wallRepairs: {
-        title: "Reparos de Parede e Pintura",
-        description: "Serviços de reparo e pintura de paredes",
+        title: "🎨 Reparos de Parede e Pintura",
+        description: "Serviços de reparo e pintura de paredes com acabamento profissional.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Reparo de buracos e rachaduras",
-            "Pintura profissional",
-            "Acabamento impecável",
-            "Materiais de qualidade"
+            "✔ Reparo de buracos e rachaduras",
+            "✔ Pintura profissional",
+            "✔ Acabamento impecável",
+            "✔ Materiais de qualidade"
           ],
           footer: "Suas paredes como novas!"
         }
       },
       doorRepairs: {
-        title: "Reparos de Portas",
-        description: "Serviços de reparo e ajuste de portas",
+        title: "🚪 Reparos de Portas",
+        description: "Serviços de reparo e ajuste de portas para perfeito funcionamento.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Ajuste de dobradiças",
-            "Reparo de fechaduras",
-            "Alinhamento de portas",
-            "Instalação de novos trincos"
+            "✔ Ajuste de dobradiças",
+            "✔ Reparo de fechaduras",
+            "✔ Alinhamento de portas",
+            "✔ Instalação de novos trincos"
           ],
           footer: "Suas portas funcionando perfeitamente!"
         }
       },
       houseNumbers: {
-        title: "Instalação de Números Residenciais",
-        description: "Instalação de números e placas de identificação residencial",
+        title: "🏠 Instalação de Números Residenciais",
+        description: "Instalação de números e placas de identificação residencial com estilo.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Fácil identificação da casa",
-            "Instalação segura",
-            "Diversos modelos disponíveis",
-            "Melhora o visual da fachada"
+            "✔ Fácil identificação da casa",
+            "✔ Instalação segura",
+            "✔ Diversos modelos disponíveis",
+            "✔ Melhora o visual da fachada"
           ],
           footer: "Sua casa mais fácil de encontrar!"
         }
       },
       mailbox: {
-        title: "Instalação de Caixa de Correio",
-        description: "Instalação de caixas de correio residenciais e comerciais",
+        title: "📮 Instalação de Caixa de Correio",
+        description: "Instalação de caixas de correio residenciais e comerciais com segurança.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Instalação segura e duradoura",
-            "Diversos modelos disponíveis",
-            "Proteção da correspondência",
-            "Cumprimento das normas postais"
+            "✔ Instalação segura e duradoura",
+            "✔ Diversos modelos disponíveis",
+            "✔ Proteção da correspondência",
+            "✔ Cumprimento das normas postais"
           ],
           footer: "Sua correspondência sempre segura!"
         }
       },
       safetyDevices: {
-        title: "Instalação de Dispositivos de Segurança",
-        description: "Instalação de detectores de fumaça, alarmes e outros dispositivos",
+        title: "🚨 Instalação de Dispositivos de Segurança",
+        description: "Instalação de detectores de fumaça, alarmes e outros dispositivos de proteção.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Maior segurança para família",
-            "Detectores de fumaça e gás",
-            "Instalação profissional",
-            "Testes de funcionamento"
+            "✔ Maior segurança para família",
+            "✔ Detectores de fumaça e gás",
+            "✔ Instalação profissional",
+            "✔ Testes de funcionamento"
           ],
           footer: "Sua família mais protegida!"
         }
       },
       gutterCleaning: {
-        title: "Limpeza de Calhas",
-        description: "Serviços de limpeza e manutenção de calhas e rufos",
+        title: "🏠 Limpeza de Calhas",
+        description: "Serviços de limpeza e manutenção de calhas e rufos para proteção da sua casa.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Prevenção de entupimentos",
-            "Proteção contra infiltrações",
-            "Limpeza completa",
-            "Verificação de vazamentos"
+            "✔ Prevenção de entupimentos",
+            "✔ Proteção contra infiltrações",
+            "✔ Limpeza completa",
+            "✔ Verificação de vazamentos"
           ],
           footer: "Suas calhas sempre limpas e funcionais!"
         }
       },
       pressureWashing: {
-        title: "Lavagem com Pressão",
-        description: "Serviços de lavagem com pressão para áreas externas",
+        title: "💧 Lavagem com Pressão",
+        description: "Serviços de lavagem com pressão para áreas externas e fachadas.",
         benefits: {
           title: "Benefícios:",
           items: [
-            "Limpeza profunda de superfícies",
-            "Remove sujeira e mofo",
-            "Equipamentos profissionais",
-            "Renova a aparência"
+            "✔ Limpeza profunda de superfícies",
+            "✔ Remove sujeira e mofo",
+            "✔ Equipamentos profissionais",
+            "✔ Renova a aparência"
           ],
           footer: "Sua casa com aparência renovada!"
         }
@@ -359,6 +324,12 @@ const translations = {
     }
   },
   en: {
+    importantNotice: {
+      title: "Important Notice",
+      subtitle: "We serve Miami-Dade and Broward County",
+      description: "For faster service, contact us via WhatsApp by clicking the floating button.",
+      button: "Got it"
+    },
     nav: {
       home: "Home",
       services: "Services",
@@ -368,7 +339,8 @@ const translations = {
     hero: {
       title: "Mr. Joe & Zé Handyman Miami",
       subtitle: "Professional home repair and maintenance services in Miami",
-      cta: "Get in Touch"
+      cta: "Get in Touch",
+      phone: "Hello! I would like to request a quote for handyman services."
     },
     services: {
       title: "Our Services",
@@ -390,267 +362,225 @@ const translations = {
         footer: "Mr. Joe & Zé solves — just the way your business needs!"
       },
       tvInstallation: {
-        title: "TV Installation",
-        description: "Professional TV wall mounting with bracket included",
+        title: "📺 TV Wall Installation",
+        description: "Professional TV wall mounting with bracket included. Make your living room modern and organized.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Safe and professional installation",
-            "Bracket included in service",
-            "Cable management",
-            "Service warranty"
+            "✔ Safe and professional installation",
+            "✔ Bracket included in service",
+            "✔ Cable management",
+            "✔ Service warranty"
           ],
           footer: "Your TV installed the right way!"
         }
       },
       smartLock: {
-        title: "Smart Lock",
-        description: "Smart lock installation for enhanced security",
+        title: "🔐 Smart Lock",
+        description: "Smart lock installation for enhanced security of your home or business.",
         benefits: {
           title: "Advantages:",
           items: [
-            "Access by code or app",
-            "Enhanced home security",
-            "Professional installation",
-            "Technical support included"
+            "✔ Access by code or app",
+            "✔ Enhanced home security",
+            "✔ Professional installation",
+            "✔ Technical support included"
           ],
           footer: "Technology and security in your hands!"
         }
       },
-      furnitureAssembly: {
-        title: "Furniture Assembly",
-        description: "We assemble your furniture quickly and efficiently.",
-        benefits: {
-          title: "Benefits:",
-          items: [
-            "Fast and efficient assembly",
-            "Qualified professionals",
-            "Service with warranty",
-            "Avoid the stress of assembly"
-          ],
-          footer: "Your furniture assembled without complication!"
-        }
-      },
-      electricalRepair: {
-        title: "Electrical Repairs",
-        description: "Electrical repair services for your home or business.",
-        benefits: {
-          title: "Benefits:",
-          items: [
-            "Accurate diagnosis",
-            "Safe and efficient repairs",
-            "Certified professionals",
-            "Fast service"
-          ],
-          footer: "Your electrical problems solved!"
-        }
-      },
-      plumbingRepair: {
-        title: "Plumbing Repairs",
-        description: "Plumbing repair services for leaks and installations.",
-        benefits: {
-          title: "Benefits:",
-          items: [
-            "Leak detection",
-            "Durable repairs",
-            "Safe installations",
-            "Detailed budget"
-          ],
-          footer: "Solutions to your plumbing problems!"
-        }
-      },
       foodDisposal: {
-        title: "Food Disposal Installation",
-        description: "Professional food disposal installation for your kitchen",
+        title: "🗑️ Food Disposal Installation",
+        description: "Professional food disposal installation for your kitchen. More convenience in daily life.",
         benefits: {
           title: "Benefits:",
           items: [
-            "More convenience in the kitchen",
-            "Reduction of organic waste",
-            "Safe and professional installation",
-            "Maintenance included"
+            "✔ More convenience in the kitchen",
+            "✔ Reduction of organic waste",
+            "✔ Safe and professional installation",
+            "✔ Maintenance included"
           ],
           footer: "Your kitchen more practical and clean!"
         }
       },
       decoration: {
-        title: "Decoration and Organization",
-        description: "Decoration and organization services to make your home more beautiful",
+        title: "🎨 Decoration and Organization",
+        description: "Decoration and organization services to make your home more beautiful and functional.",
         benefits: {
           title: "Benefits:",
           items: [
-            "More organized environment",
-            "Personalized decoration",
-            "Space optimization",
-            "Professional consulting"
+            "✔ More organized environment",
+            "✔ Personalized decoration",
+            "✔ Space optimization",
+            "✔ Professional consulting"
           ],
           footer: "Your home more beautiful and organized!"
         }
       },
       electrical: {
-        title: "Electrical Repairs",
-        description: "Complete electrical repair and installation services",
+        title: "⚡ Electrical Repairs",
+        description: "Complete electrical repair and installation services with safety and quality.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Accurate problem diagnosis",
-            "Safe and durable repairs",
-            "Certified professionals",
-            "Fast and efficient service"
+            "✔ Accurate problem diagnosis",
+            "✔ Safe and durable repairs",
+            "✔ Certified professionals",
+            "✔ Fast and efficient service"
           ],
           footer: "Your electrical problems solved safely!"
         }
       },
       ceilingFan: {
-        title: "Ceiling Fan Installation",
-        description: "Professional ceiling fan installation for greater comfort",
+        title: "💨 Ceiling Fan Installation",
+        description: "Professional ceiling fan installation for greater comfort and savings.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Safe and professional installation",
-            "Improves air circulation",
-            "Reduces air conditioning costs",
-            "Service warranty"
+            "✔ Safe and professional installation",
+            "✔ Improves air circulation",
+            "✔ Reduces air conditioning costs",
+            "✔ Service warranty"
           ],
           footer: "More comfort and savings in your home!"
         }
       },
       plumbing: {
-        title: "Plumbing Repairs",
-        description: "Complete plumbing repair and installation services",
+        title: "🔧 Plumbing Repairs",
+        description: "Complete plumbing repair and installation services with quality materials.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Accurate leak detection",
-            "Durable and efficient repairs",
-            "Safe installations",
-            "Detailed budget"
+            "✔ Accurate leak detection",
+            "✔ Durable and efficient repairs",
+            "✔ Safe installations",
+            "✔ Detailed budget"
           ],
           footer: "Complete solutions to your plumbing problems!"
         }
       },
       shelves: {
-        title: "Shelves Installation",
-        description: "Shelves installation to optimize your home space",
+        title: "📚 Shelves Installation",
+        description: "Shelves installation to optimize your home space with style.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Space optimization",
-            "Safe wall installation",
-            "Various models available",
-            "Personalized organization"
+            "✔ Space optimization",
+            "✔ Safe wall installation",
+            "✔ Various models available",
+            "✔ Personalized organization"
           ],
           footer: "More organization and space utilization!"
         }
       },
       curtains: {
-        title: "Curtains Installation",
-        description: "Professional curtains and blinds installation",
+        title: "🪟 Curtains Installation",
+        description: "Professional curtains and blinds installation for greater privacy and elegance.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Precise and safe installation",
-            "Improves privacy",
-            "Light control",
-            "Professional finish"
+            "✔ Precise and safe installation",
+            "✔ Improves privacy",
+            "✔ Light control",
+            "✔ Professional finish"
           ],
           footer: "Your home more private and elegant!"
         }
       },
       wallRepairs: {
-        title: "Wall Repairs and Painting",
-        description: "Wall repair and painting services",
+        title: "🎨 Wall Repairs and Painting",
+        description: "Wall repair and painting services with professional finish.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Repair holes and cracks",
-            "Professional painting",
-            "Impeccable finish",
-            "Quality materials"
+            "✔ Repair holes and cracks",
+            "✔ Professional painting",
+            "✔ Impeccable finish",
+            "✔ Quality materials"
           ],
           footer: "Your walls like new!"
         }
       },
       doorRepairs: {
-        title: "Door Repairs",
-        description: "Door repair and adjustment services",
+        title: "🚪 Door Repairs",
+        description: "Door repair and adjustment services for perfect functionality.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Hinge adjustment",
-            "Lock repair",
-            "Door alignment",
-            "New handle installation"
+            "✔ Hinge adjustment",
+            "✔ Lock repair",
+            "✔ Door alignment",
+            "✔ New handle installation"
           ],
           footer: "Your doors working perfectly!"
         }
       },
       houseNumbers: {
-        title: "House Numbers Installation",
-        description: "Installation of house numbers and residential identification plates",
+        title: "🏠 House Numbers Installation",
+        description: "Installation of house numbers and residential identification plates with style.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Easy house identification",
-            "Safe installation",
-            "Various models available",
-            "Improves facade appearance"
+            "✔ Easy house identification",
+            "✔ Safe installation",
+            "✔ Various models available",
+            "✔ Improves facade appearance"
           ],
           footer: "Your house easier to find!"
         }
       },
       mailbox: {
-        title: "Mailbox Installation",
-        description: "Installation of residential and commercial mailboxes",
+        title: "📮 Mailbox Installation",
+        description: "Installation of residential and commercial mailboxes with security.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Safe and durable installation",
-            "Various models available",
-            "Mail protection",
-            "Postal standards compliance"
+            "✔ Safe and durable installation",
+            "✔ Various models available",
+            "✔ Mail protection",
+            "✔ Postal standards compliance"
           ],
           footer: "Your mail always safe!"
         }
       },
       safetyDevices: {
-        title: "Safety Devices Installation",
-        description: "Installation of smoke detectors, alarms and other devices",
+        title: "🚨 Safety Devices Installation",
+        description: "Installation of smoke detectors, alarms and other protection devices.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Greater safety for family",
-            "Smoke and gas detectors",
-            "Professional installation",
-            "Functionality tests"
+            "✔ Greater safety for family",
+            "✔ Smoke and gas detectors",
+            "✔ Professional installation",
+            "✔ Functionality tests"
           ],
           footer: "Your family more protected!"
         }
       },
       gutterCleaning: {
-        title: "Gutter Cleaning",
-        description: "Gutter and downspout cleaning and maintenance services",
+        title: "🏠 Gutter Cleaning",
+        description: "Gutter and downspout cleaning and maintenance services for home protection.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Prevents clogs",
-            "Protection against infiltration",
-            "Complete cleaning",
-            "Leak verification"
+            "✔ Prevents clogs",
+            "✔ Protection against infiltration",
+            "✔ Complete cleaning",
+            "✔ Leak verification"
           ],
           footer: "Your gutters always clean and functional!"
         }
       },
       pressureWashing: {
-        title: "Pressure Washing",
-        description: "Pressure washing services for outdoor areas",
+        title: "💧 Pressure Washing",
+        description: "Pressure washing services for outdoor areas and facades.",
         benefits: {
           title: "Benefits:",
           items: [
-            "Deep surface cleaning",
-            "Removes dirt and mold",
-            "Professional equipment",
-            "Renews appearance"
+            "✔ Deep surface cleaning",
+            "✔ Removes dirt and mold",
+            "✔ Professional equipment",
+            "✔ Renews appearance"
           ],
           footer: "Your home with renewed appearance!"
         }
