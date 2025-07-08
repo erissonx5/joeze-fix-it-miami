@@ -113,6 +113,231 @@ const translations = {
           footer: "Soluções para seus problemas hidráulicos!"
         }
       },
+      foodDisposal: {
+        title: "Instalação de Triturador de Alimentos",
+        description: "Instalação profissional de trituradores de alimentos para sua cozinha",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Maior praticidade na cozinha",
+            "Redução de resíduos orgânicos",
+            "Instalação segura e profissional",
+            "Manutenção incluída"
+          ],
+          footer: "Sua cozinha mais prática e limpa!"
+        }
+      },
+      decoration: {
+        title: "Decoração e Organização",
+        description: "Serviços de decoração e organização para deixar sua casa mais bonita",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Ambiente mais organizado",
+            "Decoração personalizada",
+            "Otimização de espaços",
+            "Consultoria profissional"
+          ],
+          footer: "Sua casa mais bonita e organizada!"
+        }
+      },
+      electrical: {
+        title: "Reparos Elétricos",
+        description: "Serviços completos de reparo e instalação elétrica",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Diagnóstico preciso de problemas",
+            "Reparos seguros e duráveis",
+            "Profissionais certificados",
+            "Atendimento rápido e eficiente"
+          ],
+          footer: "Seus problemas elétricos resolvidos com segurança!"
+        }
+      },
+      ceilingFan: {
+        title: "Instalação de Ventilador de Teto",
+        description: "Instalação profissional de ventiladores de teto para maior conforto",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Instalação segura e profissional",
+            "Melhora a circulação de ar",
+            "Reduz custos com ar condicionado",
+            "Garantia do serviço"
+          ],
+          footer: "Mais conforto e economia na sua casa!"
+        }
+      },
+      plumbing: {
+        title: "Reparos Hidráulicos",
+        description: "Serviços completos de reparo e instalação hidráulica",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Detecção precisa de vazamentos",
+            "Reparos duráveis e eficientes",
+            "Instalações seguras",
+            "Orçamento detalhado"
+          ],
+          footer: "Soluções completas para seus problemas hidráulicos!"
+        }
+      },
+      shelves: {
+        title: "Instalação de Prateleiras",
+        description: "Instalação de prateleiras para otimizar o espaço da sua casa",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Otimização de espaços",
+            "Instalação segura na parede",
+            "Diversos modelos disponíveis",
+            "Organização personalizada"
+          ],
+          footer: "Mais organização e aproveitamento de espaço!"
+        }
+      },
+      curtains: {
+        title: "Instalação de Cortinas",
+        description: "Instalação profissional de cortinas e persianas",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Instalação precisa e segura",
+            "Melhora a privacidade",
+            "Controle de luminosidade",
+            "Acabamento profissional"
+          ],
+          footer: "Sua casa mais privativa e elegante!"
+        }
+      },
+      wallRepairs: {
+        title: "Reparos de Parede e Pintura",
+        description: "Serviços de reparo e pintura de paredes",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Reparo de buracos e rachaduras",
+            "Pintura profissional",
+            "Acabamento impecável",
+            "Materiais de qualidade"
+          ],
+          footer: "Suas paredes como novas!"
+        }
+      },
+      doorRepairs: {
+        title: "Reparos de Portas",
+        description: "Serviços de reparo e ajuste de portas",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Ajuste de dobradiças",
+            "Reparo de fechaduras",
+            "Alinhamento de portas",
+            "Instalação de novos trincos"
+          ],
+          footer: "Suas portas funcionando perfeitamente!"
+        }
+      },
+      houseNumbers: {
+        title: "Instalação de Números Residenciais",
+        description: "Instalação de números e placas de identificação residencial",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Fácil identificação da casa",
+            "Instalação segura",
+            "Diversos modelos disponíveis",
+            "Melhora o visual da fachada"
+          ],
+          footer: "Sua casa mais fácil de encontrar!"
+        }
+      },
+      mailbox: {
+        title: "Instalação de Caixa de Correio",
+        description: "Instalação de caixas de correio residenciais e comerciais",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Instalação segura e duradoura",
+            "Diversos modelos disponíveis",
+            "Proteção da correspondência",
+            "Cumprimento das normas postais"
+          ],
+          footer: "Sua correspondência sempre segura!"
+        }
+      },
+      safetyDevices: {
+        title: "Instalação de Dispositivos de Segurança",
+        description: "Instalação de detectores de fumaça, alarmes e outros dispositivos",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Maior segurança para família",
+            "Detectores de fumaça e gás",
+            "Instalação profissional",
+            "Testes de funcionamento"
+          ],
+          footer: "Sua família mais protegida!"
+        }
+      },
+      gutterCleaning: {
+        title: "Limpeza de Calhas",
+        description: "Serviços de limpeza e manutenção de calhas e rufos",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Prevenção de entupimentos",
+            "Proteção contra infiltrações",
+            "Limpeza completa",
+            "Verificação de vazamentos"
+          ],
+          footer: "Suas calhas sempre limpas e funcionais!"
+        }
+      },
+      pressureWashing: {
+        title: "Lavagem com Pressão",
+        description: "Serviços de lavagem com pressão para áreas externas",
+        benefits: {
+          title: "Benefícios:",
+          items: [
+            "Limpeza profunda de superfícies",
+            "Remove sujeira e mofo",
+            "Equipamentos profissionais",
+            "Renova a aparência"
+          ],
+          footer: "Sua casa com aparência renovada!"
+        }
+      }
+    },
+    about: {
+      title: "Sobre Nós",
+      quality: {
+        title: "Qualidade Garantida",
+        description: "Trabalho profissional com garantia de qualidade em todos os serviços prestados."
+      },
+      fastService: {
+        title: "Atendimento Rápido",
+        description: "Serviço ágil e pontual, respeitando sempre o prazo combinado com o cliente."
+      },
+      expertTeam: {
+        title: "Equipe Especializada",
+        description: "Profissionais experientes e qualificados para atender todas as suas necessidades."
+      }
+    },
+    testimonials: {
+      title: "Depoimentos",
+      subtitle: "Veja o que nossos clientes dizem sobre nosso trabalho",
+      reviews: {
+        maria: "Excelente serviço! Muito profissionais e pontuais. Recomendo!",
+        carlos: "Fizeram um trabalho perfeito na instalação da minha TV. Muito satisfeito!",
+        fernando: "Equipe muito competente e preço justo. Voltarei a contratar com certeza!"
+      }
+    },
+    coverage: {
+      title: "Área de Atendimento",
+      subtitle: "Miami-Dade e Broward County",
+      description: "Atendemos toda a região metropolitana de Miami com qualidade e pontualidade."
     },
     contact: {
       title: "Entre em Contato",
@@ -127,7 +352,10 @@ const translations = {
       errorMessage: "Ocorreu um erro ao enviar a mensagem."
     },
     footer: {
-      copyright: "© 2024 Mr. Joe & Zé Handyman Miami. Todos os direitos reservados."
+      copyright: "© 2024 Mr. Joe & Zé Handyman Miami. Todos os direitos reservados.",
+      coverage: "Atendemos Miami-Dade e Broward County",
+      preInstagram: "Siga-nos no Instagram para ver nossos trabalhos:",
+      instagram: "Instagram"
     }
   },
   en: {
@@ -231,6 +459,231 @@ const translations = {
           footer: "Solutions to your plumbing problems!"
         }
       },
+      foodDisposal: {
+        title: "Food Disposal Installation",
+        description: "Professional food disposal installation for your kitchen",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "More convenience in the kitchen",
+            "Reduction of organic waste",
+            "Safe and professional installation",
+            "Maintenance included"
+          ],
+          footer: "Your kitchen more practical and clean!"
+        }
+      },
+      decoration: {
+        title: "Decoration and Organization",
+        description: "Decoration and organization services to make your home more beautiful",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "More organized environment",
+            "Personalized decoration",
+            "Space optimization",
+            "Professional consulting"
+          ],
+          footer: "Your home more beautiful and organized!"
+        }
+      },
+      electrical: {
+        title: "Electrical Repairs",
+        description: "Complete electrical repair and installation services",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Accurate problem diagnosis",
+            "Safe and durable repairs",
+            "Certified professionals",
+            "Fast and efficient service"
+          ],
+          footer: "Your electrical problems solved safely!"
+        }
+      },
+      ceilingFan: {
+        title: "Ceiling Fan Installation",
+        description: "Professional ceiling fan installation for greater comfort",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Safe and professional installation",
+            "Improves air circulation",
+            "Reduces air conditioning costs",
+            "Service warranty"
+          ],
+          footer: "More comfort and savings in your home!"
+        }
+      },
+      plumbing: {
+        title: "Plumbing Repairs",
+        description: "Complete plumbing repair and installation services",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Accurate leak detection",
+            "Durable and efficient repairs",
+            "Safe installations",
+            "Detailed budget"
+          ],
+          footer: "Complete solutions to your plumbing problems!"
+        }
+      },
+      shelves: {
+        title: "Shelves Installation",
+        description: "Shelves installation to optimize your home space",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Space optimization",
+            "Safe wall installation",
+            "Various models available",
+            "Personalized organization"
+          ],
+          footer: "More organization and space utilization!"
+        }
+      },
+      curtains: {
+        title: "Curtains Installation",
+        description: "Professional curtains and blinds installation",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Precise and safe installation",
+            "Improves privacy",
+            "Light control",
+            "Professional finish"
+          ],
+          footer: "Your home more private and elegant!"
+        }
+      },
+      wallRepairs: {
+        title: "Wall Repairs and Painting",
+        description: "Wall repair and painting services",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Repair holes and cracks",
+            "Professional painting",
+            "Impeccable finish",
+            "Quality materials"
+          ],
+          footer: "Your walls like new!"
+        }
+      },
+      doorRepairs: {
+        title: "Door Repairs",
+        description: "Door repair and adjustment services",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Hinge adjustment",
+            "Lock repair",
+            "Door alignment",
+            "New handle installation"
+          ],
+          footer: "Your doors working perfectly!"
+        }
+      },
+      houseNumbers: {
+        title: "House Numbers Installation",
+        description: "Installation of house numbers and residential identification plates",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Easy house identification",
+            "Safe installation",
+            "Various models available",
+            "Improves facade appearance"
+          ],
+          footer: "Your house easier to find!"
+        }
+      },
+      mailbox: {
+        title: "Mailbox Installation",
+        description: "Installation of residential and commercial mailboxes",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Safe and durable installation",
+            "Various models available",
+            "Mail protection",
+            "Postal standards compliance"
+          ],
+          footer: "Your mail always safe!"
+        }
+      },
+      safetyDevices: {
+        title: "Safety Devices Installation",
+        description: "Installation of smoke detectors, alarms and other devices",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Greater safety for family",
+            "Smoke and gas detectors",
+            "Professional installation",
+            "Functionality tests"
+          ],
+          footer: "Your family more protected!"
+        }
+      },
+      gutterCleaning: {
+        title: "Gutter Cleaning",
+        description: "Gutter and downspout cleaning and maintenance services",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Prevents clogs",
+            "Protection against infiltration",
+            "Complete cleaning",
+            "Leak verification"
+          ],
+          footer: "Your gutters always clean and functional!"
+        }
+      },
+      pressureWashing: {
+        title: "Pressure Washing",
+        description: "Pressure washing services for outdoor areas",
+        benefits: {
+          title: "Benefits:",
+          items: [
+            "Deep surface cleaning",
+            "Removes dirt and mold",
+            "Professional equipment",
+            "Renews appearance"
+          ],
+          footer: "Your home with renewed appearance!"
+        }
+      }
+    },
+    about: {
+      title: "About Us",
+      quality: {
+        title: "Quality Guaranteed",
+        description: "Professional work with quality guarantee in all services provided."
+      },
+      fastService: {
+        title: "Fast Service",
+        description: "Agile and punctual service, always respecting the agreed deadline with the client."
+      },
+      expertTeam: {
+        title: "Expert Team",
+        description: "Experienced and qualified professionals to meet all your needs."
+      }
+    },
+    testimonials: {
+      title: "Testimonials",
+      subtitle: "See what our clients say about our work",
+      reviews: {
+        maria: "Excellent service! Very professional and punctual. I recommend!",
+        carlos: "They did a perfect job installing my TV. Very satisfied!",
+        fernando: "Very competent team and fair price. I will definitely hire again!"
+      }
+    },
+    coverage: {
+      title: "Coverage Area",
+      subtitle: "Miami-Dade and Broward County",
+      description: "We serve the entire Miami metropolitan area with quality and punctuality."
     },
     contact: {
       title: "Contact Us",
@@ -245,7 +698,10 @@ const translations = {
       errorMessage: "An error occurred while sending the message."
     },
     footer: {
-      copyright: "© 2024 Mr. Joe & Zé Handyman Miami. All rights reserved."
+      copyright: "© 2024 Mr. Joe & Zé Handyman Miami. All rights reserved.",
+      coverage: "We serve Miami-Dade and Broward County",
+      preInstagram: "Follow us on Instagram to see our work:",
+      instagram: "Instagram"
     }
   }
 };
