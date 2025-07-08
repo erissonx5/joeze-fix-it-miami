@@ -22,7 +22,7 @@ const translations = {
     nav: {
       home: "Início",
       services: "Serviços",
-      about: "Sobre",
+      about: "Sobre Nós",
       contact: "Contato"
     },
     hero: {
@@ -333,7 +333,7 @@ const translations = {
     nav: {
       home: "Home",
       services: "Services",
-      about: "About",
+      about: "About Us",
       contact: "Contact"
     },
     hero: {
