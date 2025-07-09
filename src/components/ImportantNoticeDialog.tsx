@@ -36,12 +36,12 @@ const ImportantNoticeDialog = () => {
             🚨 {t.importantNotice?.title || "Aviso Importante"}
           </AlertDialogTitle>
           <AlertDialogDescription className="text-center space-y-4">
-            <span className="block text-lg font-semibold text-gray-800">
+            <div className="block text-lg font-semibold text-gray-800">
               {t.importantNotice?.subtitle || "Atendemos Miami-Dade e Broward County"}
-            </span>
-            <span className="block text-gray-700">
+            </div>
+            <div className="block text-gray-700">
               {t.importantNotice?.description || "Para um atendimento mais rápido, entre em contato pelo WhatsApp clicando no botão flutuante."}
-            </span>
+            </div>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
