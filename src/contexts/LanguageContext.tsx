@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 export type Language = 'pt' | 'en' | 'es' | 'fr';
@@ -21,7 +20,7 @@ const translations = {
     },
     nav: {
       home: "Início",
-      services: "Serviços",
+      services: "Serviços", 
       about: "Sobre Nós",
       contact: "Contato"
     },
@@ -51,7 +50,7 @@ const translations = {
         footer: "Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!"
       },
       tvInstallation: {
-        title: "📺 Instalação de TV na Parede",
+        title: "Instalação de TV na Parede",
         description: "Instalação profissional de TVs na parede com suporte incluído. Deixe sua sala moderna e organizada.",
         benefits: {
           title: "Benefícios:",
@@ -65,7 +64,7 @@ const translations = {
         }
       },
       smartLock: {
-        title: "🔐 Fechadura Inteligente",
+        title: "Fechadura Inteligente",
         description: "Instalação de fechaduras inteligentes para maior segurança da sua casa ou negócio.",
         benefits: {
           title: "Vantagens:",
@@ -79,7 +78,7 @@ const translations = {
         }
       },
       foodDisposal: {
-        title: "🗑️ Instalação de Triturador de Alimentos",
+        title: "Instalação de Triturador de Alimentos",
         description: "Instalação profissional de trituradores de alimentos para sua cozinha. Mais praticidade no dia a dia.",
         benefits: {
           title: "Benefícios:",
@@ -93,7 +92,7 @@ const translations = {
         }
       },
       decoration: {
-        title: "🎨 Decoração e Organização",
+        title: "Decoração e Organização",
         description: "Serviços de decoração e organização para deixar sua casa mais bonita e funcional.",
         benefits: {
           title: "Benefícios:",
@@ -107,7 +106,7 @@ const translations = {
         }
       },
       electrical: {
-        title: "⚡ Reparos Elétricos",
+        title: "Reparos Elétricos",
         description: "Serviços completos de reparo e instalação elétrica com segurança e qualidade.",
         benefits: {
           title: "Benefícios:",
@@ -121,7 +120,7 @@ const translations = {
         }
       },
       ceilingFan: {
-        title: "💨 Instalação de Ventilador de Teto",
+        title: "Instalação de Ventilador de Teto",
         description: "Instalação profissional de ventiladores de teto para maior conforto e economia.",
         benefits: {
           title: "Benefícios:",
@@ -135,7 +134,7 @@ const translations = {
         }
       },
       plumbing: {
-        title: "🔧 Reparos Hidráulicos",
+        title: "Reparos Hidráulicos",
         description: "Serviços completos de reparo e instalação hidráulica com materiais de qualidade.",
         benefits: {
           title: "Benefícios:",
@@ -149,7 +148,7 @@ const translations = {
         }
       },
       shelves: {
-        title: "📚 Instalação de Prateleiras",
+        title: "Instalação de Prateleiras",
         description: "Instalação de prateleiras para otimizar o espaço da sua casa com estilo.",
         benefits: {
           title: "Benefícios:",
@@ -163,7 +162,7 @@ const translations = {
         }
       },
       curtains: {
-        title: "🪟 Instalação de Cortinas",
+        title: "Instalação de Cortinas",
         description: "Instalação profissional de cortinas e persianas para maior privacidade e elegância.",
         benefits: {
           title: "Benefícios:",
@@ -177,7 +176,7 @@ const translations = {
         }
       },
       wallRepairs: {
-        title: "🎨 Reparos de Parede e Pintura",
+        title: "Reparos de Parede e Pintura",
         description: "Serviços de reparo e pintura de paredes com acabamento profissional.",
         benefits: {
           title: "Benefícios:",
@@ -191,7 +190,7 @@ const translations = {
         }
       },
       doorRepairs: {
-        title: "🚪 Reparos de Portas",
+        title: "Reparos de Portas",
         description: "Serviços de reparo e ajuste de portas para perfeito funcionamento.",
         benefits: {
           title: "Benefícios:",
@@ -205,7 +204,7 @@ const translations = {
         }
       },
       houseNumbers: {
-        title: "🏠 Instalação de Números Residenciais",
+        title: "Instalação de Números Residenciais",
         description: "Instalação de números e placas de identificação residencial com estilo.",
         benefits: {
           title: "Benefícios:",
@@ -219,7 +218,7 @@ const translations = {
         }
       },
       mailbox: {
-        title: "📮 Instalação de Caixa de Correio",
+        title: "Instalação de Caixa de Correio",
         description: "Instalação de caixas de correio residenciais e comerciais com segurança.",
         benefits: {
           title: "Benefícios:",
@@ -233,7 +232,7 @@ const translations = {
         }
       },
       safetyDevices: {
-        title: "🚨 Instalação de Dispositivos de Segurança",
+        title: "Instalação de Dispositivos de Segurança",
         description: "Instalação de detectores de fumaça, alarmes e outros dispositivos de proteção.",
         benefits: {
           title: "Benefícios:",
@@ -247,7 +246,7 @@ const translations = {
         }
       },
       gutterCleaning: {
-        title: "🏠 Limpeza de Calhas",
+        title: "Limpeza de Calhas",
         description: "Serviços de limpeza e manutenção de calhas e rufos para proteção da sua casa.",
         benefits: {
           title: "Benefícios:",
@@ -261,7 +260,7 @@ const translations = {
         }
       },
       pressureWashing: {
-        title: "💧 Lavagem com Pressão",
+        title: "Lavagem com Pressão",
         description: "Serviços de lavagem com pressão para áreas externas e fachadas.",
         benefits: {
           title: "Benefícios:",
@@ -362,7 +361,7 @@ const translations = {
         footer: "Mr. Joe & Zé solves — just the way your business needs!"
       },
       tvInstallation: {
-        title: "📺 TV Wall Installation",
+        title: "TV Wall Installation",
         description: "Professional TV wall mounting with bracket included. Make your living room modern and organized.",
         benefits: {
           title: "Benefits:",
@@ -376,7 +375,7 @@ const translations = {
         }
       },
       smartLock: {
-        title: "🔐 Smart Lock",
+        title: "Smart Lock",
         description: "Smart lock installation for enhanced security of your home or business.",
         benefits: {
           title: "Advantages:",
@@ -390,7 +389,7 @@ const translations = {
         }
       },
       foodDisposal: {
-        title: "🗑️ Food Disposal Installation",
+        title: "Food Disposal Installation",
         description: "Professional food disposal installation for your kitchen. More convenience in daily life.",
         benefits: {
           title: "Benefits:",
@@ -404,7 +403,7 @@ const translations = {
         }
       },
       decoration: {
-        title: "🎨 Decoration and Organization",
+        title: "Decoration and Organization",
         description: "Decoration and organization services to make your home more beautiful and functional.",
         benefits: {
           title: "Benefits:",
@@ -418,7 +417,7 @@ const translations = {
         }
       },
       electrical: {
-        title: "⚡ Electrical Repairs",
+        title: "Electrical Repairs",
         description: "Complete electrical repair and installation services with safety and quality.",
         benefits: {
           title: "Benefits:",
@@ -432,7 +431,7 @@ const translations = {
         }
       },
       ceilingFan: {
-        title: "💨 Ceiling Fan Installation",
+        title: "Ceiling Fan Installation",
         description: "Professional ceiling fan installation for greater comfort and savings.",
         benefits: {
           title: "Benefits:",
@@ -446,7 +445,7 @@ const translations = {
         }
       },
       plumbing: {
-        title: "🔧 Plumbing Repairs",
+        title: "Plumbing Repairs",
         description: "Complete plumbing repair and installation services with quality materials.",
         benefits: {
           title: "Benefits:",
@@ -460,7 +459,7 @@ const translations = {
         }
       },
       shelves: {
-        title: "📚 Shelves Installation",
+        title: "Shelves Installation",
         description: "Shelves installation to optimize your home space with style.",
         benefits: {
           title: "Benefits:",
@@ -474,7 +473,7 @@ const translations = {
         }
       },
       curtains: {
-        title: "🪟 Curtains Installation",
+        title: "Curtains Installation",
         description: "Professional curtains and blinds installation for greater privacy and elegance.",
         benefits: {
           title: "Benefits:",
@@ -488,7 +487,7 @@ const translations = {
         }
       },
       wallRepairs: {
-        title: "🎨 Wall Repairs and Painting",
+        title: "Wall Repairs and Painting",
         description: "Wall repair and painting services with professional finish.",
         benefits: {
           title: "Benefits:",
@@ -502,7 +501,7 @@ const translations = {
         }
       },
       doorRepairs: {
-        title: "🚪 Door Repairs",
+        title: "Door Repairs",
         description: "Door repair and adjustment services for perfect functionality.",
         benefits: {
           title: "Benefits:",
@@ -516,7 +515,7 @@ const translations = {
         }
       },
       houseNumbers: {
-        title: "🏠 House Numbers Installation",
+        title: "House Numbers Installation",
         description: "Installation of house numbers and residential identification plates with style.",
         benefits: {
           title: "Benefits:",
@@ -530,7 +529,7 @@ const translations = {
         }
       },
       mailbox: {
-        title: "📮 Mailbox Installation",
+        title: "Mailbox Installation",
         description: "Installation of residential and commercial mailboxes with security.",
         benefits: {
           title: "Benefits:",
@@ -544,7 +543,7 @@ const translations = {
         }
       },
       safetyDevices: {
-        title: "🚨 Safety Devices Installation",
+        title: "Safety Devices Installation",
         description: "Installation of smoke detectors, alarms and other protection devices.",
         benefits: {
           title: "Benefits:",
@@ -558,7 +557,7 @@ const translations = {
         }
       },
       gutterCleaning: {
-        title: "🏠 Gutter Cleaning",
+        title: "Gutter Cleaning",
         description: "Gutter and downspout cleaning and maintenance services for home protection.",
         benefits: {
           title: "Benefits:",
@@ -572,7 +571,7 @@ const translations = {
         }
       },
       pressureWashing: {
-        title: "💧 Pressure Washing",
+        title: "Pressure Washing",
         description: "Pressure washing services for outdoor areas and facades.",
         benefits: {
           title: "Benefits:",
