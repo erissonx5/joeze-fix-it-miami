@@ -1,4 +1,3 @@
-
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -190,8 +189,43 @@ const Index = () => {
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
-              {/* TV Installation */}
+              {/* Professional Laundry Service - NEW */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
+                <div className="lg:w-1/2">
+                  <img 
+                    src="/lovable-uploads/e650dc1d-ebaf-4e75-b5f2-5b98c448d665.png" 
+                    alt="Lavagem Profissional para Salões, Spas e Negócios Locais"
+                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  />
+                </div>
+                <div className="lg:w-1/2 space-y-4">
+                  <h4 className="text-2xl font-bold text-white">🧼 Lavagem Profissional para Salões, Spas e Negócios Locais</h4>
+                  <div className="text-white/90 space-y-3">
+                    <p>Tem salão de beleza, clínica estética, barbearia ou spa?</p>
+                    <p>Ainda perde tempo lavando toalhas, lençóis ou roupões?</p>
+                    <p className="font-semibold">Pode deixar com a gente!</p>
+                    <p>A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso.</p>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <ul className="space-y-1 text-white/80">
+                      <li>✔ Toalhas de salão, clínica ou estética</li>
+                      <li>✔ Roupões, lençóis, fronhas e mantas</li>
+                      <li>✔ Lavagem e dobra com padrão profissional</li>
+                      <li>✔ Produtos de qualidade que cuidam dos tecidos</li>
+                      <li>✔ Entrega pontual direto no seu estabelecimento</li>
+                    </ul>
+                    <div className="mt-4 space-y-2 text-white/90">
+                      <p>🚐 Serviço completo tipo wash and fold.</p>
+                      <p>Você não se preocupa com nada — é só usar e pronto.</p>
+                      <p className="font-medium text-white mt-4">Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* TV Installation */}
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/98cc3b46-f328-407c-be77-d838ffd12341.png" 
@@ -215,7 +249,7 @@ const Index = () => {
               </div>
 
               {/* Smart Lock */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-200">
+              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-200">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/1092a322-1299-40fc-8c08-1e9e6b20428c.png" 
@@ -239,7 +273,7 @@ const Index = () => {
               </div>
 
               {/* Security Camera Installation */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in animation-delay-300">
+              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in animation-delay-300">
                 <div className="lg:w-1/2">
                   <img 
                     src="/lovable-uploads/50c94986-939d-40b4-a295-d72bf635ffbc.png" 
