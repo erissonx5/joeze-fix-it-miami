@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -114,19 +115,70 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Segunda Imagem Hero - Airbnb */}
+      {/* Segunda Imagem Hero - Airbnb com Fundo Gradiente */}
       <section 
-        className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
+        className="relative py-12 md:py-20 text-white overflow-hidden min-h-[400px] md:min-h-[600px] flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png')`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 50%, #2c3e50 100%)`
         }}
       >
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            {/* Seção vazia - apenas imagem de fundo */}
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-12 shadow-2xl border border-white/20">
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                {/* Imagem */}
+                <div className="lg:w-1/2 w-full">
+                  <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <img 
+                      src="/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png" 
+                      alt="Airbnb Services"
+                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  </div>
+                </div>
+                
+                {/* Conteúdo */}
+                <div className="lg:w-1/2 w-full space-y-6 text-center lg:text-left">
+                  <div className="space-y-4">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                      Especialistas em Airbnb
+                    </h2>
+                    <div className="w-20 h-1 bg-gradient-to-r from-[#8cbbc3] to-[#95430c] mx-auto lg:mx-0 rounded-full"></div>
+                  </div>
+                  
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                    Transformamos seu espaço em uma hospedagem perfeita. Instalações, reparos e melhorias que impressionam seus hóspedes.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div className="flex items-center justify-center lg:justify-start space-x-3">
+                      <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-5 w-5 text-white" />
+                      </div>
+                      <span className="text-white font-medium">Serviço Rápido</span>
+                    </div>
+                    <div className="flex items-center justify-center lg:justify-start space-x-3">
+                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                        <Star className="h-5 w-5 text-white" />
+                      </div>
+                      <span className="text-white font-medium">5 Estrelas</span>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6">
+                    <Button 
+                      onClick={openWhatsApp}
+                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-8 py-4 text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                    >
+                      <WhatsAppIcon className="h-6 w-6 mr-3" />
+                      Solicitar Orçamento
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -138,41 +190,6 @@ const Index = () => {
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
-              {/* Professional Laundry Service - Layout alterado: imagem à direita, texto à esquerda */}
-              <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in">
-                <div className="lg:w-1/2">
-                  <img 
-                    src="/lovable-uploads/d47abdfb-3770-412d-a0c4-ac40584ee276.png" 
-                    alt={t.services?.laundryService?.title || "Lavagem Profissional para Salões, Spas e Negócios Locais"}
-                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  />
-                </div>
-                <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">🧼 {t.services?.laundryService?.title || "Lavagem Profissional para Salões, Spas e Negócios Locais"}</h4>
-                  <div className="space-y-4 text-white/90">
-                    <p>{t.services?.laundryService?.question1 || "Tem salão de beleza, clínica estética, barbearia ou spa?"}</p>
-                    <p>{t.services?.laundryService?.question2 || "Ainda perde tempo lavando toalhas, lençóis ou roupões?"}</p>
-                    <p className="font-semibold">{t.services?.laundryService?.solution || "Pode deixar com a gente!"}</p>
-                    <p>{t.services?.laundryService?.description || "A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso."}</p>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services?.laundryService?.weHandleTitle || "Cuidamos de:"}</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>{t.services?.laundryService?.item1 || "✔ Toalhas de salão, clínica ou estética"}</li>
-                      <li>{t.services?.laundryService?.item2 || "✔ Roupões, lençóis, fronhas e mantas"}</li>
-                      <li>{t.services?.laundryService?.item3 || "✔ Lavagem e dobra com padrão profissional"}</li>
-                      <li>{t.services?.laundryService?.item4 || "✔ Produtos de qualidade que cuidam dos tecidos"}</li>
-                      <li>{t.services?.laundryService?.item5 || "✔ Entrega pontual direto no seu estabelecimento"}</li>
-                    </ul>
-                    <div className="mt-4 space-y-2">
-                      <p className="font-medium text-white">{t.services?.laundryService?.serviceType || "🚐 Serviço completo tipo wash and fold."}</p>
-                      <p className="text-white/90">{t.services?.laundryService?.convenience || "Você não se preocupa com nada — é só usar e pronto."}</p>
-                      <p className="font-medium text-white">{t.services?.laundryService?.footer || "Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!"}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* TV Installation */}
               <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
                 <div className="lg:w-1/2">
