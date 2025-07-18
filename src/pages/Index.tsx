@@ -283,19 +283,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">Instalação de Câmeras de Segurança (Residenciais ou Comerciais)</h4>
+                  <h4 className="text-2xl font-bold text-white">{t.services?.cameraInstallation?.title}</h4>
                   <p className="text-white/90">
-                    Proteja sua casa ou comércio com a instalação profissional de câmeras de segurança. Trabalhamos com sistemas modernos — com acesso por aplicativo, visão noturna e gravação em nuvem. Serviço limpo, discreto e funcional.
+                    {t.services?.cameraInstallation?.description}
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Ideal para quem precisa de:</p>
+                    <p className="font-semibold text-white">{t.services?.cameraInstallation?.benefits?.title}:</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Monitoramento remoto em tempo real</li>
-                      <li>✔ Instalar câmeras com gravação por movimento</li>
-                      <li>✔ Aumentar a segurança de áreas externas e internas</li>
-                      <li>✔ Ter mais controle e tranquilidade no dia a dia</li>
+                      <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[0]}</li>
+                      <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[1]}</li>
+                      <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[2]}</li>
+                      <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[3]}</li>
                     </ul>
-                    <p className="font-medium text-white mt-4">Segurança e tecnologia na medida certa — com Mr. Joe & Zé!</p>
+                    <p className="font-medium text-white mt-4">{t.services?.cameraInstallation?.benefits?.footer}</p>
                   </div>
                 </div>
               </div>

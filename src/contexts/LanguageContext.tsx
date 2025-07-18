@@ -172,6 +172,15 @@ interface Translations {
         items: string[];
       };
     };
+    cameraInstallation?: {
+      title: string;
+      description: string;
+      benefits: {
+        title: string;
+        items: string[];
+        footer: string;
+      };
+    };
   };
   about: {
     title: string;
@@ -485,6 +494,20 @@ const translations: Record<Language, Translations> = {
             "Entrega pontual direto no seu estabelecimento"
           ]
         }
+      },
+      cameraInstallation: {
+        title: "Instalação de Câmeras de Segurança (Residenciais ou Comerciais)",
+        description: "Proteja sua casa ou comércio com a instalação profissional de câmeras de segurança. Trabalhamos com sistemas modernos — com acesso por aplicativo, visão noturna e gravação em nuvem. Serviço limpo, discreto e funcional.",
+        benefits: {
+          title: "Ideal para quem precisa de",
+          items: [
+            "Monitoramento remoto em tempo real",
+            "Instalar câmeras com gravação por movimento",
+            "Aumentar a segurança de áreas externas e internas",
+            "Ter mais controle e tranquilidade no dia a dia"
+          ],
+          footer: "Segurança e tecnologia na medida certa — com Mr. Joe & Zé!"
+        }
       }
     },
     about: {
@@ -796,6 +819,20 @@ const translations: Record<Language, Translations> = {
             "Quality products that care for fabrics",
             "Punctual delivery directly to your establishment"
           ]
+        }
+      },
+      cameraInstallation: {
+        title: "Security Camera Installation (Residential or Commercial)",
+        description: "Protect your home or business with professional security camera installation. We work with modern systems — with app access, night vision and cloud recording. Clean, discreet and functional service.",
+        benefits: {
+          title: "Ideal for those who need",
+          items: [
+            "Real-time remote monitoring",
+            "Install cameras with motion recording",
+            "Increase security in external and internal areas",
+            "Have more control and peace of mind in daily life"
+          ],
+          footer: "Security and technology in the right measure — with Mr. Joe & Zé!"
         }
       }
     },
@@ -1109,6 +1146,20 @@ const translations: Record<Language, Translations> = {
             "Entrega puntual directamente en tu establecimiento"
           ]
         }
+      },
+      cameraInstallation: {
+        title: "Instalación de Cámaras de Seguridad (Residenciales o Comerciales)",
+        description: "Protege tu casa o comercio con la instalación profesional de cámaras de seguridad. Trabajamos con sistemas modernos — con acceso por aplicación, visión nocturna y grabación en la nube. Servicio limpio, discreto y funcional.",
+        benefits: {
+          title: "Ideal para quien necesita",
+          items: [
+            "Monitoreo remoto en tiempo real",
+            "Instalar cámaras con grabación por movimiento",
+            "Aumentar la seguridad de áreas externas e internas",
+            "Tener más control y tranquilidad en el día a día"
+          ],
+          footer: "¡Seguridad y tecnología en la medida exacta — con Mr. Joe & Zé!"
+        }
       }
     },
     about: {
@@ -1420,6 +1471,20 @@ const translations: Record<Language, Translations> = {
             "Produits de qualité qui prennent soin des tissus",
             "Livraison ponctuelle directement à votre établissement"
           ]
+        }
+      },
+      cameraInstallation: {
+        title: "Installation de Caméras de Sécurité (Résidentielles ou Commerciales)",
+        description: "Protégez votre maison ou commerce avec l'installation professionnelle de caméras de sécurité. Nous travaillons avec des systèmes modernes — avec accès par application, vision nocturne et enregistrement dans le nuage. Service propre, discret et fonctionnel.",
+        benefits: {
+          title: "Idéal pour ceux qui ont besoin de",
+          items: [
+            "Surveillance à distance en temps réel",
+            "Installer des caméras avec enregistrement par mouvement",
+            "Augmenter la sécurité des zones externes et internes",
+            "Avoir plus de contrôle et tranquillité au quotidien"
+          ],
+          footer: "Sécurité et technologie dans la bonne mesure — avec Mr. Joe & Zé!"
         }
       }
     },
