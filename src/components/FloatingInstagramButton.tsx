@@ -11,7 +11,7 @@ const FloatingInstagramButton: React.FC<FloatingInstagramButtonProps> = ({ insta
   };
 
   return (
-    <div className="fixed bottom-24 right-6 z-50">
+    <div className="fixed bottom-[180px] right-6 z-50">
       <button
         onClick={openInstagram}
         className="w-14 h-14 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 hover:from-purple-700 hover:via-pink-700 hover:to-orange-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
