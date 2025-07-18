@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
+import FloatingInstagramButton from '@/components/FloatingInstagramButton';
 import FloatingLanguageSelector from '@/components/FloatingLanguageSelector';
 import ImportantNoticeDialog from '@/components/ImportantNoticeDialog';
 import { useState, useEffect } from 'react';
@@ -738,7 +739,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Floating WhatsApp Button */}
+      {/* Floating Social Buttons */}
+      <FloatingInstagramButton instagramUrl="https://www.instagram.com/mrjoeandzehandyman/" />
       <FloatingWhatsAppButton 
         phoneNumber={whatsappNumber}
         message={whatsappMessage}
