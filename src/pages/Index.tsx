@@ -200,26 +200,26 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">🧼 Lavagem Profissional para Salões, Spas e Negócios Locais</h4>
+                  <h4 className="text-2xl font-bold text-white">🧼 {t.services?.laundryService?.title}</h4>
                   <div className="text-white/90 space-y-3">
-                    <p>Tem salão de beleza, clínica estética, barbearia ou spa?</p>
-                    <p>Ainda perde tempo lavando toalhas, lençóis ou roupões?</p>
-                    <p className="font-semibold">Pode deixar com a gente!</p>
-                    <p>A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso.</p>
+                    <p>{t.services?.laundryService?.questions?.[0]}</p>
+                    <p>{t.services?.laundryService?.questions?.[1]}</p>
+                    <p className="font-semibold">{t.services?.laundryService?.solutions?.[0]}</p>
+                    <p>{t.services?.laundryService?.solutions?.[1]}</p>
                   </div>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">Cuidamos de:</p>
+                    <p className="font-semibold text-white">{t.services?.laundryService?.benefits?.title}:</p>
                     <ul className="space-y-1 text-white/80">
-                      <li>✔ Toalhas de salão, clínica ou estética</li>
-                      <li>✔ Roupões, lençóis, fronhas e mantas</li>
-                      <li>✔ Lavagem e dobra com padrão profissional</li>
-                      <li>✔ Produtos de qualidade que cuidam dos tecidos</li>
-                      <li>✔ Entrega pontual direto no seu estabelecimento</li>
+                      <li>✔ {t.services?.laundryService?.benefits?.items?.[0]}</li>
+                      <li>✔ {t.services?.laundryService?.benefits?.items?.[1]}</li>
+                      <li>✔ {t.services?.laundryService?.benefits?.items?.[2]}</li>
+                      <li>✔ {t.services?.laundryService?.benefits?.items?.[3]}</li>
+                      <li>✔ {t.services?.laundryService?.benefits?.items?.[4]}</li>
                     </ul>
                     <div className="mt-4 space-y-2 text-white/90">
-                      <p>🚐 Serviço completo tipo wash and fold.</p>
-                      <p>Você não se preocupa com nada — é só usar e pronto.</p>
-                      <p className="font-medium text-white mt-4">Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!</p>
+                      <p>🚐 {t.services?.laundryService?.solutions?.[2]}</p>
+                      <p>{t.services?.laundryService?.solutions?.[3]}</p>
+                      <p className="font-medium text-white mt-4">{t.services?.laundryService?.solutions?.[4]}</p>
                     </div>
                   </div>
                 </div>

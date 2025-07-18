@@ -163,6 +163,15 @@ interface Translations {
         footer: string;
       };
     };
+    laundryService?: {
+      title: string;
+      questions: string[];
+      solutions: string[];
+      benefits: {
+        title: string;
+        items: string[];
+      };
+    };
   };
   about: {
     title: string;
@@ -452,6 +461,30 @@ const translations: Record<Language, Translations> = {
           ],
           footer: "Sua área externa como nova — limpa, segura e com visual renovado. Com Mr. Joe & Zé, é pressão e perfeição! 💦🧼"
         }
+      },
+      laundryService: {
+        title: "Lavagem Profissional para Salões, Spas e Negócios Locais",
+        questions: [
+          "Tem salão de beleza, clínica estética, barbearia ou spa?",
+          "Ainda perde tempo lavando toalhas, lençóis ou roupões?"
+        ],
+        solutions: [
+          "Pode deixar com a gente!",
+          "A gente busca, lava e devolve tudo dobrado, limpo e pronto pro uso.",
+          "Serviço completo tipo wash and fold.",
+          "Você não se preocupa com nada — é só usar e pronto.",
+          "Mr. Joe & Zé resolve — do jeitinho que seu negócio precisa!"
+        ],
+        benefits: {
+          title: "Cuidamos de",
+          items: [
+            "Toalhas de salão, clínica ou estética",
+            "Roupões, lençóis, fronhas e mantas",
+            "Lavagem e dobra com padrão profissional",
+            "Produtos de qualidade que cuidam dos tecidos",
+            "Entrega pontual direto no seu estabelecimento"
+          ]
+        }
       }
     },
     about: {
@@ -739,6 +772,30 @@ const translations: Record<Language, Translations> = {
             "✔ Professional equipment and visible results immediately"
           ],
           footer: "Your external area like new — clean, safe and with renewed appearance. With Mr. Joe & Zé, it's pressure and perfection! 💦🧼"
+        }
+      },
+      laundryService: {
+        title: "Professional Laundry for Salons, Spas and Local Businesses",
+        questions: [
+          "Do you have a beauty salon, aesthetic clinic, barbershop or spa?",
+          "Still wasting time washing towels, sheets or robes?"
+        ],
+        solutions: [
+          "Leave it to us!",
+          "We pick up, wash and return everything folded, clean and ready to use.",
+          "Complete wash and fold service.",
+          "You don't worry about anything — just use and that's it.",
+          "Mr. Joe & Zé solves — just the way your business needs!"
+        ],
+        benefits: {
+          title: "We take care of",
+          items: [
+            "Salon, clinic or aesthetic towels",
+            "Robes, sheets, pillowcases and blankets",
+            "Washing and folding with professional standards",
+            "Quality products that care for fabrics",
+            "Punctual delivery directly to your establishment"
+          ]
         }
       }
     },
@@ -1028,6 +1085,30 @@ const translations: Record<Language, Translations> = {
           ],
           footer: "¡Su área externa como nueva — limpia, segura y con aspecto renovado. Con Mr. Joe & Zé, es presión y perfección! 💦🧼"
         }
+      },
+      laundryService: {
+        title: "Lavandería Profesional para Salones, Spas y Negocios Locales",
+        questions: [
+          "¿Tienes un salón de belleza, clínica estética, barbería o spa?",
+          "¿Aún pierdes tiempo lavando toallas, sábanas o batas?"
+        ],
+        solutions: [
+          "¡Déjalo en nuestras manos!",
+          "Recogemos, lavamos y devolvemos todo doblado, limpio y listo para usar.",
+          "Servicio completo tipo wash and fold.",
+          "No te preocupas por nada — solo usar y listo.",
+          "¡Mr. Joe & Zé resuelve — de la manera que tu negocio necesita!"
+        ],
+        benefits: {
+          title: "Cuidamos de",
+          items: [
+            "Toallas de salón, clínica o estética",
+            "Batas, sábanas, fundas y mantas",
+            "Lavado y doblado con estándar profesional",
+            "Productos de calidad que cuidan los tejidos",
+            "Entrega puntual directamente en tu establecimiento"
+          ]
+        }
       }
     },
     about: {
@@ -1315,6 +1396,30 @@ const translations: Record<Language, Translations> = {
             "✔ Équipement professionnel et résultat visible immédiatement"
           ],
           footer: "Votre zone externe comme neuve — propre, sûre et avec apparence renouvelée. Avec Mr. Joe & Zé, c'est pression et perfection! 💦🧼"
+        }
+      },
+      laundryService: {
+        title: "Blanchisserie Professionnelle pour Salons, Spas et Entreprises Locales",
+        questions: [
+          "Avez-vous un salon de beauté, une clinique esthétique, un barbier ou un spa?",
+          "Perdez-vous encore du temps à laver les serviettes, draps ou peignoirs?"
+        ],
+        solutions: [
+          "Laissez-nous faire!",
+          "Nous ramassons, lavons et ramenons tout plié, propre et prêt à utiliser.",
+          "Service complet type wash and fold.",
+          "Vous ne vous souciez de rien — juste utiliser et c'est tout.",
+          "Mr. Joe & Zé résout — de la façon dont votre entreprise a besoin!"
+        ],
+        benefits: {
+          title: "Nous nous occupons de",
+          items: [
+            "Serviettes de salon, clinique ou esthétique",
+            "Peignoirs, draps, taies d'oreiller et couvertures",
+            "Lavage et pliage avec standard professionnel",
+            "Produits de qualité qui prennent soin des tissus",
+            "Livraison ponctuelle directement à votre établissement"
+          ]
         }
       }
     },
