@@ -16,6 +16,13 @@ interface Translations {
     fastService: string;
     expertTeam: string;
   };
+  airbnb: {
+    title: string;
+    description: string;
+    quickService: string;
+    fiveStars: string;
+    requestQuote: string;
+  };
   services: {
     title: string;
     subtitle: string;
@@ -546,6 +553,13 @@ const translations: Record<Language, Translations> = {
       subtitle: "Miami-Dade e Broward",
       description: "Atendemos toda a região de Miami-Dade e Broward com serviços de handyman profissionais e confiáveis."
     },
+    airbnb: {
+      title: "Especialistas em Airbnb",
+      description: "Transformamos seu espaço em uma hospedagem perfeita. Instalações, reparos e melhorias que impressionam seus hóspedes.",
+      quickService: "Serviço Rápido",
+      fiveStars: "5 Estrelas",
+      requestQuote: "Solicitar Orçamento"
+    },
     footer: {
       title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "Um resolve, o outro garante",
@@ -871,6 +885,13 @@ const translations: Record<Language, Translations> = {
       title: "Service Area",
       subtitle: "Miami-Dade and Broward",
       description: "We serve the entire Miami-Dade and Broward region with professional and reliable handyman services."
+    },
+    airbnb: {
+      title: "Airbnb Specialists",
+      description: "We transform your space into a perfect accommodation. Installations, repairs and improvements that impress your guests.",
+      quickService: "Fast Service",
+      fiveStars: "5 Stars",
+      requestQuote: "Request Quote"
     },
     footer: {
       title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
@@ -1198,6 +1219,13 @@ const translations: Record<Language, Translations> = {
       subtitle: "Miami-Dade y Broward",
       description: "Servimos toda la región de Miami-Dade y Broward con servicios de mantenimiento profesionales y confiables."
     },
+    airbnb: {
+      title: "Especialistas en Airbnb",
+      description: "Transformamos tu espacio en un alojamiento perfecto. Instalaciones, reparaciones y mejoras que impresionan a tus huéspedes.",
+      quickService: "Servicio Rápido",
+      fiveStars: "5 Estrellas",
+      requestQuote: "Solicitar Presupuesto"
+    },
     footer: {
       title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",
       subtitle: "Uno resuelve, el otro garantiza",
@@ -1523,6 +1551,13 @@ const translations: Record<Language, Translations> = {
       title: "Zone de Service",
       subtitle: "Miami-Dade et Broward",
       description: "Nous servons toute la région de Miami-Dade et Broward avec des services de bricolage professionnels et fiables."
+    },
+    airbnb: {
+      title: "Spécialistes Airbnb",
+      description: "Nous transformons votre espace en un hébergement parfait. Installations, réparations et améliorations qui impressionnent vos invités.",
+      quickService: "Service Rapide",
+      fiveStars: "5 Étoiles",
+      requestQuote: "Demander un Devis"
     },
     footer: {
       title: "Mr. Joe & Zé – SOLUTIONS A2 CORP.",

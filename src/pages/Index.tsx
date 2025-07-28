@@ -143,13 +143,13 @@ const Index = () => {
                 <div className="lg:w-1/2 w-full space-y-6 text-center lg:text-left">
                   <div className="space-y-4">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                      Especialistas em Airbnb
+                      {t.airbnb.title}
                     </h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-[#8cbbc3] to-[#95430c] mx-auto lg:mx-0 rounded-full"></div>
                   </div>
                   
                   <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-                    Transformamos seu espaço em uma hospedagem perfeita. Instalações, reparos e melhorias que impressionam seus hóspedes.
+                    {t.airbnb.description}
                   </p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -157,13 +157,13 @@ const Index = () => {
                       <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                         <CheckCircle className="h-5 w-5 text-white" />
                       </div>
-                      <span className="text-white font-medium">Serviço Rápido</span>
+                      <span className="text-white font-medium">{t.airbnb.quickService}</span>
                     </div>
                     <div className="flex items-center justify-center lg:justify-start space-x-3">
                       <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                         <Star className="h-5 w-5 text-white" />
                       </div>
-                      <span className="text-white font-medium">5 Estrelas</span>
+                      <span className="text-white font-medium">{t.airbnb.fiveStars}</span>
                     </div>
                   </div>
                   
@@ -173,7 +173,7 @@ const Index = () => {
                       className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-8 py-4 text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                     >
                       <WhatsAppIcon className="h-6 w-6 mr-3" />
-                      Solicitar Orçamento
+                      {t.airbnb.requestQuote}
                     </Button>
                   </div>
                 </div>
