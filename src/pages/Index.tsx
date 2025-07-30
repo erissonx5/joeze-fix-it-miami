@@ -131,8 +131,8 @@ const Index = () => {
                 <div className="lg:w-1/2 w-full">
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                     <img 
-                      src="/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png" 
-                      alt="Airbnb Services"
+                      src="/lovable-uploads/08af9906-437f-49b6-b9a0-941b8d65234a.png" 
+                      alt="Contact Us - Mr. Joe & Zé Handyman"
                       className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
