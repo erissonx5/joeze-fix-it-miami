@@ -128,16 +128,6 @@ const Index = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-12 shadow-2xl border border-white/20">
               <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 {/* Imagem */}
-                <div className="lg:w-1/2 w-full">
-                  <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                  <img 
-                      src="/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png" 
-                      alt="Airbnb Services"
-                      className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  </div>
-                </div>
                 
                 {/* Conteúdo */}
                 <div className="lg:w-1/2 w-full space-y-6 text-center lg:text-left">
