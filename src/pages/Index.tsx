@@ -19,7 +19,7 @@ const WhatsAppIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
 const Index = () => {
   const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
-  const whatsappNumber = "+17865937841";
+  const whatsappNumber = "17867020403";
   const whatsappMessage = t.hero.phone || "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
   
   useEffect(() => {
@@ -33,7 +33,7 @@ const Index = () => {
   }, []);
 
   const openWhatsApp = () => {
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    const url = `https://api.whatsapp.com/send/?phone=17867020403&text&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
   };
 
@@ -130,9 +130,9 @@ const Index = () => {
                 {/* Imagem */}
                 <div className="lg:w-1/2 w-full">
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                    <img 
-                      src="/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png" 
-                      alt="Airbnb Services"
+                  <img 
+                      src="/lovable-uploads/263824db-df10-49db-b77e-71662e66ef94.png" 
+                      alt="Contact Information"
                       className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
