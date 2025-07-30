@@ -124,45 +124,43 @@ const Index = () => {
       >
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-12 shadow-2xl border border-white/20">
-              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-                {/* Imagem */}
-                
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-16 shadow-2xl border border-white/20">
+              <div className="space-y-8 text-center">
                 {/* Conteúdo */}
-                <div className="lg:w-1/2 w-full space-y-6 text-center lg:text-left">
+                <div className="space-y-6">
                   <div className="space-y-4">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                       {t.airbnb.title}
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-[#8cbbc3] to-[#95430c] mx-auto lg:mx-0 rounded-full"></div>
+                    <div className="w-20 h-1 bg-gradient-to-r from-[#8cbbc3] to-[#95430c] mx-auto rounded-full"></div>
                   </div>
                   
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed">
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
                     {t.airbnb.description}
                   </p>
                   
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                    <div className="flex items-center justify-center lg:justify-start space-x-3">
-                      <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        <CheckCircle className="h-5 w-5 text-white" />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 max-w-lg mx-auto">
+                    <div className="flex items-center justify-center space-x-3">
+                      <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                        <CheckCircle className="h-6 w-6 text-white" />
                       </div>
-                      <span className="text-white font-medium">{t.airbnb.quickService}</span>
+                      <span className="text-white font-medium text-lg">{t.airbnb.quickService}</span>
                     </div>
-                    <div className="flex items-center justify-center lg:justify-start space-x-3">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                        <Star className="h-5 w-5 text-white" />
+                    <div className="flex items-center justify-center space-x-3">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                        <Star className="h-6 w-6 text-white" />
                       </div>
-                      <span className="text-white font-medium">{t.airbnb.fiveStars}</span>
+                      <span className="text-white font-medium text-lg">{t.airbnb.fiveStars}</span>
                     </div>
                   </div>
                   
-                  <div className="pt-6">
+                  <div className="pt-8">
                     <Button 
                       onClick={openWhatsApp}
-                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-8 py-4 text-lg rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-10 py-5 text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                     >
-                      <WhatsAppIcon className="h-6 w-6 mr-3" />
+                      <WhatsAppIcon className="h-7 w-7 mr-3" />
                       {t.airbnb.requestQuote}
                     </Button>
                   </div>
