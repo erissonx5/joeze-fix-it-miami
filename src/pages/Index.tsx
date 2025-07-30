@@ -102,7 +102,7 @@ const Index = () => {
       <section 
         className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/897b0615-1490-4b2f-a9ea-8ed93a5ff745.png')`,
+          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/42b96f00-74e2-4a30-a6cd-01e354d3d3d0.png')`,
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -131,8 +131,8 @@ const Index = () => {
                 <div className="lg:w-1/2 w-full">
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <img 
-                      src="/lovable-uploads/263824db-df10-49db-b77e-71662e66ef94.png" 
-                      alt="Contact Information"
+                      src="/lovable-uploads/a870125f-bcc5-4368-ad88-91e3601c6bf0.png" 
+                      alt="Airbnb Services"
                       className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
