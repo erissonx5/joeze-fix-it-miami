@@ -115,6 +115,19 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section Image */}
+      <section className="py-8 md:py-12 bg-gradient-to-b from-[#8cbbc3] to-[#95430c]">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <img 
+              src="/lovable-uploads/be762647-5ba4-46f4-90d4-46ccb1ab6b26.png" 
+              alt="Contact Us - Mr. Joe & Zé Handyman"
+              className="w-full h-auto rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Segunda Imagem Hero - Airbnb com Fundo Gradiente */}
       <section 
         className="relative py-12 md:py-20 text-white overflow-hidden min-h-[400px] md:min-h-[600px] flex items-center justify-center"
