@@ -179,40 +179,6 @@ const Index = () => {
             <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
-              {/* Professional Laundry Service - NEW */}
-              <div className="flex flex-col lg:flex-row items-center gap-8 animate-fade-in">
-                <div className="lg:w-1/2">
-                  <img 
-                    src="/lovable-uploads/e650dc1d-ebaf-4e75-b5f2-5b98c448d665.png" 
-                    alt="Lavagem Profissional para Salões, Spas e Negócios Locais"
-                    className="w-full h-auto rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  />
-                </div>
-                <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">🧼 {t.services?.laundryService?.title}</h4>
-                  <div className="text-white/90 space-y-3">
-                    <p>{t.services?.laundryService?.questions?.[0]}</p>
-                    <p>{t.services?.laundryService?.questions?.[1]}</p>
-                    <p className="font-semibold">{t.services?.laundryService?.solutions?.[0]}</p>
-                    <p>{t.services?.laundryService?.solutions?.[1]}</p>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services?.laundryService?.benefits?.title}:</p>
-                    <ul className="space-y-1 text-white/80">
-                      <li>✔ {t.services?.laundryService?.benefits?.items?.[0]}</li>
-                      <li>✔ {t.services?.laundryService?.benefits?.items?.[1]}</li>
-                      <li>✔ {t.services?.laundryService?.benefits?.items?.[2]}</li>
-                      <li>✔ {t.services?.laundryService?.benefits?.items?.[3]}</li>
-                      <li>✔ {t.services?.laundryService?.benefits?.items?.[4]}</li>
-                    </ul>
-                    <div className="mt-4 space-y-2 text-white/90">
-                      <p>🚐 {t.services?.laundryService?.solutions?.[2]}</p>
-                      <p>{t.services?.laundryService?.solutions?.[3]}</p>
-                      <p className="font-medium text-white mt-4">{t.services?.laundryService?.solutions?.[4]}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* TV Installation */}
               <div className="flex flex-col lg:flex-row-reverse items-center gap-8 animate-fade-in">
