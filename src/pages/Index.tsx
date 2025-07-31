@@ -83,11 +83,11 @@ const Index = () => {
           <div className="flex items-center justify-center h-40 md:h-36">
             {/* Logo aumentada significativamente */}
             <div 
-              className="w-[500px] h-36 sm:w-[650px] sm:h-44 md:w-[900px] md:h-52 lg:w-[1100px] lg:h-60 transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
-                src="/lovable-uploads/15b926b0-bb90-444d-a910-1dd1f42c8c36.png" 
+                src="/lovable-uploads/b08d43d6-384b-464a-a60d-63cc3e248fdb.png" 
                 alt="Mr. Joe & Zé Handyman Logo" 
                 className="w-full h-full object-contain filter drop-shadow-lg"
               />
