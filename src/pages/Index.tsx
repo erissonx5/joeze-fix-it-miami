@@ -116,61 +116,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Segunda Imagem Hero - Airbnb com Fundo Gradiente */}
-      <section 
-        className="relative py-12 md:py-20 text-white overflow-hidden min-h-[400px] md:min-h-[600px] flex items-center justify-center"
-        style={{
-          background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 50%, #2c3e50 100%)`
-        }}
-      >
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-16 shadow-2xl border border-white/20">
-              <div className="space-y-8 text-center">
-                {/* Conteúdo */}
-                <div className="space-y-6">
-                  <div className="space-y-4">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                      {t.airbnb.title}
-                    </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-[#8cbbc3] to-[#95430c] mx-auto rounded-full"></div>
-                  </div>
-                  
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
-                    {t.airbnb.description}
-                  </p>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 max-w-lg mx-auto">
-                    <div className="flex items-center justify-center space-x-3">
-                      <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                        <CheckCircle className="h-6 w-6 text-white" />
-                      </div>
-                      <span className="text-white font-medium text-lg">{t.airbnb.quickService}</span>
-                    </div>
-                    <div className="flex items-center justify-center space-x-3">
-                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                        <Star className="h-6 w-6 text-white" />
-                      </div>
-                      <span className="text-white font-medium text-lg">{t.airbnb.fiveStars}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-8">
-                    <Button 
-                      onClick={openWhatsApp}
-                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-10 py-5 text-xl rounded-xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-                    >
-                      <WhatsAppIcon className="h-7 w-7 mr-3" />
-                      {t.airbnb.requestQuote}
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
