@@ -102,9 +102,9 @@ const Index = () => {
 
       {/* Hero Section - Imagem centralizada no desktop */}
       <section 
-        className="relative py-8 md:py-16 text-white overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center"
+        className="relative py-8 md:py-16 text-primary-foreground overflow-hidden min-h-[300px] md:min-h-[500px] flex items-center justify-center bg-background"
         style={{
-          backgroundImage: `linear-gradient(rgba(140, 187, 195, 0.2), rgba(149, 67, 12, 0.2)), url('/lovable-uploads/42b96f00-74e2-4a30-a6cd-01e354d3d3d0.png')`,
+          backgroundImage: `url('/lovable-uploads/42b96f00-74e2-4a30-a6cd-01e354d3d3d0.png')`,
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
