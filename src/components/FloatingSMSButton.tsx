@@ -13,7 +13,7 @@ const FloatingSMSButton: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-[170px] right-6 z-50">
+    <div className="fixed bottom-[240px] right-6 z-50">
       <button
         onClick={openSMS}
         className="w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
