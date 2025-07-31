@@ -729,7 +729,6 @@ const Index = () => {
       </section>
 
       {/* Floating Social Buttons */}
-      <FloatingInstagramButton instagramUrl="https://www.instagram.com/mrjoeandzehandyman/" />
       <FloatingWhatsAppButton 
         phoneNumber={whatsappNumber}
         message={whatsappMessage}
