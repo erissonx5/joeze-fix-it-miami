@@ -83,7 +83,7 @@ const Index = () => {
           <div className="flex items-center justify-center h-40 md:h-36">
             {/* Logo aumentada significativamente */}
             <div 
-              className="w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[200px] h-[200px] sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] lg:w-[280px] lg:h-[280px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
