@@ -87,7 +87,7 @@ const Index = () => {
               onClick={handleLogoClick}
             >
               <img 
-                src="/lovable-uploads/c1e8c03d-3cd0-4452-bfb1-2df182bdd43f.png" 
+                src="/lovable-uploads/15b926b0-bb90-444d-a910-1dd1f42c8c36.png" 
                 alt="Mr. Joe & Zé Handyman Logo" 
                 className="w-full h-full object-contain filter drop-shadow-lg"
               />
