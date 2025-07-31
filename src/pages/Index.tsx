@@ -1,3 +1,4 @@
+
 import { Phone, MapPin, Clock, CheckCircle, Users, Wrench, Star, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -79,11 +80,11 @@ const Index = () => {
       <header className={`bg-[#8cbbc3] shadow-lg transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-center h-16">
-            {/* Logo em tamanho harmônico */}
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-center h-20">
+            {/* Logo em tamanho harmônico com cabeçalho */}
             <div 
-              className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] md:w-[120px] md:h-[120px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -97,7 +98,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[72px]"></div>}
+      {isScrolled && <div className="h-[96px]"></div>}
 
       {/* Hero Section - Imagem centralizada no desktop */}
       <section 
