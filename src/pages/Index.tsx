@@ -77,7 +77,7 @@ const Index = () => {
       <ImportantNoticeDialog />
       
       {/* Header */}
-      <header className={`bg-gradient-to-r from-secondary to-accent shadow-lg transition-all duration-300 z-50 ${
+      <header className={`bg-gradient-to-r from-secondary via-primary to-secondary shadow-lg transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-6">
