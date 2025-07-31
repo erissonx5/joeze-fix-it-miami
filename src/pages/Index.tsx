@@ -72,7 +72,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen w-full overflow-x-hidden" style={{ backgroundColor: '#8cbbc3' }}>
+    <div className="min-h-screen w-full overflow-x-hidden bg-background">
       {/* Important Notice Dialog */}
       <ImportantNoticeDialog />
       
@@ -119,10 +119,10 @@ const Index = () => {
 
 
       {/* Services Section */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
+      <section className="py-20 bg-gradient-to-br from-primary via-secondary to-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-center mb-16 text-white animate-fade-in">{t.services?.title}</h3>
+            <h3 className="text-4xl font-bold text-center mb-16 text-primary-foreground animate-fade-in">{t.services?.title}</h3>
             
             <div className="space-y-16">
 
@@ -136,16 +136,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.tvInstallation.title}</h4>
-                  <p className="text-white/90">{t.services.tvInstallation.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.tvInstallation.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.tvInstallation.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.tvInstallation.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.tvInstallation.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.tvInstallation.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.tvInstallation.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.tvInstallation.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -160,16 +160,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.smartLock.title}</h4>
-                  <p className="text-white/90">{t.services.smartLock.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.smartLock.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.smartLock.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.smartLock.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.smartLock.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.smartLock.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.smartLock.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.smartLock.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -184,19 +184,19 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services?.cameraInstallation?.title}</h4>
-                  <p className="text-white/90">
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services?.cameraInstallation?.title}</h4>
+                  <p className="text-primary-foreground/90">
                     {t.services?.cameraInstallation?.description}
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services?.cameraInstallation?.benefits?.title}:</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services?.cameraInstallation?.benefits?.title}:</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[0]}</li>
                       <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[1]}</li>
                       <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[2]}</li>
                       <li>✔ {t.services?.cameraInstallation?.benefits?.items?.[3]}</li>
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services?.cameraInstallation?.benefits?.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services?.cameraInstallation?.benefits?.footer}</p>
                   </div>
                 </div>
               </div>
@@ -211,16 +211,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.foodDisposal.title}</h4>
-                  <p className="text-white/90">{t.services.foodDisposal.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.foodDisposal.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.foodDisposal.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.foodDisposal.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.foodDisposal.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.foodDisposal.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.foodDisposal.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.foodDisposal.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -235,16 +235,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.decoration.title}</h4>
-                  <p className="text-white/90">{t.services.decoration.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.decoration.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.decoration.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.decoration.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.decoration.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.decoration.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.decoration.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.decoration.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -259,16 +259,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.electrical.title}</h4>
-                  <p className="text-white/90">{t.services.electrical.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.electrical.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.electrical.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.electrical.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.electrical.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.electrical.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.electrical.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.electrical.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -283,16 +283,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.ceilingFan.title}</h4>
-                  <p className="text-white/90">{t.services.ceilingFan.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.ceilingFan.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.ceilingFan.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.ceilingFan.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.ceilingFan.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.ceilingFan.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.ceilingFan.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.ceilingFan.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -307,16 +307,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.plumbing.title}</h4>
-                  <p className="text-white/90">{t.services.plumbing.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.plumbing.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.plumbing.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.plumbing.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.plumbing.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.plumbing.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.plumbing.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.plumbing.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -331,16 +331,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.shelves.title}</h4>
-                  <p className="text-white/90">{t.services.shelves.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.shelves.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.shelves.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.shelves.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.shelves.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.shelves.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.shelves.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.shelves.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -355,16 +355,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.curtains.title}</h4>
-                  <p className="text-white/90">{t.services.curtains.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.curtains.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.curtains.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.curtains.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.curtains.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.curtains.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.curtains.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.curtains.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -379,16 +379,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.wallRepairs.title}</h4>
-                  <p className="text-white/90">{t.services.wallRepairs.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.wallRepairs.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.wallRepairs.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.wallRepairs.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.wallRepairs.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.wallRepairs.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.wallRepairs.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.wallRepairs.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -403,16 +403,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.doorRepairs.title}</h4>
-                  <p className="text-white/90">{t.services.doorRepairs.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.doorRepairs.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.doorRepairs.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.doorRepairs.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.doorRepairs.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.doorRepairs.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.doorRepairs.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.doorRepairs.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -427,16 +427,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.houseNumbers.title}</h4>
-                  <p className="text-white/90">{t.services.houseNumbers.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.houseNumbers.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.houseNumbers.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.houseNumbers.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.houseNumbers.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.houseNumbers.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.houseNumbers.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.houseNumbers.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -451,16 +451,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.mailbox.title}</h4>
-                  <p className="text-white/90">{t.services.mailbox.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.mailbox.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.mailbox.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.mailbox.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.mailbox.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.mailbox.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.mailbox.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.mailbox.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -475,16 +475,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.safetyDevices.title}</h4>
-                  <p className="text-white/90">{t.services.safetyDevices.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.safetyDevices.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.safetyDevices.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.safetyDevices.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.safetyDevices.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.safetyDevices.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.safetyDevices.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.safetyDevices.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -499,16 +499,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.gutterCleaning.title}</h4>
-                  <p className="text-white/90">{t.services.gutterCleaning.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.gutterCleaning.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.gutterCleaning.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.gutterCleaning.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.gutterCleaning.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.gutterCleaning.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.gutterCleaning.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.gutterCleaning.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -523,16 +523,16 @@ const Index = () => {
                   />
                 </div>
                 <div className="lg:w-1/2 space-y-4">
-                  <h4 className="text-2xl font-bold text-white">{t.services.pressureWashing.title}</h4>
-                  <p className="text-white/90">{t.services.pressureWashing.description}</p>
+                  <h4 className="text-2xl font-bold text-primary-foreground">{t.services.pressureWashing.title}</h4>
+                  <p className="text-primary-foreground/90">{t.services.pressureWashing.description}</p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-white">{t.services.pressureWashing.benefits.title}</p>
-                    <ul className="space-y-1 text-white/80">
+                    <p className="font-semibold text-primary-foreground">{t.services.pressureWashing.benefits.title}</p>
+                    <ul className="space-y-1 text-primary-foreground/80">
                       {t.services.pressureWashing.benefits.items.map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
                     </ul>
-                    <p className="font-medium text-white mt-4">{t.services.pressureWashing.benefits.footer}</p>
+                    <p className="font-medium text-primary-foreground mt-4">{t.services.pressureWashing.benefits.footer}</p>
                   </div>
                 </div>
               </div>
@@ -542,39 +542,39 @@ const Index = () => {
       </section>
 
       {/* About Section - Moved after Services */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
+      <section className="py-20 bg-gradient-to-br from-secondary via-accent to-primary">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl font-bold text-white mb-12 text-center animate-fade-in">{t.about?.title || "Sobre Nós"}</h3>
+            <h3 className="text-4xl font-bold text-primary-foreground mb-12 text-center animate-fade-in">{t.about?.title || "Sobre Nós"}</h3>
             <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
               <div className="space-y-8 animate-fade-in animation-delay-300">
                 <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <CheckCircle className="h-6 w-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <CheckCircle className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.quality?.title || "Qualidade Garantida"}</h4>
-                    <p className="text-white/80">{t.about?.quality?.description || "Trabalho profissional com garantia de qualidade em todos os serviços prestados."}</p>
+                    <h4 className="text-xl font-semibold text-primary-foreground mb-2">{t.about?.quality?.title || "Qualidade Garantida"}</h4>
+                    <p className="text-primary-foreground/80">{t.about?.quality?.description || "Trabalho profissional com garantia de qualidade em todos os serviços prestados."}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Clock className="h-6 w-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Clock className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.fastService?.title || "Atendimento Rápido"}</h4>
-                    <p className="text-white/80">{t.about?.fastService?.description || "Serviço ágil e pontual, respeitando sempre o prazo combinado com o cliente."}</p>
+                    <h4 className="text-xl font-semibold text-primary-foreground mb-2">{t.about?.fastService?.title || "Atendimento Rápido"}</h4>
+                    <p className="text-primary-foreground/80">{t.about?.fastService?.description || "Serviço ágil e pontual, respeitando sempre o prazo combinado com o cliente."}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4 transform hover:translate-x-2 transition-transform duration-300 bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                    <Users className="h-6 w-6 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <Users className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{t.about?.expertTeam?.title || "Equipe Especializada"}</h4>
-                    <p className="text-white/80">{t.about?.expertTeam?.description || "Profissionais experientes e qualificados para atender todas as suas necessidades."}</p>
+                    <h4 className="text-xl font-semibold text-primary-foreground mb-2">{t.about?.expertTeam?.title || "Equipe Especializada"}</h4>
+                    <p className="text-primary-foreground/80">{t.about?.expertTeam?.description || "Profissionais experientes e qualificados para atender todas as suas necessidades."}</p>
                   </div>
                 </div>
               </div>
@@ -584,23 +584,23 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section - Only 3 comments with initials */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #8cbbc3 0%, #95430c 100%)` }}>
+      <section className="py-20 bg-gradient-to-br from-primary via-secondary to-accent">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h3 className="text-4xl font-bold text-white mb-6">{t.testimonials?.title || "Depoimentos"}</h3>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+            <h3 className="text-4xl font-bold text-primary-foreground mb-6">{t.testimonials?.title || "Depoimentos"}</h3>
+            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
               {t.testimonials?.subtitle || "Veja o que nossos clientes dizem sobre nosso trabalho"}
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-white/95 backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 100}ms`}}>
+              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-6 bg-card backdrop-blur-sm group animate-fade-in overflow-hidden" style={{animationDelay: `${index * 100}ms`}}>
                 <CardContent className="p-6 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#95430c]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="flex items-center mb-6 relative z-10">
-                    <Avatar className="w-14 h-14 mr-4 ring-2 ring-[#95430c] ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
-                      <AvatarFallback className="bg-gradient-to-br from-[#95430c] to-orange-600 text-white font-bold text-lg">
+                    <Avatar className="w-14 h-14 mr-4 ring-2 ring-secondary ring-offset-2 group-hover:ring-4 transition-all duration-300 shadow-lg">
+                      <AvatarFallback className="bg-gradient-to-br from-secondary to-accent text-primary-foreground font-bold text-lg">
                         {testimonial.initials}
                       </AvatarFallback>
                     </Avatar>
@@ -610,11 +610,11 @@ const Index = () => {
                           <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400 transform group-hover:scale-110 transition-transform duration-300" style={{animationDelay: `${i * 50}ms`}} />
                         ))}
                       </div>
-                      <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600">{testimonial.location}</p>
+                      <p className="font-semibold text-card-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.location}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 italic group-hover:text-gray-900 transition-colors duration-300 relative z-10">"{testimonial.comment}"</p>
+                  <p className="text-muted-foreground italic group-hover:text-card-foreground transition-colors duration-300 relative z-10">"{testimonial.comment}"</p>
                 </CardContent>
               </Card>
             ))}
@@ -623,17 +623,17 @@ const Index = () => {
       </section>
 
       {/* Coverage Area */}
-      <section className="py-20" style={{ background: `linear-gradient(135deg, #95430c 0%, #8cbbc3 100%)` }}>
+      <section className="py-20 bg-gradient-to-br from-secondary via-accent to-primary">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
-            <h3 className="text-4xl font-bold text-white animate-fade-in">{t.coverage?.title || "Área de Atendimento"}</h3>
+            <h3 className="text-4xl font-bold text-primary-foreground animate-fade-in">{t.coverage?.title || "Área de Atendimento"}</h3>
             <div className="flex items-center justify-center mb-8 animate-fade-in animation-delay-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#8cbbc3] to-teal-400 rounded-full flex items-center justify-center shadow-xl">
-                <MapPin className="h-10 w-10 text-white animate-bounce" />
+              <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-xl">
+                <MapPin className="h-10 w-10 text-primary-foreground animate-bounce" />
               </div>
             </div>
-            <h4 className="text-2xl font-semibold text-white animate-fade-in animation-delay-500">{t.coverage?.subtitle || "Miami-Dade e Broward County"}</h4>
-            <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
+            <h4 className="text-2xl font-semibold text-primary-foreground animate-fade-in animation-delay-500">{t.coverage?.subtitle || "Miami-Dade e Broward County"}</h4>
+            <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto animate-fade-in animation-delay-700">
               {t.coverage?.description || "Atendemos toda a região metropolitana de Miami com qualidade e pontualidade."}
             </p>
           </div>
