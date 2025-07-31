@@ -5,6 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { useLanguage } from '@/contexts/LanguageContext';
 import FloatingWhatsAppButton from '@/components/FloatingWhatsAppButton';
 import FloatingInstagramButton from '@/components/FloatingInstagramButton';
+import FloatingSMSButton from '@/components/FloatingSMSButton';
 import FloatingLanguageSelector from '@/components/FloatingLanguageSelector';
 import ImportantNoticeDialog from '@/components/ImportantNoticeDialog';
 import { useState, useEffect } from 'react';
@@ -733,6 +734,7 @@ const Index = () => {
         phoneNumber={whatsappNumber}
         message={whatsappMessage}
       />
+      <FloatingSMSButton />
       
       <FloatingLanguageSelector />
 
