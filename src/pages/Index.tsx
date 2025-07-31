@@ -77,9 +77,9 @@ const Index = () => {
       <ImportantNoticeDialog />
       
       {/* Header */}
-      <header className={`bg-gradient-to-l from-secondary/90 to-secondary shadow-lg transition-all duration-300 z-50 ${
+      <header className={`shadow-lg transition-all duration-300 z-50 ${
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
-      }`}>
+      }`} style={{ background: 'linear-gradient(to right, #a47828, #d4a855)' }}>
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-center h-24">
             {/* Logo em tamanho harmônico com cabeçalho */}
