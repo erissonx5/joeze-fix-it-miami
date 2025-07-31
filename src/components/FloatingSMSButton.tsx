@@ -9,8 +9,7 @@ const SMSIcon = ({ className = "h-6 w-6" }: { className?: string }) => (
 
 const FloatingSMSButton: React.FC = () => {
   const openSMS = () => {
-    const url = `sms:+17867020403`;
-    window.location.href = url;
+    window.location.href = 'sms:+17867020403';
   };
 
   return (
