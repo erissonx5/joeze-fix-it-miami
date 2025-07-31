@@ -80,10 +80,10 @@ const Index = () => {
         isScrolled ? 'fixed top-0 left-0 right-0' : 'relative'
       }`}>
         <div className="container mx-auto px-4 py-2">
-          <div className="flex items-center justify-center h-20 md:h-24">
-            {/* Logo organizada em tamanho apropriado */}
+          <div className="flex items-center justify-center h-16">
+            {/* Logo em tamanho harmônico */}
             <div 
-              className="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[160px] md:h-[160px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
+              className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] transform hover:scale-110 transition-transform duration-300 cursor-pointer flex-shrink-0"
               onClick={handleLogoClick}
             >
               <img 
@@ -97,7 +97,7 @@ const Index = () => {
       </header>
 
       {/* Spacer when header is fixed */}
-      {isScrolled && <div className="h-[96px] md:h-[108px]"></div>}
+      {isScrolled && <div className="h-[72px]"></div>}
 
       {/* Hero Section - Imagem centralizada no desktop */}
       <section 
