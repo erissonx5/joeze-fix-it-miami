@@ -21,7 +21,7 @@ const WhatsAppIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
 const Index = () => {
   const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
-  const whatsappNumber = "17867020403";
+  const whatsappNumber = "17865937841";
   const whatsappMessage = t.hero.phone || "Olá! Gostaria de solicitar um orçamento para serviços de handyman.";
   
   useEffect(() => {
@@ -35,7 +35,7 @@ const Index = () => {
   }, []);
 
   const openWhatsApp = () => {
-    const url = `https://api.whatsapp.com/send/?phone=17867020403&text&type=phone_number&app_absent=0`;
+    const url = `https://api.whatsapp.com/send/?phone=17865937841&text&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
   };
 

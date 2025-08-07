@@ -95,12 +95,12 @@ const ImportantNoticeDialog = () => {
   );
 
   const openWhatsApp = () => {
-    const url = `https://api.whatsapp.com/send/?phone=17867020403&text&type=phone_number&app_absent=0`;
+    const url = `https://api.whatsapp.com/send/?phone=17865937841&text&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
   };
 
   const openSMS = () => {
-    const phoneNumber = "+17867020403";
+    const phoneNumber = "+17865937841";
     const smsUrl = `sms:${phoneNumber}`;
     window.open(smsUrl, '_self');
   };
