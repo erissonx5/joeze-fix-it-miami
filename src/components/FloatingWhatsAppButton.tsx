@@ -15,7 +15,7 @@ interface FloatingWhatsAppButtonProps {
 
 const FloatingWhatsAppButton: React.FC<FloatingWhatsAppButtonProps> = ({ phoneNumber, message }) => {
   const openWhatsApp = () => {
-    const url = `https://wa.me/17865937841`;
+    const url = `https://wa.me/${phoneNumber}`;
     window.open(url, '_blank');
   };
 
